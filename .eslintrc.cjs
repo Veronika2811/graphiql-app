@@ -30,6 +30,7 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/destructuring-assignment': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    'react/function-component-definition': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
     'simple-import-sort/imports': [
@@ -65,4 +66,3 @@ module.exports = {
     },
   },
 };
-
