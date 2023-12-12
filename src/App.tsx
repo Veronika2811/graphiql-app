@@ -1,5 +1,3 @@
-function App() {
-  return <div>graphiql-app</div>;
-}
+const App = () => <div>graphiql-app</div>;
 
 export default App;
