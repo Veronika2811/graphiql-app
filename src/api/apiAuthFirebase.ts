@@ -15,6 +15,7 @@ import { app } from './initFirebase';
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
 export const singIn = async ({ email, password }: User): Promise<void> => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
