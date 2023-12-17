@@ -23,29 +23,22 @@ export const getUserName = async (uid: string): Promise<string | void> => {
       where(USER_FIELDS.UID, '==', uid)
     );
     const userQuerySnap = await getDocs(userQuery);
+
+    if (!userQuerySnap.docs.length) {
+      throw new Error(ERROR.FIREBASE.NOT_FOUND);
+    }
+
     const userName = userQuerySnap.docs[0].data().name;
 
     return userName;
   } catch (error) {
     if (error instanceof FirebaseError) {
-      throw new Error(error.code);
+      throw new Error(
+        `${ERROR.FIREBASE.HEADER}: ${error.code} - ${error.message}`
+      );
     }
-    throw new Error(ERROR.FIREBASE.MESSAGE);
-  }
-};
-
-export const checkEmail = async (email: string): Promise<boolean | void> => {
-  try {
-    const userQuery = query(
-      collection(db, COLLECTIONS.USERS),
-      where(USER_FIELDS.EMAIL, '==', email)
-    );
-    const userQuerySnap = await getDocs(userQuery);
-
-    return !!userQuerySnap.docs.length;
-  } catch (error) {
-    if (error instanceof FirebaseError) {
-      throw new Error(error.code);
+    if (error instanceof Error) {
+      throw new Error(error.message);
     }
     throw new Error(ERROR.FIREBASE.MESSAGE);
   }
