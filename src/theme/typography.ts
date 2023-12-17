@@ -26,6 +26,13 @@ export const typographyCustom: TypographyOptions = {
     fontSize: '1.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
+  },
+  subtitle2: {
+    fontSize: '1.1rem',
+    fontWeight: 500,
+    lineHeight: 1.2,
+    fontStyle: 'normal',
   },
   body1: {
     fontSize: '1.6rem',
@@ -46,7 +53,7 @@ export const typographyCustom: TypographyOptions = {
     lineHeight: 1.28,
   },
   button: {
-    fontSize: '1.2rem',
+    fontSize: '0.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
   },

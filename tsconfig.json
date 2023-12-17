@@ -21,7 +21,8 @@
       "shared/*": ["shared/*"],
       "theme/*": ["theme/*"],
       "pages/*": ["pages/*"],
-      "types/*": ["types/*"]
+      "types/*": ["types/*"],
+      "ui/*": ["ui/*"]
     },
 
     /* Linting */

@@ -24,6 +24,7 @@ export default defineConfig({
       pages: '/src/pages',
       types: '/src/types',
       theme: '/src/theme',
+      ui: '/src/ui',
     },
   },
   test: {
@@ -36,3 +37,4 @@ export default defineConfig({
     },
   },
 });
+

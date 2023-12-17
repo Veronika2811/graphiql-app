@@ -4,6 +4,10 @@ export const paletteCustom: PaletteOptions = {
   primary: {
     main: '#fff',
   },
+  custom: {
+    blue: '#3282ff',
+    yellow: '#bbc347',
+  },
   secondary: {
     main: '#E1008E',
   },
