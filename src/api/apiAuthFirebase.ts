@@ -18,10 +18,6 @@ import { ERROR } from '../constants/constants';
 import { User } from '../type/interface';
 
 import { AUTH_PROVIDERS, COLLECTIONS } from './constants/constants';
-// import { app } from './initFirebase';
-
-// export const auth = getAuth(app);
-// export const db = getFirestore(app);
 
 export default class AuthService {
   private auth: Auth;

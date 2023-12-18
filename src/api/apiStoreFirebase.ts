@@ -11,10 +11,6 @@ import {
 import { ERROR } from '../constants/constants';
 
 import { COLLECTIONS, USER_FIELDS } from './constants/constants';
-// import { app } from './initFirebase';
-
-// export const auth = getAuth(app);
-// export const db = getFirestore(app);
 
 export default class DataBaseService {
   private db: Firestore;
