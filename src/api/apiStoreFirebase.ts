@@ -20,7 +20,7 @@ class DataBaseService {
     this.db = getFirestore(app);
   }
 
-  getUserName = async (uid: string): Promise<string | void> => {
+  getUserName = async (uid: string) => {
     try {
       const userQuery = query(
         collection(this.db, COLLECTIONS.USERS),
