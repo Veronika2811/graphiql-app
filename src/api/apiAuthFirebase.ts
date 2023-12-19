@@ -1,4 +1,4 @@
-import { FirebaseApp, FirebaseError } from 'firebase/app';
+import { FirebaseApp } from 'firebase/app';
 import {
   Auth,
   createUserWithEmailAndPassword,
@@ -14,10 +14,10 @@ import {
   getFirestore,
 } from 'firebase/firestore';
 
-import { ERROR } from '../constants/constants';
 import { User } from '../type/interface';
 
 import { AUTH_PROVIDERS, COLLECTIONS } from './constants/constants';
+import { handleFirebaseError } from './utils/handleFirebaseError';
 import { app as appFB } from './initFirebase';
 
 class AuthService {
@@ -30,20 +30,15 @@ class AuthService {
     this.db = getFirestore(app);
   }
 
-  signIn = async ({ email, password }: User): Promise<void> => {
+  signIn = async ({ email, password }: User) => {
     try {
       await signInWithEmailAndPassword(this.auth, email, password);
     } catch (error) {
-      if (error instanceof FirebaseError) {
-        throw new Error(
-          `${ERROR.FIREBASE.HEADER}: ${error.code} - ${error.message}`
-        );
-      }
-      throw new Error(ERROR.FIREBASE.MESSAGE);
+      handleFirebaseError(error);
     }
   };
 
-  registerUser = async ({ name, email, password }: User): Promise<void> => {
+  registerUser = async ({ name, email, password }: User) => {
     try {
       const res = await createUserWithEmailAndPassword(
         this.auth,
@@ -58,24 +53,23 @@ class AuthService {
         email,
       });
     } catch (error) {
-      if (error instanceof FirebaseError) {
-        throw new Error(`${ERROR.FIREBASE}: ${error.code} - ${error.message}`);
-      }
-      throw new Error(ERROR.FIREBASE.MESSAGE);
+      handleFirebaseError(error);
     }
   };
 
-  checkEmail = async (email: string): Promise<boolean | void> => {
+  checkEmail = async (email: string) => {
     try {
       const signInMethods = await fetchSignInMethodsForEmail(this.auth, email);
-      return !!signInMethods.length;
-    } catch (error) {
-      if (error instanceof FirebaseError) {
-        throw new Error(
-          `${ERROR.FIREBASE.HEADER}: ${error.code} - ${error.message}`
-        );
+
+      if (signInMethods.length) {
+        return true;
       }
-      throw new Error(ERROR.FIREBASE.MESSAGE);
+
+      return false;
+    } catch (error) {
+      handleFirebaseError(error);
+
+      return false;
     }
   };
 

@@ -15,6 +15,17 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      app: '/src/app',
+      layouts: '/src/layouts',
+      components: '/src/components',
+      shared: '/src/shared',
+      pages: '/src/pages',
+      types: '/src/types',
+      theme: '/src/theme',
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
