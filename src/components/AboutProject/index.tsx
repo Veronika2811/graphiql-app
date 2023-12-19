@@ -3,7 +3,7 @@ import { CardMedia, Grid, Stack, Typography } from '@mui/material';
 import img1 from '../../assets/images/jpg/img1.jpg';
 import img2 from '../../assets/images/jpg/img2.jpg';
 
-import { styles } from './AboutProject.styles';
+import { styles } from './styles';
 
 export const AboutProject = () => (
   <Grid container spacing={5} columnSpacing={5} wrap="wrap">

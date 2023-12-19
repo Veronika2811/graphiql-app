@@ -13,7 +13,7 @@ import { GithubIcon } from '../../ui/icons/GitHubIcon';
 import { LinkedInIcon } from '../../ui/icons/LinkedInIcon';
 import { TelegramIcon } from '../../ui/icons/TelegramIcon';
 
-import { styles } from './TeamCard.styles';
+import { styles } from './styles';
 
 interface TeamCardProps {
   name: string;
@@ -30,9 +30,7 @@ export const TeamCard = ({
 }: TeamCardProps) => (
   <Card sx={styles.card}>
     <CardContent sx={styles['card-content']}>
-      <Typography variant="subtitle1" component="h5">
-        {name}
-      </Typography>
+      <Typography variant="h5">{name}</Typography>
       <Box sx={styles['card-social']}>
         <IconButton href={github} target="_blank">
           <GithubIcon size="large" />

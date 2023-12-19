@@ -4,19 +4,21 @@ export const styles = {
     borderRadius: '20px',
     justifyContent: 'space-between',
     padding: '20px',
-    maxWidth: '500px',
+    maxWidth: '400px',
+    minWidth: '300px',
+    width: '100%',
   },
   'card-content': {
     display: 'flex',
     flexDirection: 'column',
-    gap: '10px',
+    justifyContent: 'space-between',
+    padding: 0,
   },
   'card-social': {
     display: 'flex',
     alignItems: 'center',
-    gap: '10px',
   },
   'card-image': {
-    width: '130px',
+    width: '100px',
   },
 };

@@ -1,3 +1,4 @@
+import { Link as RouterLink } from 'react-router-dom';
 import { Grid, Link, Stack, Typography } from '@mui/material';
 
 import { AboutProject } from '../../components/AboutProject';
@@ -5,7 +6,7 @@ import { TeamCard } from '../../components/TeamCard';
 
 import styles from './WelcomePage.styles';
 
-export const WelcomePage = () => {
+const WelcomePage = () => {
   const auth = '';
 
   return (
@@ -14,7 +15,6 @@ export const WelcomePage = () => {
       direction="column"
       useFlexGap
       sx={styles.container}
-      component="main"
     >
       <Stack direction="column" spacing={2}>
         <Typography variant="h1" align="center" color="secondary">
@@ -27,13 +27,23 @@ export const WelcomePage = () => {
       {auth ? (
         <Typography variant="h3" component="h2" align="center">
           Query and Explore GraphQL API with&nbsp;
-          <Link href="/editor" color="secondary" underline="always">
+          <Link
+            component={RouterLink}
+            to="/editor"
+            color="secondary"
+            underline="always"
+          >
             GraphiQL IDE
           </Link>
         </Typography>
       ) : (
         <Typography variant="h3" component="h2" align="center">
-          <Link href="/authorization" color="secondary" underline="always">
+          <Link
+            component={RouterLink}
+            to="/authorization"
+            color="secondary"
+            underline="always"
+          >
             Sign In
           </Link>
           &nbsp;to get started
@@ -47,14 +57,7 @@ export const WelcomePage = () => {
       </Typography>
 
       <Grid container spacing={5} columnSpacing={5} wrap="wrap">
-        <Grid
-          container
-          item
-          xs={12}
-          lg={4}
-          zeroMinWidth
-          justifyContent="center"
-        >
+        <Grid container item xs={12} md={4} justifyContent="center">
           <TeamCard
             name="Konstantin"
             github="https://github.com/KikinovK"
@@ -62,14 +65,7 @@ export const WelcomePage = () => {
             telegram="https://t.me/KonstantinKikinov"
           />
         </Grid>
-        <Grid
-          container
-          item
-          xs={12}
-          lg={4}
-          zeroMinWidth
-          justifyContent="center"
-        >
+        <Grid container item xs={12} md={4} justifyContent="center">
           <TeamCard
             name="Veranika"
             github="https://github.com/Veronika2811"
@@ -77,7 +73,7 @@ export const WelcomePage = () => {
             telegram="https://t.me/nika_2811"
           />
         </Grid>
-        <Grid container item xs={12} lg={4} justifyContent="center">
+        <Grid container item xs={12} md={4} justifyContent="center">
           <TeamCard
             name="Artem"
             github="https://github.com/Arterixs"
@@ -89,3 +85,5 @@ export const WelcomePage = () => {
     </Stack>
   );
 };
+
+export default WelcomePage;

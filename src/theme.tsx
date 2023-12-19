@@ -8,14 +8,11 @@ import '@fontsource/inter';
 
 import { componentsCustom } from './theme/components';
 
-
 const defaultTheme = createTheme({});
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: paletteCustom,
   typography: typographyCustom(defaultTheme),
   transitions: transitionsCustom,
   components: componentsCustom,
 });
-
-export default theme;

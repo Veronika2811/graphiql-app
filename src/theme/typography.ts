@@ -10,7 +10,7 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     ...(theme.breakpoints &&
       theme.breakpoints.down && {
         [theme.breakpoints.down('sm')]: {
-          fontSize: '2.7rem',
+          fontSize: '1.9rem',
         },
       }),
   },
@@ -27,7 +27,7 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     ...(theme.breakpoints &&
       theme.breakpoints.down && {
         [theme.breakpoints.down('sm')]: {
-          fontSize: '2.4rem',
+          fontSize: '1.6rem',
         },
       }),
   },
@@ -39,9 +39,15 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     ...(theme.breakpoints &&
       theme.breakpoints.down && {
         [theme.breakpoints.down('sm')]: {
-          fontSize: '2.2rem',
+          fontSize: '1.4rem',
         },
       }),
+  },
+  h5: {
+    fontSize: '1.8rem',
+    fontWeight: 700,
+    lineHeight: 1.2,
+    fontStyle: 'normal',
   },
   subtitle1: {
     fontSize: '1.8rem',
@@ -51,7 +57,7 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     ...(theme.breakpoints &&
       theme.breakpoints.down && {
         [theme.breakpoints.down('sm')]: {
-          fontSize: '1.4rem',
+          fontSize: '1.1rem',
         },
       }),
   },
@@ -60,6 +66,12 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     fontWeight: 100,
     fontStyle: 'italic',
     lineHeight: 1.2,
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1rem',
+        },
+      }),
   },
   body2: {
     fontSize: '1.2rem',
