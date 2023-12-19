@@ -1,3 +1,5 @@
-const App = () => <div>graphiql-app</div>;
+import { WelcomePage } from './pages/welcome';
+
+const App = () => <WelcomePage />;
 
 export default App;
