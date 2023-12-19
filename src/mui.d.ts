@@ -10,6 +10,13 @@ declare module '@mui/material/styles' {
   }
 }
 
+declare module '@mui/material/SvgIcon' {
+  interface SvgIconPropsSizeOverrides {
+    huge: true;
+    miniHuge: true;
+  }
+}
+
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     code: true;
