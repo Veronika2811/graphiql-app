@@ -13,7 +13,7 @@ import {
   where,
 } from 'firebase/firestore';
 
-import { IUser } from '../type/interface';
+import { User } from '../type/interface';
 
 import { app } from './initFirebase';
 
@@ -25,10 +25,7 @@ interface IFirebaseAuthError {
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
-export const singIn = async ({
-  email,
-  password,
-}: IUser): Promise<undefined> => {
+export const singIn = async ({ email, password }: User): Promise<undefined> => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
   } catch (error) {
@@ -42,7 +39,7 @@ export const registerUser = async ({
   name,
   email,
   password,
-}: IUser): Promise<undefined> => {
+}: User): Promise<undefined> => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const { user } = res;

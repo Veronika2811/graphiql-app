@@ -1,3 +1,5 @@
-const App = () => <div>graphiql-app</div>;
+import AuthPage from './components/AuthPage';
+
+const App = () => <AuthPage />;
 
 export default App;

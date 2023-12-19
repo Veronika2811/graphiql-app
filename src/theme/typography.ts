@@ -1,11 +1,18 @@
+import { ThemeOptions } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
-export const typographyCustom: TypographyOptions = {
+export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
   fontFamily: ['Inter', 'sans-serif'].join(','),
   h1: {
-    fontSize: '12.6rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontSize: '12.6rem',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('md')]: {
+          fontSize: '8rem',
+        },
+      }),
   },
   h2: {
     fontSize: '3.2rem',
@@ -57,4 +64,4 @@ export const typographyCustom: TypographyOptions = {
     lineHeight: 1.4,
     letterSpacing: '0.01em',
   },
-};
+});

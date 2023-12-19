@@ -9,9 +9,13 @@ import { typographyCustom } from './theme/typography';
 
 // https://mui.com/material-ui/customization/default-theme/
 // A custom theme for this app
+// let theme = createTheme({});
+
+const themeOld = createTheme({});
+
 const theme = createTheme({
   palette: paletteCustom,
-  typography: typographyCustom,
+  typography: typographyCustom(themeOld),
   transitions: transitionsCustom,
 });
 
