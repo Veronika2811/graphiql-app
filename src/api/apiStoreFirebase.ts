@@ -11,8 +11,9 @@ import {
 import { ERROR } from '../constants/constants';
 
 import { COLLECTIONS, USER_FIELDS } from './constants/constants';
+import { app as appFB } from './initFirebase';
 
-export default class DataBaseService {
+class DataBaseService {
   private db: Firestore;
 
   constructor(app: FirebaseApp) {
@@ -47,3 +48,5 @@ export default class DataBaseService {
     }
   };
 }
+
+export default new DataBaseService(appFB);

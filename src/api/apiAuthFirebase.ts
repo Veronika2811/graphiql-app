@@ -18,8 +18,9 @@ import { ERROR } from '../constants/constants';
 import { User } from '../type/interface';
 
 import { AUTH_PROVIDERS, COLLECTIONS } from './constants/constants';
+import { app as appFB } from './initFirebase';
 
-export default class AuthService {
+class AuthService {
   private auth: Auth;
 
   private db: Firestore;
@@ -82,3 +83,5 @@ export default class AuthService {
     signOut(this.auth);
   };
 }
+
+export default new AuthService(appFB);
