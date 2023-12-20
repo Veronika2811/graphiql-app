@@ -1,9 +1,8 @@
 import { CardMedia, Grid, Stack, Typography } from '@mui/material';
+import img1 from 'assets/images/jpg/img1.jpg';
+import img2 from 'assets/images/jpg/img2.jpg';
 
-import img1 from '../../assets/images/jpg/img1.jpg';
-import img2 from '../../assets/images/jpg/img2.jpg';
-
-import { styles } from './styles';
+import { aboutProjectSx } from './styles';
 
 export const AboutProject = () => (
   <Grid container spacing={5} columnSpacing={5} wrap="wrap">
@@ -16,7 +15,7 @@ export const AboutProject = () => (
           variant="body1"
           align="left"
           paragraph
-          sx={styles['about-subtitle']}
+          sx={aboutProjectSx.about__subtitle}
         >
           GraphQL is a query language for APIs and a runtime for fulfilling
           those queries with your existing data. GraphQL provides a complete and
@@ -27,10 +26,20 @@ export const AboutProject = () => (
       </Stack>
     </Grid>
     <Grid container item xs={12} md={6} zeroMinWidth>
-      <CardMedia component="img" image={img1} alt="img1" sx={styles.img} />
+      <CardMedia
+        component="img"
+        image={img1}
+        alt="img"
+        sx={aboutProjectSx.about__img}
+      />
     </Grid>
     <Grid container item xs={12} md={6} zeroMinWidth>
-      <CardMedia component="img" image={img2} alt="img2" sx={styles.img} />
+      <CardMedia
+        component="img"
+        image={img2}
+        alt="img"
+        sx={aboutProjectSx.about__img}
+      />
     </Grid>
     <Grid container item xs={12} md={6} alignItems="center" zeroMinWidth>
       <Stack direction="column" spacing={2}>
@@ -41,7 +50,7 @@ export const AboutProject = () => (
           variant="body1"
           align="left"
           paragraph
-          sx={styles['about-subtitle']}
+          sx={aboutProjectSx.about__subtitle}
         >
           Send a GraphQL query to your API and get exactly what you need,
           nothing more and nothing less. GraphQL queries always return

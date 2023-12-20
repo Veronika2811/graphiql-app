@@ -1,19 +1,18 @@
 import {
-  Box,
   Card,
   CardContent,
   CardMedia,
   IconButton,
+  Stack,
   Typography,
 } from '@mui/material';
+import girl from 'assets/images/svg/girl.svg';
+import man from 'assets/images/svg/man.svg';
+import { GithubIcon } from 'ui/icons/GitHubIcon';
+import { LinkedInIcon } from 'ui/icons/LinkedInIcon';
+import { TelegramIcon } from 'ui/icons/TelegramIcon';
 
-import girl from '../../assets/images/svg/girl.svg';
-import man from '../../assets/images/svg/man.svg';
-import { GithubIcon } from '../../ui/icons/GitHubIcon';
-import { LinkedInIcon } from '../../ui/icons/LinkedInIcon';
-import { TelegramIcon } from '../../ui/icons/TelegramIcon';
-
-import { styles } from './styles';
+import { teamCardSx } from './styles';
 
 interface TeamCardProps {
   name: string;
@@ -28,26 +27,26 @@ export const TeamCard = ({
   linkedIn,
   telegram,
 }: TeamCardProps) => (
-  <Card sx={styles.card}>
-    <CardContent sx={styles['card-content']}>
+  <Card sx={teamCardSx.card}>
+    <CardContent sx={teamCardSx.card__content}>
       <Typography variant="h5">{name}</Typography>
-      <Box sx={styles['card-social']}>
-        <IconButton href={github} target="_blank">
-          <GithubIcon size="large" />
+      <Stack direction="row" useFlexGap>
+        <IconButton href={github} target="_blank" rel="noopener">
+          <GithubIcon fontSize="large" />
         </IconButton>
-        <IconButton href={linkedIn} target="_blank">
-          <LinkedInIcon />
+        <IconButton href={linkedIn} target="_blank" rel="noopener">
+          <LinkedInIcon fontSize="large" />
         </IconButton>
-        <IconButton href={telegram} target="_blank">
-          <TelegramIcon />
+        <IconButton href={telegram} target="_blank" rel="noopener">
+          <TelegramIcon fontSize="large" />
         </IconButton>
-      </Box>
+      </Stack>
     </CardContent>
     <CardMedia
       component="img"
       image={name === 'Veranika' ? girl : man}
       alt={name}
-      sx={styles['card-image']}
+      sx={teamCardSx.card__image}
     />
   </Card>
 );

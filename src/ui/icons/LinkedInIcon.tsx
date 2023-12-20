@@ -1,14 +1,8 @@
-import { SvgIcon } from '@mui/material';
+import { SvgIcon, SvgIconProps } from '@mui/material';
 
-export const LinkedInIcon = () => (
-  <SvgIcon fontSize="large">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-    >
+export const LinkedInIcon = (props: SvgIconProps) => (
+  <SvgIcon aria-label="LinkedInIcon" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
       <path
         d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
         fill="#0077B5"

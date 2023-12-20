@@ -1,27 +1,22 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { Grid, Link, Stack, Typography } from '@mui/material';
+import { INFORMATION_ABOUT_DEVELOPERS } from 'constants/informationAboutDevelopers';
 
-import { AboutProject } from '../../components/AboutProject';
-import { TeamCard } from '../../components/TeamCard';
-
-import styles from './WelcomePage.styles';
+import { AboutProject } from 'components/AboutProject';
+import { TeamCard } from 'components/TeamCard';
 
 const WelcomePage = () => {
   const auth = '';
 
   return (
-    <Stack
-      spacing={{ xs: 5, sm: 7 }}
-      direction="column"
-      useFlexGap
-      sx={styles.container}
-    >
+    <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap padding={3}>
       <Stack direction="column" spacing={2}>
         <Typography variant="h1" align="center" color="secondary">
           The Best IDE for GraphQL Requests
         </Typography>
         <Typography variant="subtitle1" component="p" align="center">
-          created within RSSchool
+          The app is the result of completing the final task of RS School React
+          Course.
         </Typography>
       </Stack>
       {auth ? (
@@ -57,30 +52,23 @@ const WelcomePage = () => {
       </Typography>
 
       <Grid container spacing={5} columnSpacing={5} wrap="wrap">
-        <Grid container item xs={12} md={4} justifyContent="center">
-          <TeamCard
-            name="Konstantin"
-            github="https://github.com/KikinovK"
-            linkedIn="https://www.linkedin.com/in/kostiantyn-kikinov-505387b3/"
-            telegram="https://t.me/KonstantinKikinov"
-          />
-        </Grid>
-        <Grid container item xs={12} md={4} justifyContent="center">
-          <TeamCard
-            name="Veranika"
-            github="https://github.com/Veronika2811"
-            linkedIn="https://www.linkedin.com/in/veranika-smiayun-9a2297235/"
-            telegram="https://t.me/nika_2811"
-          />
-        </Grid>
-        <Grid container item xs={12} md={4} justifyContent="center">
-          <TeamCard
-            name="Artem"
-            github="https://github.com/Arterixs"
-            linkedIn=""
-            telegram="https://t.me/arteminder"
-          />
-        </Grid>
+        {INFORMATION_ABOUT_DEVELOPERS.map((developer) => (
+          <Grid
+            container
+            item
+            xs={12}
+            lg={4}
+            justifyContent="center"
+            key={developer.id}
+          >
+            <TeamCard
+              name={developer.name}
+              github={developer.github}
+              linkedIn={developer.linkedIn}
+              telegram={developer.telegram}
+            />
+          </Grid>
+        ))}
       </Grid>
     </Stack>
   );

@@ -1,8 +1,8 @@
-export const styles = {
-  'about-subtitle': {
+export const aboutProjectSx = {
+  about__subtitle: {
     textAlign: 'justify',
   },
-  img: {
+  about__img: {
     width: '100%',
     objectFit: 'cover',
     borderRadius: '20px',
