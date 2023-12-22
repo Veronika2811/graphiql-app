@@ -30,3 +30,14 @@ export const ERROR = {
     NOT_FOUND: 'User not found',
   },
 };
+
+export const DIC_ERROR_API = {
+  'wrong-password': 'Wrong password',
+  'invalid-email': 'Invalid Email',
+  'user-disabled': 'User-disabled',
+  'user-not-found': 'User not found',
+  'email-already-in-use': 'Email already in use',
+  'operation-not-allowed': 'Operation not allowed',
+  'weak-password': 'Weak-password',
+  default: 'Unknown error',
+};

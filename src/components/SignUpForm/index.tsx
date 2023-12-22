@@ -11,24 +11,50 @@ import {
   Typography,
 } from '@mui/material';
 
-import ROOT from '../../constants/constants';
+import authService from '../../api/apiAuthFirebase';
+import ROOT, { DIC_ERROR_API } from '../../constants/constants';
+import { findNextText } from '../../utils/findNextText';
+import { getFieldByKey } from '../../utils/getFieldByKey';
 import shemaSignUp, { FormData } from '../../validation/shemaSignUp';
 import AuthButton from '../AuthButton';
 import AuthTextField from '../AuthTextField';
 
 const SignUpForm = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [submitDisabled, setSubmitDisabled] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors, isValid },
+    setError,
   } = useForm<FormData>({
-    resolver: yupResolver(shemaSignUp),
+    resolver: yupResolver(shemaSignUp, { strict: true }),
     mode: 'onBlur',
-    reValidateMode: 'onChange',
+    reValidateMode: 'onBlur',
   });
 
-  const onSubmit = () => {};
+  const onSubmit = async (formData: FormData) => {
+    setSubmitDisabled(true);
+    try {
+      const isEmailAvailable = await authService.checkEmail(formData.email);
+      if (isEmailAvailable) {
+        setError('email', {
+          type: 'manual',
+          message: 'Email is already taken',
+        });
+      } else {
+        await authService.registerUser(formData);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error(
+          'signUp',
+          getFieldByKey(DIC_ERROR_API, findNextText(error.message, 'auth/'))
+        );
+      }
+    }
+    setSubmitDisabled(false);
+  };
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
@@ -109,12 +135,16 @@ const SignUpForm = () => {
             ),
           }}
         />
+        <Box sx={{ textAlign: 'center', mb: 2 }}>
+          <AuthButton
+            type="submit"
+            variant="outlined"
+            disabled={!isValid || submitDisabled}
+          >
+            {ROOT.SIGN_IN.BUTTON}
+          </AuthButton>
+        </Box>
       </form>
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton type="submit" variant="outlined" disabled={!isValid}>
-          {ROOT.SIGN_IN.BUTTON}
-        </AuthButton>
-      </Box>
       <Typography
         variant="body1"
         component="p"

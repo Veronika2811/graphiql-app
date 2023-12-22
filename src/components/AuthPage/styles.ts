@@ -1,4 +1,5 @@
-import theme from '../../theme';
+import { theme } from 'theme';
+
 import { KitSxProps } from '../../type/interface';
 
 const styles: KitSxProps = {

@@ -11,7 +11,10 @@ import {
   Typography,
 } from '@mui/material';
 
-import ROOT from '../../constants/constants';
+import authService from '../../api/apiAuthFirebase';
+import ROOT, { DIC_ERROR_API } from '../../constants/constants';
+import { findNextText } from '../../utils/findNextText';
+import { getFieldByKey } from '../../utils/getFieldByKey';
 import shemaSignIn, { FormData } from '../../validation/shemaSignIn';
 import AuthButton from '../AuthButton';
 import AuthTextField from '../AuthTextField';
@@ -24,11 +27,22 @@ const SignInForm = () => {
     formState: { errors, isValid },
   } = useForm<FormData>({
     resolver: yupResolver(shemaSignIn),
-    mode: 'onChange',
+    mode: 'onBlur',
     reValidateMode: 'onChange',
   });
 
-  const onSubmit = () => {};
+  const onSubmit = async (formData: FormData) => {
+    try {
+      await authService.signIn(formData);
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error(
+          'signIn',
+          getFieldByKey(DIC_ERROR_API, findNextText(error.message, 'auth/'))
+        );
+      }
+    }
+  };
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
@@ -73,12 +87,12 @@ const SignInForm = () => {
             ),
           }}
         />
+        <Box sx={{ textAlign: 'center', mb: 2 }}>
+          <AuthButton type="submit" variant="outlined" disabled={!isValid}>
+            {ROOT.SIGN_IN.BUTTON}
+          </AuthButton>
+        </Box>
       </form>
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton type="submit" variant="outlined" disabled={!isValid}>
-          {ROOT.SIGN_IN.BUTTON}
-        </AuthButton>
-      </Box>
       <Typography
         variant="body1"
         component="p"
