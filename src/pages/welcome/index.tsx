@@ -1,5 +1,5 @@
-import AuthPage from 'components/AuthPage';
+import { Box } from '@mui/material';
 
-const WelcomePage = () => <AuthPage />;
+const WelcomePage = () => <Box component="div">Welcome Page</Box>;
 
 export default WelcomePage;
