@@ -11,8 +11,10 @@ import {
   Typography,
 } from '@mui/material';
 
+import { useSnackbar } from 'components/SnackbarProvider';
+
 import authService from '../../api/apiAuthFirebase';
-import ROOT, { DIC_ERROR_API } from '../../constants/constants';
+import ROOT, { DIC_ERROR_API, SUCCESS } from '../../constants/constants';
 import { findNextText } from '../../utils/findNextText';
 import { getFieldByKey } from '../../utils/getFieldByKey';
 import shemaSignUp, { FormData } from '../../validation/shemaSignUp';
@@ -22,6 +24,7 @@ import AuthTextField from '../AuthTextField';
 const SignUpForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [submitDisabled, setSubmitDisabled] = useState(false);
+  const { openSnackbar } = useSnackbar();
   const {
     register,
     handleSubmit,
@@ -44,13 +47,15 @@ const SignUpForm = () => {
         });
       } else {
         await authService.registerUser(formData);
+        openSnackbar(SUCCESS.SIGN_UP, 'success');
       }
     } catch (error) {
       if (error instanceof Error) {
-        console.error(
-          'signUp',
-          getFieldByKey(DIC_ERROR_API, findNextText(error.message, 'auth/'))
+        const messageError = getFieldByKey(
+          DIC_ERROR_API,
+          findNextText(error.message, 'auth/')
         );
+        openSnackbar(messageError, 'error');
       }
     }
     setSubmitDisabled(false);

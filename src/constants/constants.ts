@@ -41,3 +41,8 @@ export const DIC_ERROR_API = {
   'weak-password': 'Weak-password',
   default: 'Unknown error',
 };
+
+export const SUCCESS = {
+  SIGN_IN: 'Logged in successfully',
+  SIGN_UP: 'Registered successfully',
+};
