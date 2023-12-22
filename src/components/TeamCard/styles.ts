@@ -1,19 +1,19 @@
 export const teamCardSx = {
   card: {
     display: 'flex',
-    borderRadius: '20px',
+    borderRadius: 2,
     justifyContent: 'space-between',
-    padding: '20px',
+    padding: 2,
     maxWidth: '20em',
     width: '100%',
   },
-  card__content: {
+  content: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: 0,
   },
-  card__image: {
+  image: {
     width: '5.4em',
   },
 };

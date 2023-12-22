@@ -1,52 +1,40 @@
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  IconButton,
-  Stack,
-  Typography,
-} from '@mui/material';
-import girl from 'assets/images/svg/girl.svg';
-import man from 'assets/images/svg/man.svg';
-import { GithubIcon } from 'ui/icons/GitHubIcon';
-import { LinkedInIcon } from 'ui/icons/LinkedInIcon';
-import { TelegramIcon } from 'ui/icons/TelegramIcon';
+import { Card, CardContent, CardMedia, Stack, Typography } from '@mui/material';
+import defaultProfile from 'assets/images/svg/default-profile.svg';
 
+import SocialMedia from './SocialMedia';
 import { teamCardSx } from './styles';
 
 interface TeamCardProps {
   name: string;
-  github: string;
-  linkedIn: string;
-  telegram: string;
+  photo: string;
+  socialMedia: {
+    type: string;
+    url: string;
+  }[];
 }
 
-export const TeamCard = ({
-  name,
-  github,
-  linkedIn,
-  telegram,
-}: TeamCardProps) => (
+export const TeamCard = ({ name, photo, socialMedia }: TeamCardProps) => (
   <Card sx={teamCardSx.card}>
-    <CardContent sx={teamCardSx.card__content}>
+    <CardContent sx={teamCardSx.content}>
       <Typography variant="h5">{name}</Typography>
       <Stack direction="row" useFlexGap>
-        <IconButton href={github} target="_blank" rel="noopener">
-          <GithubIcon fontSize="large" />
-        </IconButton>
-        <IconButton href={linkedIn} target="_blank" rel="noopener">
-          <LinkedInIcon fontSize="large" />
-        </IconButton>
-        <IconButton href={telegram} target="_blank" rel="noopener">
-          <TelegramIcon fontSize="large" />
-        </IconButton>
+        {socialMedia.map((social) => {
+          const { type, url } = social;
+          return <SocialMedia key={type} type={type} url={url} />;
+        })}
       </Stack>
     </CardContent>
     <CardMedia
       component="img"
-      image={name === 'Veranika' ? girl : man}
-      alt={name}
-      sx={teamCardSx.card__image}
+      image={photo}
+      alt={`Profile picture ${name}`}
+      loading="lazy"
+      sx={teamCardSx.image}
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.onerror = null;
+        target.src = defaultProfile;
+      }}
     />
   </Card>
 );

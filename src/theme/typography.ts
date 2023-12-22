@@ -18,6 +18,13 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     fontSize: '3rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.9rem',
+        },
+      }),
   },
   h3: {
     fontSize: '2.8rem',

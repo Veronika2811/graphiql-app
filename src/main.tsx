@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import { MuiProvider } from 'layouts/mui';
+import { ErrorFallback } from 'ui/ErrorFallback';
 
 import { ErrorBoundary } from 'components/ErrorBoundary';
 
@@ -11,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <MuiProvider>
       <HashRouter>
-        <ErrorBoundary>
+        <ErrorBoundary fallback={<ErrorFallback />}>
           <App />
         </ErrorBoundary>
       </HashRouter>
