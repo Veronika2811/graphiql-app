@@ -21,7 +21,11 @@
       "shared/*": ["shared/*"],
       "theme/*": ["theme/*"],
       "pages/*": ["pages/*"],
-      "types/*": ["types/*"]
+      "types/*": ["types/*"],
+      "constants/*": ["constants/*"],
+      "api/*": ["api/*"],
+      "utils/*": ["utils/*"],
+      "validation/*": ["validation/*"],
     },
 
     /* Linting */
@@ -33,4 +37,3 @@
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
-

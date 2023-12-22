@@ -24,6 +24,10 @@ export default defineConfig({
       pages: '/src/pages',
       types: '/src/types',
       theme: '/src/theme',
+      constants: '/src/constants',
+      api: '/src/api',
+      utils: '/src/utils',
+      validation: '/src/validation',
     },
   },
   test: {

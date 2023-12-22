@@ -1,3 +1,4 @@
+import { ERROR } from 'constants/constants';
 import { FirebaseApp, FirebaseError } from 'firebase/app';
 import {
   collection,
@@ -7,8 +8,6 @@ import {
   query,
   where,
 } from 'firebase/firestore';
-
-import { ERROR } from '../constants/constants';
 
 import { COLLECTIONS, USER_FIELDS } from './constants/constants';
 import { app as appFB } from './initFirebase';

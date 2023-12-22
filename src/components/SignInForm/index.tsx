@@ -4,16 +4,15 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Box, IconButton, InputAdornment } from '@mui/material';
+import authService from 'api/apiAuthFirebase';
+import ROOT, { DIC_ERROR_API, SUCCESS } from 'constants/constants';
+import { findNextText } from 'utils/findNextText';
+import { getFieldByKey } from 'utils/getFieldByKey';
+import shemaSignIn, { FormData } from 'validation/shemaSignIn';
 
+import AuthButton from 'components/AuthButton';
+import AuthTextField from 'components/AuthTextField';
 import { useSnackbar } from 'components/SnackbarProvider';
-
-import authService from '../../api/apiAuthFirebase';
-import ROOT, { DIC_ERROR_API, SUCCESS } from '../../constants/constants';
-import { findNextText } from '../../utils/findNextText';
-import { getFieldByKey } from '../../utils/getFieldByKey';
-import shemaSignIn, { FormData } from '../../validation/shemaSignIn';
-import AuthButton from '../AuthButton';
-import AuthTextField from '../AuthTextField';
 
 const SignInForm = () => {
   const [showPassword, setShowPassword] = useState(false);
