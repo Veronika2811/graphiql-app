@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react-hooks', 'simple-import-sort'],
   rules: {
+    'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/require-default-props': 'off',
@@ -67,3 +68,4 @@ module.exports = {
     },
   },
 };
+
