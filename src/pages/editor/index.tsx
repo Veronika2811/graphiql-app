@@ -10,7 +10,7 @@ const EditorPage = () => {
   // const { data, isLoading, isFetching, isError } = useGetSchemeQuery(endpoint);
 
   return (
-    <Stack direction="column" rowGap={2} padding={3}>
+    <Stack direction="column" rowGap={2}>
       <SearchBar endpoint={endpoint} setEndpoint={setEndpoint} />
     </Stack>
   );

@@ -24,7 +24,7 @@ const SearchBar = ({
 
   return (
     <TextField
-      label="Please enter URL API"
+      label="URL API"
       defaultValue={endpoint}
       inputRef={inputRef}
       fullWidth
@@ -35,6 +35,7 @@ const SearchBar = ({
           </Button>
         ),
       }}
+      autoFocus
       sx={searchBarSx['search-bar']}
     />
   );
