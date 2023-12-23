@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { CardMedia, Grid, Typography } from '@mui/material';
+import notFoundImage from 'assets/images/jpg/notFoundImage.jpg';
 
 import { aboutProjectSx } from './styles';
 
@@ -7,13 +8,11 @@ const LayoutAboutProject = ({
   position,
   title,
   image,
-  imageError,
   children,
 }: {
   position: 'row' | 'row-reverse';
   title: string;
   image: string;
-  imageError: string;
   children: ReactNode;
 }) => (
   <Grid container spacing={5} alignItems="center" flexDirection={position}>
@@ -48,7 +47,7 @@ const LayoutAboutProject = ({
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.onerror = null;
-          target.src = imageError;
+          target.src = notFoundImage;
         }}
       />
     </Grid>
