@@ -7,6 +7,8 @@ import { store } from 'store';
 
 import { App } from './app';
 
+import './style.css';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <MuiProvider>

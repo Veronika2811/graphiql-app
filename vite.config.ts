@@ -24,6 +24,7 @@ export default defineConfig({
       pages: '/src/pages',
       types: '/src/types',
       theme: '/src/theme',
+      ui: '/src/ui',
       service: '/src/service',
       store: '/src/store',
     },
