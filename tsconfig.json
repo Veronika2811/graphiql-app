@@ -26,6 +26,7 @@
       "api/*": ["api/*"],
       "utils/*": ["utils/*"],
       "validation/*": ["validation/*"],
+      "ui/*": ["ui/*"]
     },
 
     /* Linting */
