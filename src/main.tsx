@@ -5,6 +5,8 @@ import { MuiProvider } from 'layouts/mui';
 
 import { App } from './app';
 
+import './style.css';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <MuiProvider>
@@ -14,3 +16,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </MuiProvider>
   </React.StrictMode>
 );
+
