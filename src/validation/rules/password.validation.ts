@@ -1,6 +1,5 @@
 import * as Yup from 'yup';
 
-//  Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter, and 1 number
 const passwordValidation: Yup.StringSchema<
   string,
   Yup.AnyObject,

@@ -1,6 +1,5 @@
 import * as Yup from 'yup';
 
-// A properly formatted email address
 const emailValidation: Yup.StringSchema<string, Yup.AnyObject, undefined, ''> =
   Yup.string()
     .trim()
