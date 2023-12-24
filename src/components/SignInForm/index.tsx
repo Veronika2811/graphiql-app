@@ -55,7 +55,7 @@ const SignInForm = () => {
         id="email"
         label={ROOT.SIGN_IN_FORM.LABEL_LOGIN}
         variant="outlined"
-        error={!!errors.email}
+        error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
         inputProps={register('email')}
       />
@@ -67,7 +67,7 @@ const SignInForm = () => {
         id="password"
         label={ROOT.SIGN_IN_FORM.LABEL_PASSWORD}
         variant="outlined"
-        error={!!errors.password}
+        error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
         InputProps={{
           ...register('password'),

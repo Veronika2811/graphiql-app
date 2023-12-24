@@ -67,7 +67,7 @@ const SignUpForm = () => {
         id="name"
         label={ROOT.SIGN_UP_FORM.LABEL_NAME}
         variant="outlined"
-        error={!!errors.name}
+        error={Boolean(errors.name)}
         helperText={errors.name && errors.name.message}
         inputProps={register('name')}
       />
@@ -78,7 +78,7 @@ const SignUpForm = () => {
         id="email"
         label={ROOT.SIGN_UP_FORM.LABEL_LOGIN}
         variant="outlined"
-        error={!!errors.email}
+        error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
         inputProps={register('email')}
       />
@@ -90,7 +90,7 @@ const SignUpForm = () => {
         id="password"
         label={ROOT.SIGN_UP_FORM.LABEL_PASSWORD}
         variant="outlined"
-        error={!!errors.password}
+        error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
         InputProps={{
           ...register('password'),
@@ -115,7 +115,7 @@ const SignUpForm = () => {
         id="confirmPassword"
         label={ROOT.SIGN_UP_FORM.LABEL_CONFIRM_PASSWORD}
         variant="outlined"
-        error={!!errors.confirmPassword}
+        error={Boolean(errors.confirmPassword)}
         helperText={errors.confirmPassword && errors.confirmPassword.message}
         InputProps={{
           ...register('confirmPassword'),
