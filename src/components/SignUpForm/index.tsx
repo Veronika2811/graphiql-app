@@ -38,10 +38,10 @@ export const SignUpForm = () => {
           type: 'manual',
           message: 'Email is already taken',
         });
-      } else {
-        await authService.registerUser(formData);
-        openSnackbar(SUCCESS.SIGN_UP, 'success');
+        return;
       }
+      await authService.registerUser(formData);
+      openSnackbar(SUCCESS.SIGN_UP, 'success');
     } catch (error) {
       if (error instanceof Error) {
         const messageError = getFieldByKey(

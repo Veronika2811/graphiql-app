@@ -16,8 +16,9 @@ interface CustomTabProps {
 }
 
 const TabPanel = ({ children, value, index }: TabPanelProps) => {
-  if (value === index) return children;
-  return null;
+  if (value !== index) return null;
+
+  return children;
 };
 
 export const CustomTab = ({
