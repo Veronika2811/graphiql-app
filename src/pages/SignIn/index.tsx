@@ -1,8 +1,8 @@
 import { Link, Typography } from '@mui/material';
 import { ROOT } from 'constants/index';
 
-import ContainerForm from 'components/ContainerForm';
-import SignInForm from 'components/SignInForm';
+import { ContainerForm } from 'components/ContainerForm';
+import { SignInForm } from 'components/SignInForm';
 
 const SignIn = () => (
   <ContainerForm title={ROOT.SIGN_IN.TITLE}>

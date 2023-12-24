@@ -8,7 +8,7 @@ interface ContainerFormProps {
   children: ReactNode;
 }
 
-const ContainerForm = ({ children, title }: ContainerFormProps) => (
+export const ContainerForm = ({ children, title }: ContainerFormProps) => (
   <Container maxWidth="sm" sx={styles.container}>
     <Paper sx={styles.paper}>
       <Typography variant="h4" component="h2" align="center" marginBottom={2}>
@@ -18,5 +18,3 @@ const ContainerForm = ({ children, title }: ContainerFormProps) => (
     </Paper>
   </Container>
 );
-
-export default ContainerForm;

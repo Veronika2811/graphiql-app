@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-const passwordValidation: Yup.StringSchema<
+export const passwordValidation: Yup.StringSchema<
   string,
   Yup.AnyObject,
   undefined,
@@ -29,5 +29,3 @@ const passwordValidation: Yup.StringSchema<
     (value) => value !== undefined && /[!@#$%^&*]/.test(value)
   )
   .required('Password is required');
-
-export default passwordValidation;

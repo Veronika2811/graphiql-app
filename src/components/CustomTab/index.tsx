@@ -20,7 +20,11 @@ const TabPanel = ({ children, value, index }: TabPanelProps) => {
   return null;
 };
 
-const CustomTab = ({ tabNames, tabContent, activeTab = 0 }: CustomTabProps) => {
+export const CustomTab = ({
+  tabNames,
+  tabContent,
+  activeTab = 0,
+}: CustomTabProps) => {
   const [value, setValue] = useState(activeTab);
   const styles = generateStyles(tabNames.length);
 
@@ -49,5 +53,3 @@ const CustomTab = ({ tabNames, tabContent, activeTab = 0 }: CustomTabProps) => {
     </>
   );
 };
-
-export default CustomTab;

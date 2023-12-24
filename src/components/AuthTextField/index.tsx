@@ -1,6 +1,6 @@
 import { alpha, styled, TextField, TextFieldProps } from '@mui/material';
 
-const AuthTextField = styled(TextField)<TextFieldProps>(({ theme }) => ({
+export const AuthTextField = styled(TextField)<TextFieldProps>(({ theme }) => ({
   '& .MuiFormLabel-root, & .MuiInputBase-root': {
     color: theme.palette.primary.main,
     fontStyle: 'normal',
@@ -26,5 +26,3 @@ const AuthTextField = styled(TextField)<TextFieldProps>(({ theme }) => ({
     fontWeight: 400,
   },
 }));
-
-export default AuthTextField;

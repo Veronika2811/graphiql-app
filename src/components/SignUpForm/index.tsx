@@ -8,13 +8,13 @@ import authService from 'api/apiAuthFirebase';
 import { DIC_ERROR_API, ROOT, SUCCESS } from 'constants/index';
 import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
-import shemaSignUp, { FormData } from 'validation/shemaSignUp';
+import { FormData, shemaSignUp } from 'validation/shemaSignUp';
 
-import AuthButton from 'components/AuthButton';
-import AuthTextField from 'components/AuthTextField';
+import { AuthButton } from 'components/AuthButton';
+import { AuthTextField } from 'components/AuthTextField';
 import { useSnackbar } from 'components/SnackbarProvider';
 
-const SignUpForm = () => {
+export const SignUpForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [submitDisabled, setSubmitDisabled] = useState(false);
   const { openSnackbar } = useSnackbar();
@@ -144,5 +144,3 @@ const SignUpForm = () => {
     </form>
   );
 };
-
-export default SignUpForm;
