@@ -1,6 +1,5 @@
+import { ERROR } from 'constants/index';
 import { FirebaseError } from 'firebase/app';
-
-import { ERROR } from '../../constants/constants';
 
 export const handleFirebaseError = (error: unknown) => {
   if (error instanceof FirebaseError) {

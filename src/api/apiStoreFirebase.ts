@@ -1,4 +1,4 @@
-import { ERROR } from 'constants/constants';
+import { ERROR } from 'constants/index';
 import { FirebaseApp, FirebaseError } from 'firebase/app';
 import {
   collection,

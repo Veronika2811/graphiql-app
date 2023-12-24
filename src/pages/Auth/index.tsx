@@ -1,4 +1,4 @@
-import ROOT from 'constants/constants';
+import { ROOT } from 'constants/index';
 
 import ContainerForm from 'components/ContainerForm';
 import CustomTab from 'components/CustomTab';

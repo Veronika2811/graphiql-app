@@ -1,4 +1,4 @@
-const ROOT = {
+export const ROOT = {
   AUTH_FORM: {
     TITLE: 'Welcome',
     TABS: ['Sign In', 'Sign Up'],
@@ -25,9 +25,7 @@ const ROOT = {
     LABEL_CONFIRM_PASSWORD: 'Confirm Password',
     BUTTON: 'Sign Up',
   },
-};
-
-export default ROOT;
+} as const;
 
 export const ERROR = {
   FIREBASE: {
@@ -35,7 +33,7 @@ export const ERROR = {
     HEADER: 'Firebase Error',
     NOT_FOUND: 'User not found',
   },
-};
+} as const;
 
 export const DIC_ERROR_API = {
   'wrong-password': 'Wrong password',
@@ -46,9 +44,9 @@ export const DIC_ERROR_API = {
   'operation-not-allowed': 'Operation not allowed',
   'weak-password': 'Weak-password',
   default: 'Unknown error',
-};
+} as const;
 
 export const SUCCESS = {
   SIGN_IN: 'Logged in successfully',
   SIGN_UP: 'Registered successfully',
-};
+} as const;

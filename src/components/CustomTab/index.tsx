@@ -10,7 +10,7 @@ interface TabPanelProps {
 }
 
 interface CustomTabProps {
-  tabNames: string[];
+  tabNames: readonly string[];
   tabContent: React.ReactElement[];
   activeTab?: number;
 }

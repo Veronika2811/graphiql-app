@@ -5,7 +5,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Box, IconButton, InputAdornment } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
-import ROOT, { DIC_ERROR_API, SUCCESS } from 'constants/constants';
+import { DIC_ERROR_API, ROOT, SUCCESS } from 'constants/index';
 import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
 import shemaSignUp, { FormData } from 'validation/shemaSignUp';
