@@ -37,7 +37,7 @@ const CustomTab = ({ tabNames, tabContent, activeTab = 0 }: CustomTabProps) => {
           <Tab
             key={item}
             label={item}
-            sx={{ width: `${100 / array.length}%` }}
+            sx={{ width: `${100 / array.length}%`, fontSize: '1.2rem' }}
           />
         ))}
       </Tabs>
