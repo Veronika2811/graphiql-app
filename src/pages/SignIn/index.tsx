@@ -1,5 +1,5 @@
 import { Link, Typography } from '@mui/material';
-import { ROOT } from 'constants/index';
+import { ROOT } from 'shared/constants/elements';
 
 import { ContainerForm } from 'components/ContainerForm';
 import { SignInForm } from 'components/SignInForm';
