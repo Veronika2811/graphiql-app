@@ -33,8 +33,8 @@ export const SignUpForm = () => {
   const onSubmit = async (formData: FormData) => {
     setSubmitDisabled(true);
     try {
-      const isEmailAvailable = await authService.checkEmail(formData.email);
-      if (isEmailAvailable) {
+      const isEmailExist = await authService.checkEmail(formData.email);
+      if (isEmailExist) {
         setError('email', {
           type: 'manual',
           message: 'Email is already taken',
