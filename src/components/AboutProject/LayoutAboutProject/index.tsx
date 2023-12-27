@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { CardMedia, Grid, Typography } from '@mui/material';
 import notFoundImage from 'assets/images/jpg/notFoundImage.jpg';
+import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
 import { aboutProjectSx } from './styles';
 
@@ -44,11 +45,7 @@ const LayoutAboutProject = ({
         alt={`Section image ${title}`}
         loading="lazy"
         sx={aboutProjectSx.img}
-        onError={(e) => {
-          const target = e.target as HTMLImageElement;
-          target.onerror = null;
-          target.src = notFoundImage;
-        }}
+        onError={(e) => onErrorCardMedia(e, notFoundImage)}
       />
     </Grid>
   </Grid>

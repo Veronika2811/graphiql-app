@@ -8,7 +8,7 @@ import WelcomeLinkEditor from 'components/WelcomeLinkEditor';
 import { WelcomeTitle } from 'components/WelcomeTitle';
 
 const WelcomePage = () => (
-  <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap padding={3}>
+  <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>
     <WelcomeTitle />
 
     {localStorage.getItem('auth') ? (

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardMedia, Stack, Typography } from '@mui/material';
 import defaultProfile from 'assets/images/svg/default-profile.svg';
+import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
 import SocialMedia from './SocialMedia';
 import { teamCardSx } from './styles';
@@ -30,11 +31,7 @@ export const TeamCard = ({ name, photo, socialMedia }: TeamCardProps) => (
       alt={`Profile picture ${name}`}
       loading="lazy"
       sx={teamCardSx.image}
-      onError={(e) => {
-        const target = e.target as HTMLImageElement;
-        target.onerror = null;
-        target.src = defaultProfile;
-      }}
+      onError={(e) => onErrorCardMedia(e, defaultProfile)}
     />
   </Card>
 );

@@ -1,36 +1,47 @@
-import { Component, ErrorInfo, ReactNode } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
+import { Box } from '@mui/material';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
   fallback: ReactNode;
 }
 
-interface ErrorBoundaryState {
-  hasError: boolean;
-}
+export const ErrorBoundary = ({ children, fallback }: ErrorBoundaryProps) => {
+  const [hasError, setHasError] = useState(false);
 
-export class ErrorBoundary extends Component<
-  ErrorBoundaryProps,
-  ErrorBoundaryState
-> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false };
+  useEffect(() => {
+    const handleError = () => {
+      setHasError(true);
+    };
+
+    const logError = (error: Error, errorInfo: React.ErrorInfo) => {
+      console.error('Uncaught error:', error, errorInfo);
+    };
+
+    window.addEventListener('error', handleError);
+    window.addEventListener('unhandledrejection', (event) => {
+      if (event.reason instanceof Error) {
+        logError(event.reason, {
+          componentStack: 'Unhandled Promise Rejection',
+        });
+      } else {
+        console.error(
+          'Unhandled Promise Rejection (non-Error object):',
+          event.reason
+        );
+      }
+    });
+
+    return () => {
+      window.removeEventListener('error', handleError);
+    };
+  }, []);
+
+  if (hasError) {
+    return <Box>{fallback}</Box>;
   }
 
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
+  return <Box>{children}</Box>;
+};
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Uncaught error:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return this.props.fallback;
-    }
-
-    return this.props.children;
-  }
-}
+export default ErrorBoundary;

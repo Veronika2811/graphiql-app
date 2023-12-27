@@ -27,6 +27,7 @@ export default defineConfig({
       ui: '/src/ui',
       constants: '/src/constants',
       assets: '/src/assets',
+      utils: '/src/utils',
     },
   },
   test: {
