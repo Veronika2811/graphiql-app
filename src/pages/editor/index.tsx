@@ -1,13 +1,10 @@
 import { useState } from 'react';
 import { Stack } from '@mui/material';
 
-// import { useGetSchemeQuery } from 'service/api';
-import SearchBar from 'components/Editor/SearchBar';
+import SearchBar from 'components/search-bar';
 
 const EditorPage = () => {
   const [endpoint, setEndpoint] = useState<string>('');
-
-  // const { data, isLoading, isFetching, isError } = useGetSchemeQuery(endpoint);
 
   return (
     <Stack direction="column" rowGap={2}>

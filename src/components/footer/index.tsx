@@ -6,6 +6,7 @@ import {
   Tooltip,
   Typography,
 } from '@mui/material';
+import { theme } from 'theme';
 import { GithubIcon, RsSchoolIcon } from 'ui/icons';
 
 import { footerSx } from './styles';
@@ -47,8 +48,8 @@ export const Footer = () => {
                 sx={item.styleIconSx}
               >
                 <GithubIcon
-                  width="50px"
-                  height="50px"
+                  width={theme.spacing(6)}
+                  height={theme.spacing(6)}
                   aria-label={item.ariaLabel}
                 />
               </Link>
@@ -57,7 +58,7 @@ export const Footer = () => {
         ))}
       </List>
       <Link href="https://rs.school/" target="_blank" rel="noopener">
-        <RsSchoolIcon width="120px" height="60px" />
+        <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(7)} />
       </Link>
     </Container>
   );
