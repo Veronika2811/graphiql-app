@@ -14,15 +14,17 @@
     "prettier-fix": "prettier --write \"./src/**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.16",
     "@fontsource/source-code-pro": "^5.0.16",
-    "@mui/material": "^5.14.20",
+    "@mui/icons-material": "^5.15.1",
+    "@mui/material": "^5.15.1",
     "firebase": "^10.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
+    "react-hook-form": "^7.49.2",
     "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
