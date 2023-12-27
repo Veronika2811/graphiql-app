@@ -6,20 +6,20 @@ export const AuthTextField = styled(TextField)<TextFieldProps>(({ theme }) => ({
     fontStyle: 'normal',
   },
   '& .MuiFormLabel-root': {
-    left: '13px',
+    left: theme.spacing(1.6),
     fontSize: '1rem',
   },
   '& .MuiInputBase-root': {
     fontSize: '1.4rem',
     backgroundColor: theme.palette.background.default,
-    borderRadius: '10px',
+    borderRadius: theme.spacing(1.3),
     borderColor: alpha('#FFC0CB1A', 0.1),
     input: {
-      padding: '11px 30px',
+      padding: theme.spacing(1.4, 3.8),
     },
   },
   '&.MuiFormControl-marginDense': {
-    marginBottom: '30px',
+    marginBottom: 30,
   },
   '& .MuiFormHelperText-root': {
     fontSize: '1rem',
