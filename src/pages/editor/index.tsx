@@ -8,7 +8,7 @@ import { Sidebar } from 'components/sidebar';
 const EditorPage = () => {
   const [endpoint, setEndpoint] = useState<string>('');
 
-  // const { data, isLoading, isFetching, isError } = useGetSchemeQuery(endpoint);
+  // const { data } = useGetSchemeQuery(endpoint);
   return (
     <Stack direction="row" columnGap={2.5} height="100%">
       <Sidebar />
