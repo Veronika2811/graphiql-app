@@ -9,7 +9,7 @@ export const getData = async (
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
-        headers: headers ? JSON.parse(headers) : {},
+        ...JSON.parse(headers || '{}'),
       },
       body: JSON.stringify({
         query,
