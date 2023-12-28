@@ -1,11 +1,11 @@
 import { Grid, Stack, Typography } from '@mui/material';
-import { INFORMATION_ABOUT_DEVELOPERS } from 'constants/informationAboutDevelopers';
+import { INFORMATION_ABOUT_DEVELOPERS } from 'constants/about-developers';
 
-import { AboutProject } from 'components/AboutProject';
-import { TeamCard } from 'components/TeamCard';
-import WelcomeLinkAuthorization from 'components/WelcomeLinkAuthorization';
-import WelcomeLinkEditor from 'components/WelcomeLinkEditor';
-import { WelcomeTitle } from 'components/WelcomeTitle';
+import { AboutProject } from 'components/about-project';
+import { TeamCard } from 'components/team-card';
+import WelcomeLinkAuthorization from 'components/welcome-link-authorization';
+import WelcomeLinkEditor from 'components/welcome-link-editor';
+import { WelcomeTitle } from 'components/welcome-title';
 
 const WelcomePage = () => (
   <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>

@@ -1,8 +1,9 @@
-import { Card, CardContent, CardMedia, Stack, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import defaultProfile from 'assets/images/svg/default-profile.svg';
 import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
-import SocialMedia from './SocialMedia';
+import { SocialMediaWrapper } from 'components/social-media-wrapper';
+
 import { teamCardSx } from './styles';
 
 interface TeamCardProps {
@@ -18,12 +19,7 @@ export const TeamCard = ({ name, photo, socialMedia }: TeamCardProps) => (
   <Card sx={teamCardSx.card}>
     <CardContent sx={teamCardSx.content}>
       <Typography variant="h5">{name}</Typography>
-      <Stack direction="row" useFlexGap>
-        {socialMedia.map((social) => {
-          const { type, url } = social;
-          return <SocialMedia key={type} type={type} url={url} />;
-        })}
-      </Stack>
+      <SocialMediaWrapper socialMedia={socialMedia} />
     </CardContent>
     <CardMedia
       component="img"

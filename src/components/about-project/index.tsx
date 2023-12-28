@@ -3,7 +3,7 @@ import aboutImage1 from 'assets/images/jpg/aboutImage1.jpg';
 import aboutImage2 from 'assets/images/jpg/aboutImage2.jpg';
 import aboutRsschool from 'assets/images/jpg/aboutRsschool.jpg';
 
-import LayoutAboutProject from './LayoutAboutProject';
+import LayoutAboutProject from '../layout-about-project';
 
 export const AboutProject = () => (
   <Grid container rowGap={5}>

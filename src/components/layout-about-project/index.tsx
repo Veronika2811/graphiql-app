@@ -5,17 +5,19 @@ import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
 import { aboutProjectSx } from './styles';
 
+interface LayoutAboutProjectProps {
+  position: 'row' | 'row-reverse';
+  title: string;
+  image: string;
+  children: ReactNode;
+}
+
 const LayoutAboutProject = ({
   position,
   title,
   image,
   children,
-}: {
-  position: 'row' | 'row-reverse';
-  title: string;
-  image: string;
-  children: ReactNode;
-}) => (
+}: LayoutAboutProjectProps) => (
   <Grid container spacing={5} alignItems="center" flexDirection={position}>
     <Grid
       item
