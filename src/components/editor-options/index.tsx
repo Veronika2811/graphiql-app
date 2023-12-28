@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import { EditorOptionsFieldNames } from 'type/editor-form';
 
-import EditorField from 'components/editor-field';
-import OptionButtons from 'components/editor-options-buttons';
+import { EditorField } from 'components/editor-field';
+import { OptionButtons } from 'components/editor-options-buttons';
 
 import { EditorOptionsSx } from './styles';
 
-const EditorOptions = () => {
+export const EditorOptions = () => {
   const [activeTab, setActiveTab] = useState<EditorOptionsFieldNames | null>(
     'variables'
   );
@@ -21,10 +21,7 @@ const EditorOptions = () => {
     <Box sx={EditorOptionsSx.container}>
       <OptionButtons activeTab={activeTab} handleActiveTab={handleActiveTab} />
 
-      {activeTab === 'variables' && <EditorField name={activeTab} />}
-      {activeTab === 'headers' && <EditorField name={activeTab} />}
+      {activeTab && <EditorField key={activeTab} name={activeTab} />}
     </Box>
   );
 };
-
-export default EditorOptions;

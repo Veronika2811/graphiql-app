@@ -1,12 +1,9 @@
-import {
-  CleaningServices,
-  PlayCircleOutlineTwoTone,
-} from '@mui/icons-material';
-import { Grid, IconButton, Tooltip } from '@mui/material';
+import { Grid } from '@mui/material';
 
-import EditorField from 'components/editor-field';
+import { EditorCommandPanel } from 'components/editor-command-panel';
+import { EditorField } from 'components/editor-field';
 
-const EditorMain = () => (
+export const EditorMain = () => (
   <Grid
     container
     columns={13}
@@ -23,23 +20,13 @@ const EditorMain = () => (
       md={1}
       display="flex"
       flexDirection={{ xs: 'row', md: 'column' }}
-      justifyContent="center"
+      justifyContent={{ xs: 'center', md: 'flex-start' }}
+      height={{ md: '100%' }}
     >
-      <Tooltip title="Execute query">
-        <IconButton aria-label="Execute query" type="submit">
-          <PlayCircleOutlineTwoTone color="secondary" fontSize="large" />
-        </IconButton>
-      </Tooltip>
-      <Tooltip title="Prettify query">
-        <IconButton aria-label="Prettify query">
-          <CleaningServices color="secondary" fontSize="large" />
-        </IconButton>
-      </Tooltip>
+      <EditorCommandPanel />
     </Grid>
     <Grid item xs={13} md={6} height={{ xs: '40%', md: '100%' }}>
       <EditorField name="response" readOnly />
     </Grid>
   </Grid>
 );
-
-export default EditorMain;

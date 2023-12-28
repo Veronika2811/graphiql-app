@@ -4,16 +4,18 @@ import { EditorOptionsFieldNames } from 'type/editor-form';
 
 import { EditorOptionsButtonsSx } from './styles';
 
-const OptionButtons = ({
-  activeTab,
-  handleActiveTab,
-}: {
+interface OptionButtonsProps {
   activeTab: string | null;
   handleActiveTab: (
     event: React.MouseEvent<HTMLElement, MouseEvent>,
     value: EditorOptionsFieldNames | null
   ) => void;
-}) => (
+}
+
+export const OptionButtons = ({
+  activeTab,
+  handleActiveTab,
+}: OptionButtonsProps) => (
   <ToggleButtonGroup
     value={activeTab}
     exclusive
@@ -37,5 +39,3 @@ const OptionButtons = ({
     </ToggleButton>
   </ToggleButtonGroup>
 );
-
-export default OptionButtons;

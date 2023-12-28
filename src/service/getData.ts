@@ -1,13 +1,15 @@
 export const getData = async (
   endpoint: string,
   query: string,
-  variables?: string
+  variables: string,
+  headers: string
 ) => {
   try {
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
+        headers: headers ? JSON.parse(headers) : {},
       },
       body: JSON.stringify({
         query,

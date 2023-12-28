@@ -4,13 +4,12 @@ import { EditorFieldNames } from 'type/editor-form';
 
 import { EditorFieldStyle } from './styles';
 
-const EditorField = ({
-  name,
-  readOnly = false,
-}: {
+interface EditorFieldProps {
   name: EditorFieldNames;
   readOnly?: boolean;
-}) => {
+}
+
+export const EditorField = ({ name, readOnly = false }: EditorFieldProps) => {
   const controller = useController({ name });
 
   return (
@@ -24,5 +23,3 @@ const EditorField = ({
     />
   );
 };
-
-export default EditorField;
