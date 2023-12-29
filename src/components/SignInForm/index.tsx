@@ -78,6 +78,7 @@ export const SignInForm = () => {
                 onClick={handleTogglePassword}
                 edge="end"
                 color="primary"
+                aria-label="Visibility Password"
               >
                 {showPassword ? <VisibilityOff /> : <Visibility />}
               </IconButton>
