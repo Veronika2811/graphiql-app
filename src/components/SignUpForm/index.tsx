@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Box, IconButton, InputAdornment } from '@mui/material';
+import { Box } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
 import { ROOT } from 'shared/constants/elements';
 import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
@@ -13,12 +11,11 @@ import { FormData, shemaSignUp } from 'validation/shemaSignUp';
 
 import { AuthButton } from 'components/AuthButton';
 import { AuthTextField } from 'components/AuthTextField';
+import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
 
 export const SignUpForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
   const [submitDisabled, setSubmitDisabled] = useState(false);
-  const { openSnackbar } = useSnackbar();
   const {
     register,
     handleSubmit,
@@ -29,6 +26,8 @@ export const SignUpForm = () => {
     mode: 'onBlur',
     reValidateMode: 'onBlur',
   });
+  const { showPassword, handleTogglePassword } = usePassword();
+  const { openSnackbar } = useSnackbar();
 
   const onSubmit = async (formData: FormData) => {
     setSubmitDisabled(true);
@@ -55,10 +54,6 @@ export const SignUpForm = () => {
     setSubmitDisabled(false);
   };
 
-  const handleTogglePassword = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <AuthTextField
@@ -83,7 +78,7 @@ export const SignUpForm = () => {
         helperText={errors.email && errors.email.message}
         inputProps={register('email')}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -93,22 +88,11 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={{
-          ...register('password'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register('password')}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -118,20 +102,9 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.confirmPassword)}
         helperText={errors.confirmPassword && errors.confirmPassword.message}
-        InputProps={{
-          ...register('confirmPassword'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register('confirmPassword')}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
       <Box sx={{ textAlign: 'center', mb: 2 }}>
         <AuthButton

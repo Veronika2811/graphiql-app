@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Box, IconButton, InputAdornment } from '@mui/material';
+import { Box } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
 import { ROOT } from 'shared/constants/elements';
 import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
@@ -13,11 +10,10 @@ import { FormData, shemaSignIn } from 'validation/shemaSignIn';
 
 import { AuthButton } from 'components/AuthButton';
 import { AuthTextField } from 'components/AuthTextField';
+import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
 
 export const SignInForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const { openSnackbar } = useSnackbar();
   const {
     register,
     handleSubmit,
@@ -27,6 +23,8 @@ export const SignInForm = () => {
     mode: 'onBlur',
     reValidateMode: 'onChange',
   });
+  const { showPassword, handleTogglePassword } = usePassword();
+  const { openSnackbar } = useSnackbar();
 
   const onSubmit = async (formData: FormData) => {
     try {
@@ -43,10 +41,6 @@ export const SignInForm = () => {
     }
   };
 
-  const handleTogglePassword = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <AuthTextField
@@ -60,7 +54,7 @@ export const SignInForm = () => {
         helperText={errors.email && errors.email.message}
         inputProps={register('email')}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -70,21 +64,9 @@ export const SignInForm = () => {
         variant="outlined"
         error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={{
-          ...register('password'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-                aria-label="Visibility Password"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register('password')}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
       <Box sx={{ textAlign: 'center', mb: 2 }}>
         <AuthButton type="submit" variant="outlined" disabled={!isValid}>
