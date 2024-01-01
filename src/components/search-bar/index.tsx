@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
+import { useLocale } from 'context/hook';
 
 import { searchBarSx } from './styles';
 
@@ -19,6 +20,8 @@ const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
     },
   });
 
+  const { translation } = useLocale();
+
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
@@ -30,13 +33,13 @@ const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <TextField
-        label="URL API"
+        label={translation.editor_search_bar_label}
         defaultValue={endpoint}
         fullWidth
         InputProps={{
           endAdornment: (
             <Button variant="outlined" color="secondary" type="submit">
-              Change Endpoint
+              {translation.editor_button_change_endpoint}
             </Button>
           ),
         }}

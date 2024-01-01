@@ -1,5 +1,6 @@
 import { Grid, Stack, Typography } from '@mui/material';
-import { INFORMATION_ABOUT_DEVELOPERS } from 'constants/about-developers';
+import { useLocale } from 'context/hook';
+import { GenerateInformationAboutDeveloper } from 'utils/generate-info-developers';
 
 import { AboutProject } from 'components/about-project';
 import { TeamCard } from 'components/team-card';
@@ -7,41 +8,45 @@ import WelcomeLinkAuthorization from 'components/welcome-link-authorization';
 import WelcomeLinkEditor from 'components/welcome-link-editor';
 import { WelcomeTitle } from 'components/welcome-title';
 
-const WelcomePage = () => (
-  <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>
-    <WelcomeTitle />
+const WelcomePage = () => {
+  const { translation } = useLocale();
 
-    {localStorage.getItem('auth') ? (
-      <WelcomeLinkEditor />
-    ) : (
-      <WelcomeLinkAuthorization />
-    )}
+  return (
+    <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>
+      <WelcomeTitle />
 
-    <AboutProject />
+      {localStorage.getItem('auth') ? (
+        <WelcomeLinkEditor />
+      ) : (
+        <WelcomeLinkAuthorization />
+      )}
 
-    <Typography variant="h2" component="h2" align="center" color="secondary">
-      Team
-    </Typography>
+      <AboutProject />
 
-    <Grid container spacing={5} columnSpacing={5} wrap="wrap">
-      {INFORMATION_ABOUT_DEVELOPERS.map((developer) => (
-        <Grid
-          item
-          xs={12}
-          lg={4}
-          key={developer.name}
-          display="flex"
-          justifyContent="center"
-        >
-          <TeamCard
-            name={developer.name}
-            photo={developer.photo}
-            socialMedia={developer.socialMedia}
-          />
-        </Grid>
-      ))}
-    </Grid>
-  </Stack>
-);
+      <Typography variant="h2" component="h2" align="center" color="secondary">
+        {translation.team}
+      </Typography>
+
+      <Grid container spacing={5} columnSpacing={5} wrap="wrap">
+        {GenerateInformationAboutDeveloper().map((developer) => (
+          <Grid
+            item
+            xs={12}
+            lg={4}
+            key={developer.name}
+            display="flex"
+            justifyContent="center"
+          >
+            <TeamCard
+              name={developer.name}
+              photo={developer.photo}
+              socialMedia={developer.socialMedia}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </Stack>
+  );
+};
 
 export default WelcomePage;

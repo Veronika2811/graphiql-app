@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
+import { LocaleProvider } from 'context';
 import { MuiProvider } from 'layouts/mui';
 import { store } from 'store';
 import { ErrorFallback } from 'ui/error-fallback';
@@ -18,7 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <HashRouter>
         <ErrorBoundary fallback={<ErrorFallback />}>
           <Provider store={store}>
-            <App />
+            <LocaleProvider>
+              <App />
+            </LocaleProvider>
           </Provider>
         </ErrorBoundary>
       </HashRouter>

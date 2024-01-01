@@ -102,6 +102,7 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     fontSize: '0.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
   },
   code: {
     fontFamily: ['Source Code Pro', 'monospace'].join(','),

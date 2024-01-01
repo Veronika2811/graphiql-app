@@ -2,10 +2,11 @@ import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from 'layouts/default';
 import { SuspenseLayout } from 'layouts/suspense';
-import { EDITOR, WELCOME } from 'shared/router-path';
+import { AUTH, EDITOR, WELCOME } from 'shared/router-path';
 
 const WelcomePage = React.lazy(() => import('pages/welcome'));
 const EditorPage = React.lazy(() => import('pages/editor'));
+const AuthPage = React.lazy(() => import('pages/auth'));
 const NotFound = React.lazy(() => import('pages/404'));
 
 export const App = () => (
@@ -16,6 +17,7 @@ export const App = () => (
         <Route index element={<Navigate to={WELCOME} />} />
         <Route path={WELCOME} element={<WelcomePage />} />
         <Route path={EDITOR} element={<EditorPage />} />
+        <Route path={AUTH} element={<AuthPage />} />
       </Route>
     </Route>
   </Routes>

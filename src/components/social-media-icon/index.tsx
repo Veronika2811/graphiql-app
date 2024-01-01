@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { IconButton, SvgIconOwnProps } from '@mui/material';
+import { IconButton, SvgIconOwnProps, Tooltip } from '@mui/material';
 import {
   DefaulSocialIcon,
   GithubIcon,
@@ -10,11 +10,12 @@ import {
 import { SocialMediaSx } from './styles';
 
 interface SocialMediaIconProps {
+  name: string;
   type: string;
   url: string;
 }
 
-const SocialMediaIcon = ({ type, url }: SocialMediaIconProps) => {
+const SocialMediaIcon = ({ name, type, url }: SocialMediaIconProps) => {
   const iconProps: SvgIconOwnProps = {
     fontSize: 'large',
   };
@@ -26,14 +27,16 @@ const SocialMediaIcon = ({ type, url }: SocialMediaIconProps) => {
   ]);
 
   return (
-    <IconButton
-      href={url}
-      target="_blank"
-      rel="noopener"
-      sx={SocialMediaSx['social-button']}
-    >
-      {iconMap.get(type) ?? <DefaulSocialIcon {...iconProps} />}
-    </IconButton>
+    <Tooltip title={name}>
+      <IconButton
+        href={url}
+        target="_blank"
+        rel="noopener"
+        sx={SocialMediaSx['social-button']}
+      >
+        {iconMap.get(type) ?? <DefaulSocialIcon {...iconProps} />}
+      </IconButton>
+    </Tooltip>
   );
 };
 
