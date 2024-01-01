@@ -24,6 +24,12 @@ export default defineConfig({
       pages: '/src/pages',
       types: '/src/types',
       theme: '/src/theme',
+      ui: '/src/ui',
+      constants: '/src/constants',
+      assets: '/src/assets',
+      utils: '/src/utils',
+      service: '/src/service',
+      store: '/src/store',
     },
   },
   test: {
