@@ -22,7 +22,7 @@ export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
-    if (!url) return;
+    if (!url) return; // FIXME: SnackBar Error: 'Enter endpoint'
 
     setEndpoint(url.trim());
   };

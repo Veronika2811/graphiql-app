@@ -22,13 +22,13 @@ export const EditorForm = ({ endpoint }: { endpoint: string }) => {
   const onSubmit = async (data: EditorGraphQL) => {
     const { request, variables, headers } = data;
 
-    if (!request) return console.error('Enter your request'); // FIXME:Error or warning snackbar
+    if (!request) return console.error('Enter your request'); // FIXME: SnackBar Error: 'Enter your request'
 
     const res = await getData(endpoint, request, variables, headers);
 
-    form.setValue('request', JSON.stringify(res, undefined, 2));
+    form.setValue('response', JSON.stringify(res, undefined, 2));
 
-    return console.error('Success'); // FIXME:Success snackbar
+    return console.error('Success'); // FIXME: SnackBar Success: 'Success'
   };
 
   return (
