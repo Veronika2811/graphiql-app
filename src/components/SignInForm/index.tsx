@@ -52,7 +52,7 @@ export const SignInForm = () => {
         variant="outlined"
         error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
-        inputProps={register('email')}
+        inputProps={register(ROOT.SIGN_IN_FORM.FILED_LOGIN)}
       />
       <PasswordField
         margin="dense"
@@ -64,7 +64,7 @@ export const SignInForm = () => {
         variant="outlined"
         error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={register('password')}
+        InputProps={register(ROOT.SIGN_IN_FORM.FILED_PASSWORD)}
         showPassword={showPassword}
         handleTogglePassword={handleTogglePassword}
       />

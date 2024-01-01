@@ -10,7 +10,9 @@ export const ROOT = {
   },
   SIGN_IN_FORM: {
     LABEL_LOGIN: 'Email',
+    FILED_LOGIN: 'email',
     LABEL_PASSWORD: 'Password',
+    FILED_PASSWORD: 'password',
     BUTTON: 'Sign In',
   },
   SIGN_UP: {
@@ -20,9 +22,13 @@ export const ROOT = {
   },
   SIGN_UP_FORM: {
     LABEL_NAME: 'Name',
+    FILED_NAME: 'name',
     LABEL_LOGIN: 'Email',
+    FILED_LOGIN: 'email',
     LABEL_PASSWORD: 'Password',
+    FILED_PASSWORD: 'password',
     LABEL_CONFIRM_PASSWORD: 'Confirm Password',
+    FILED_CONFIRM_PASSWORD: 'confirmPassword',
     BUTTON: 'Sign Up',
   },
 } as const;

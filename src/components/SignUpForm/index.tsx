@@ -65,7 +65,7 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.name)}
         helperText={errors.name && errors.name.message}
-        inputProps={register('name')}
+        inputProps={register(ROOT.SIGN_UP_FORM.FILED_LOGIN)}
       />
       <AuthTextField
         margin="dense"
@@ -76,7 +76,7 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
-        inputProps={register('email')}
+        inputProps={register(ROOT.SIGN_UP_FORM.FILED_LOGIN)}
       />
       <PasswordField
         margin="dense"
@@ -88,7 +88,7 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={register('password')}
+        InputProps={register(ROOT.SIGN_UP_FORM.FILED_PASSWORD)}
         showPassword={showPassword}
         handleTogglePassword={handleTogglePassword}
       />
@@ -102,7 +102,7 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.confirmPassword)}
         helperText={errors.confirmPassword && errors.confirmPassword.message}
-        InputProps={register('confirmPassword')}
+        InputProps={register(ROOT.SIGN_UP_FORM.FILED_CONFIRM_PASSWORD)}
         showPassword={showPassword}
         handleTogglePassword={handleTogglePassword}
       />
