@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Box } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
 import { ROOT } from 'shared/constants/elements';
 import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
@@ -9,13 +7,13 @@ import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
 import { FormData, shemaSignIn } from 'validation/shemaSignIn';
 
-import { AuthButton } from 'components/AuthButton';
 import { AuthTextField } from 'components/AuthTextField';
 import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
+import { SubmitButton, useSubmit } from 'components/SubmitButton';
 
 export const SignInForm = () => {
-  const [submitDisabled, setSubmitDisabled] = useState(false);
+  const { submitDisabled, setSubmitDisabled } = useSubmit();
   const {
     register,
     handleSubmit,
@@ -71,15 +69,11 @@ export const SignInForm = () => {
         showPassword={showPassword}
         handleTogglePassword={handleTogglePassword}
       />
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton
-          type="submit"
-          variant="outlined"
-          disabled={!isValid || submitDisabled}
-        >
-          {ROOT.SIGN_IN_FORM.BUTTON}
-        </AuthButton>
-      </Box>
+      <SubmitButton
+        submitDisabled={submitDisabled}
+        isValid={isValid}
+        nameButton={ROOT.SIGN_IN_FORM.BUTTON}
+      />
     </form>
   );
 };

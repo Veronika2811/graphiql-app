@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Box } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
 import { ROOT } from 'shared/constants/elements';
 import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
@@ -9,10 +8,10 @@ import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
 import { FormData, shemaSignUp } from 'validation/shemaSignUp';
 
-import { AuthButton } from 'components/AuthButton';
 import { AuthTextField } from 'components/AuthTextField';
 import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
+import { SubmitButton } from 'components/SubmitButton';
 
 export const SignUpForm = () => {
   const [submitDisabled, setSubmitDisabled] = useState(false);
@@ -37,6 +36,7 @@ export const SignUpForm = () => {
           type: 'manual',
           message: 'Email is already taken',
         });
+        setSubmitDisabled(false);
         return;
       }
       await authService.registerUser(formData);
@@ -64,7 +64,7 @@ export const SignUpForm = () => {
         variant="outlined"
         error={Boolean(errors.name)}
         helperText={errors.name && errors.name.message}
-        inputProps={register(ROOT.SIGN_UP_FORM.FILED_LOGIN)}
+        inputProps={register(ROOT.SIGN_UP_FORM.FILED_NAME)}
       />
       <AuthTextField
         margin="dense"
@@ -105,15 +105,11 @@ export const SignUpForm = () => {
         showPassword={showPassword}
         handleTogglePassword={handleTogglePassword}
       />
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton
-          type="submit"
-          variant="outlined"
-          disabled={!isValid || submitDisabled}
-        >
-          {ROOT.SIGN_UP_FORM.BUTTON}
-        </AuthButton>
-      </Box>
+      <SubmitButton
+        submitDisabled={submitDisabled}
+        isValid={isValid}
+        nameButton={ROOT.SIGN_UP_FORM.BUTTON}
+      />
     </form>
   );
 };
