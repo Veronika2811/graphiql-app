@@ -24,7 +24,6 @@ export const SignUpForm = () => {
   } = useForm<FormData>({
     resolver: yupResolver(shemaSignUp, { strict: true }),
     mode: 'onBlur',
-    reValidateMode: 'onBlur',
   });
   const { showPassword, handleTogglePassword } = usePassword();
   const { openSnackbar } = useSnackbar();

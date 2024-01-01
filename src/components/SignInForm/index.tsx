@@ -23,7 +23,6 @@ export const SignInForm = () => {
   } = useForm<FormData>({
     resolver: yupResolver(shemaSignIn),
     mode: 'onBlur',
-    reValidateMode: 'onChange',
   });
   const { showPassword, handleTogglePassword } = usePassword();
   const { openSnackbar } = useSnackbar();
