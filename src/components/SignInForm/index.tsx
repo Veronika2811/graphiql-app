@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Box } from '@mui/material';
@@ -14,6 +15,7 @@ import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
 
 export const SignInForm = () => {
+  const [submitDisabled, setSubmitDisabled] = useState(false);
   const {
     register,
     handleSubmit,
@@ -27,6 +29,7 @@ export const SignInForm = () => {
   const { openSnackbar } = useSnackbar();
 
   const onSubmit = async (formData: FormData) => {
+    setSubmitDisabled(true);
     try {
       await authService.signIn(formData);
       openSnackbar(SUCCESS.SIGN_IN, 'success');
@@ -39,6 +42,7 @@ export const SignInForm = () => {
         openSnackbar(messageError, 'error');
       }
     }
+    setSubmitDisabled(false);
   };
 
   return (
@@ -69,7 +73,11 @@ export const SignInForm = () => {
         handleTogglePassword={handleTogglePassword}
       />
       <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton type="submit" variant="outlined" disabled={!isValid}>
+        <AuthButton
+          type="submit"
+          variant="outlined"
+          disabled={!isValid || submitDisabled}
+        >
           {ROOT.SIGN_IN_FORM.BUTTON}
         </AuthButton>
       </Box>
