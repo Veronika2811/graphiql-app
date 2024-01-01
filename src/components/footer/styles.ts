@@ -34,6 +34,6 @@ export const footerSx = {
   },
   list: {
     display: 'flex',
-    gap: 3,
+    gap: 2,
   },
 };

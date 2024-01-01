@@ -58,7 +58,7 @@ export const Footer = () => {
         ))}
       </List>
       <Link href="https://rs.school/" target="_blank" rel="noopener">
-        <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(7)} />
+        <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(8)} />
       </Link>
     </Container>
   );
