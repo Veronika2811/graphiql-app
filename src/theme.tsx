@@ -6,8 +6,10 @@ import { typographyCustom } from 'theme/typography';
 import '@fontsource/source-code-pro';
 import '@fontsource/inter';
 
+const defaultTheme = createTheme({});
+
 export const theme = createTheme({
   palette: paletteCustom,
-  typography: typographyCustom,
+  typography: typographyCustom(defaultTheme),
   transitions: transitionsCustom,
 });

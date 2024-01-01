@@ -53,6 +53,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'no-console': ['warn', { allow: ['error'] }],
+    'react/jsx-props-no-spreading': 'off'
   },
   settings: {
     react: {
