@@ -25,9 +25,11 @@ export default defineConfig({
       types: '/src/types',
       theme: '/src/theme',
       ui: '/src/ui',
-      assets: '/src/assets',
-      service: '/src/service',
       constants: '/src/constants',
+      assets: '/src/assets',
+      utils: '/src/utils',
+      service: '/src/service',
+      store: '/src/store',
     },
   },
   test: {
