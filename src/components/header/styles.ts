@@ -14,10 +14,6 @@ export const headerSx = {
     alignItems: 'center',
   },
   switch: {
-    '& .css-1q1okxe-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track':
-      {
-        bgcolor: 'secondary.main',
-      },
     '& .MuiSwitch-track': {
       bgcolor: 'secondary.main',
     },

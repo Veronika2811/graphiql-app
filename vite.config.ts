@@ -28,6 +28,8 @@ export default defineConfig({
       constants: '/src/constants',
       assets: '/src/assets',
       utils: '/src/utils',
+      service: '/src/service',
+      store: '/src/store',
     },
   },
   test: {
