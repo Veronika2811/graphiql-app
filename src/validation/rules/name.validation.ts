@@ -13,4 +13,5 @@ export const nameValidation: Yup.StringSchema<
     }
     return true;
   })
+  .matches(/^[А-Яа-яA-Za-z]+$/, 'The field should contain only letters.')
   .required('Name is required');
