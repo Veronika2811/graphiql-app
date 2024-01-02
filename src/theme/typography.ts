@@ -2,7 +2,7 @@ import { ThemeOptions } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
-  fontFamily: ['Inter', 'sans-serif'].join(','),
+  fontFamily: 'Inter, sans-serif',
   h1: {
     fontWeight: 700,
     lineHeight: 1.2,
@@ -58,7 +58,7 @@ export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
     lineHeight: 1.2,
   },
   code: {
-    fontFamily: ['Source Code Pro', 'monospace'].join(','),
+    fontFamily: 'Source Code Pro, monospace',
     fontWeight: 400,
     fontSize: '1rem',
     lineHeight: 1.4,
