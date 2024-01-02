@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
-import { Snackbar } from '@mui/material';
-import Alert, { AlertColor } from '@mui/material/Alert';
+import { Alert, AlertColor, Snackbar } from '@mui/material';
 
 type SnackbarContextProps = {
   openSnackbar: (message: string, variant: AlertColor) => void;
@@ -17,7 +16,7 @@ export const SnackbarContext = createContext<SnackbarContextProps | undefined>(
 export const useSnackbar = () => {
   const context = useContext(SnackbarContext);
   if (!context) {
-    throw new Error('useModal must be used within a ModalProvider');
+    throw new Error('useSnackbar must be used within a SnackbarProvider');
   }
   return context;
 };
