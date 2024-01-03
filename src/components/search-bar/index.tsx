@@ -1,5 +1,8 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
+import { EDITOR_MESSAGES } from 'constants/editor-form';
+
+import { useSnackbar } from 'components/SnackbarProvider';
 
 import { searchBarSx } from './styles';
 
@@ -12,17 +15,19 @@ interface DefaultValuesForm {
   endpoint: string;
 }
 
-const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
+export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   const { register, handleSubmit } = useForm<DefaultValuesForm>({
     defaultValues: {
       endpoint,
     },
   });
 
+  const { openSnackbar } = useSnackbar();
+
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
-    if (!url) return;
+    if (!url) openSnackbar(EDITOR_MESSAGES.missing_URL, 'error');
 
     setEndpoint(url.trim());
   };
@@ -47,5 +52,3 @@ const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
     </form>
   );
 };
-
-export default SearchBar;
