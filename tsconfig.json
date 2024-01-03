@@ -22,6 +22,10 @@
       "theme/*": ["theme/*"],
       "pages/*": ["pages/*"],
       "types/*": ["types/*"],
+      "constants/*": ["constants/*"],
+      "api/*": ["api/*"],
+      "utils/*": ["utils/*"],
+      "validation/*": ["validation/*"],
       "ui/*": ["ui/*"]
     },
 
@@ -34,4 +38,3 @@
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
-
