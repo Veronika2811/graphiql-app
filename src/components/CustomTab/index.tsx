@@ -1,5 +1,8 @@
-import { useState } from 'react';
+import { memo, useMemo, useState } from 'react';
 import { Tab, Tabs } from '@mui/material';
+import { increaseArraySize } from 'utils/increaseArraySize';
+
+import generateStyles from './style';
 
 interface TabPanelProps {
   children: React.ReactNode;
@@ -8,21 +11,67 @@ interface TabPanelProps {
 }
 
 interface CustomTabProps {
-  tabNames: string[];
+  tabNames: readonly string[];
   tabContent: React.ReactElement[];
   activeTab?: number;
 }
 
 const TabPanel = ({ children, value, index }: TabPanelProps) => {
-  if (value === index) return children;
-  return null;
+  if (!children) return null;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`tabpanel-${index}`}
+      aria-labelledby={`tab-${index}`}
+    >
+      {children}
+    </div>
+  );
 };
 
-const CustomTab = ({ tabNames, tabContent, activeTab = 0 }: CustomTabProps) => {
+const TabPanelMemo = memo(
+  TabPanel,
+  (prevProps, nextProps) =>
+    prevProps.children === nextProps.children &&
+    prevProps.value === nextProps.value &&
+    prevProps.index === nextProps.index
+);
+
+export const CustomTab = ({
+  tabNames,
+  tabContent,
+  activeTab = 0,
+}: CustomTabProps) => {
   const [value, setValue] = useState(activeTab);
+  const styles = useMemo(
+    () => generateStyles(tabNames.length),
+    [tabNames.length]
+  );
+
   const handleChange = (_: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
+
+  let tabNamesUdates = [...tabNames];
+  let tabContentUpates = [...tabContent];
+
+  if (tabNames.length > tabContent.length) {
+    tabContentUpates = increaseArraySize<React.ReactElement>(
+      [...tabContent],
+      tabNames.length,
+      <div />
+    );
+  }
+
+  if (tabContent.length > tabNames.length) {
+    tabNamesUdates = increaseArraySize<string>(
+      [...tabNames],
+      tabContent.length,
+      ''
+    );
+  }
 
   return (
     <>
@@ -31,23 +80,24 @@ const CustomTab = ({ tabNames, tabContent, activeTab = 0 }: CustomTabProps) => {
         onChange={handleChange}
         centered
         indicatorColor="secondary"
-        sx={{ mb: 4 }}
+        sx={styles.tabs}
+        aria-label="tabs"
       >
-        {tabNames.map((item, _, array) => (
+        {tabNamesUdates.map((item, index) => (
           <Tab
             key={item}
             label={item}
-            sx={{ width: `${100 / array.length}%`, fontSize: '1.2rem' }}
+            sx={styles.tab}
+            id={`tab-${index}`}
+            aria-controls={`tabpanel-${index}`}
           />
         ))}
       </Tabs>
-      {tabContent.map((item, index) => (
-        <TabPanel key={item.key} value={value} index={index}>
+      {tabContentUpates.map((item, index) => (
+        <TabPanelMemo key={item.key} value={value} index={index}>
           {item}
-        </TabPanel>
+        </TabPanelMemo>
       ))}
     </>
   );
 };
-
-export default CustomTab;

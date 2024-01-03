@@ -1,23 +1,20 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Box, IconButton, InputAdornment } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
-import ROOT, { DIC_ERROR_API, SUCCESS } from 'constants/constants';
+import { ROOT } from 'shared/constants/elements';
+import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
 import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
-import shemaSignUp, { FormData } from 'validation/shemaSignUp';
+import { FormData, shemaSignUp } from 'validation/shemaSignUp';
 
-import AuthButton from 'components/AuthButton';
-import AuthTextField from 'components/AuthTextField';
+import { AuthTextField } from 'components/AuthTextField';
+import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
+import { SubmitButton } from 'components/SubmitButton';
 
-const SignUpForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
+export const SignUpForm = () => {
   const [submitDisabled, setSubmitDisabled] = useState(false);
-  const { openSnackbar } = useSnackbar();
   const {
     register,
     handleSubmit,
@@ -26,22 +23,24 @@ const SignUpForm = () => {
   } = useForm<FormData>({
     resolver: yupResolver(shemaSignUp, { strict: true }),
     mode: 'onBlur',
-    reValidateMode: 'onBlur',
   });
+  const { showPassword, handleTogglePassword } = usePassword();
+  const { openSnackbar } = useSnackbar();
 
   const onSubmit = async (formData: FormData) => {
     setSubmitDisabled(true);
     try {
-      const isEmailAvailable = await authService.checkEmail(formData.email);
-      if (isEmailAvailable) {
+      const isEmailExist = await authService.checkEmail(formData.email);
+      if (isEmailExist) {
         setError('email', {
           type: 'manual',
           message: 'Email is already taken',
         });
-      } else {
-        await authService.registerUser(formData);
-        openSnackbar(SUCCESS.SIGN_UP, 'success');
+        setSubmitDisabled(false);
+        return;
       }
+      await authService.registerUser(formData);
+      openSnackbar(SUCCESS.SIGN_UP, 'success');
     } catch (error) {
       if (error instanceof Error) {
         const messageError = getFieldByKey(
@@ -54,10 +53,6 @@ const SignUpForm = () => {
     setSubmitDisabled(false);
   };
 
-  const handleTogglePassword = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <AuthTextField
@@ -67,9 +62,9 @@ const SignUpForm = () => {
         id="name"
         label={ROOT.SIGN_UP_FORM.LABEL_NAME}
         variant="outlined"
-        error={!!errors.name}
+        error={Boolean(errors.name)}
         helperText={errors.name && errors.name.message}
-        inputProps={register('name')}
+        inputProps={register(ROOT.SIGN_UP_FORM.FILED_NAME)}
       />
       <AuthTextField
         margin="dense"
@@ -78,11 +73,11 @@ const SignUpForm = () => {
         id="email"
         label={ROOT.SIGN_UP_FORM.LABEL_LOGIN}
         variant="outlined"
-        error={!!errors.email}
+        error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
-        inputProps={register('email')}
+        inputProps={register(ROOT.SIGN_UP_FORM.FILED_LOGIN)}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -90,24 +85,13 @@ const SignUpForm = () => {
         id="password"
         label={ROOT.SIGN_UP_FORM.LABEL_PASSWORD}
         variant="outlined"
-        error={!!errors.password}
+        error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={{
-          ...register('password'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register(ROOT.SIGN_UP_FORM.FILED_PASSWORD)}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -115,34 +99,17 @@ const SignUpForm = () => {
         id="confirmPassword"
         label={ROOT.SIGN_UP_FORM.LABEL_CONFIRM_PASSWORD}
         variant="outlined"
-        error={!!errors.confirmPassword}
+        error={Boolean(errors.confirmPassword)}
         helperText={errors.confirmPassword && errors.confirmPassword.message}
-        InputProps={{
-          ...register('confirmPassword'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register(ROOT.SIGN_UP_FORM.FILED_CONFIRM_PASSWORD)}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton
-          type="submit"
-          variant="outlined"
-          disabled={!isValid || submitDisabled}
-        >
-          {ROOT.SIGN_UP_FORM.BUTTON}
-        </AuthButton>
-      </Box>
+      <SubmitButton
+        submitDisabled={submitDisabled}
+        isValid={isValid}
+        nameButton={ROOT.SIGN_UP_FORM.BUTTON}
+      />
     </form>
   );
 };
-
-export default SignUpForm;

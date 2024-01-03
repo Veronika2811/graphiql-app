@@ -1,22 +1,19 @@
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Box, IconButton, InputAdornment } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
-import ROOT, { DIC_ERROR_API, SUCCESS } from 'constants/constants';
+import { ROOT } from 'shared/constants/elements';
+import { DIC_ERROR_API, SUCCESS } from 'shared/constants/errors';
 import { findNextText } from 'utils/findNextText';
 import { getFieldByKey } from 'utils/getFieldByKey';
-import shemaSignIn, { FormData } from 'validation/shemaSignIn';
+import { FormData, shemaSignIn } from 'validation/shemaSignIn';
 
-import AuthButton from 'components/AuthButton';
-import AuthTextField from 'components/AuthTextField';
+import { AuthTextField } from 'components/AuthTextField';
+import { PasswordField, usePassword } from 'components/PasswordFiled';
 import { useSnackbar } from 'components/SnackbarProvider';
+import { SubmitButton, useSubmit } from 'components/SubmitButton';
 
-const SignInForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const { openSnackbar } = useSnackbar();
+export const SignInForm = () => {
+  const { submitDisabled, setSubmitDisabled } = useSubmit();
   const {
     register,
     handleSubmit,
@@ -24,10 +21,12 @@ const SignInForm = () => {
   } = useForm<FormData>({
     resolver: yupResolver(shemaSignIn),
     mode: 'onBlur',
-    reValidateMode: 'onChange',
   });
+  const { showPassword, handleTogglePassword } = usePassword();
+  const { openSnackbar } = useSnackbar();
 
   const onSubmit = async (formData: FormData) => {
+    setSubmitDisabled(true);
     try {
       await authService.signIn(formData);
       openSnackbar(SUCCESS.SIGN_IN, 'success');
@@ -40,10 +39,7 @@ const SignInForm = () => {
         openSnackbar(messageError, 'error');
       }
     }
-  };
-
-  const handleTogglePassword = () => {
-    setShowPassword(!showPassword);
+    setSubmitDisabled(false);
   };
 
   return (
@@ -55,11 +51,11 @@ const SignInForm = () => {
         id="email"
         label={ROOT.SIGN_IN_FORM.LABEL_LOGIN}
         variant="outlined"
-        error={!!errors.email}
+        error={Boolean(errors.email)}
         helperText={errors.email && errors.email.message}
-        inputProps={register('email')}
+        inputProps={register(ROOT.SIGN_IN_FORM.FILED_LOGIN)}
       />
-      <AuthTextField
+      <PasswordField
         margin="dense"
         required
         fullWidth
@@ -67,30 +63,17 @@ const SignInForm = () => {
         id="password"
         label={ROOT.SIGN_IN_FORM.LABEL_PASSWORD}
         variant="outlined"
-        error={!!errors.password}
+        error={Boolean(errors.password)}
         helperText={errors.password && errors.password.message}
-        InputProps={{
-          ...register('password'),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                onClick={handleTogglePassword}
-                edge="end"
-                color="primary"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        InputProps={register(ROOT.SIGN_IN_FORM.FILED_PASSWORD)}
+        showPassword={showPassword}
+        handleTogglePassword={handleTogglePassword}
       />
-      <Box sx={{ textAlign: 'center', mb: 2 }}>
-        <AuthButton type="submit" variant="outlined" disabled={!isValid}>
-          {ROOT.SIGN_IN_FORM.BUTTON}
-        </AuthButton>
-      </Box>
+      <SubmitButton
+        submitDisabled={submitDisabled}
+        isValid={isValid}
+        nameButton={ROOT.SIGN_IN_FORM.BUTTON}
+      />
     </form>
   );
 };
-
-export default SignInForm;

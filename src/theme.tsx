@@ -6,13 +6,10 @@ import { typographyCustom } from 'theme/typography';
 import '@fontsource/source-code-pro';
 import '@fontsource/inter';
 
-// https://mui.com/material-ui/customization/default-theme/
-// A custom theme for this app
-
-const themeDefault = createTheme({});
+const defaultTheme = createTheme({});
 
 export const theme = createTheme({
   palette: paletteCustom,
-  typography: typographyCustom(themeDefault),
+  typography: typographyCustom(defaultTheme),
   transitions: transitionsCustom,
 });

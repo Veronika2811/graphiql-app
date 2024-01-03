@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { auth } from 'api/initFirebase';
 import { SIGN_IN, SIGN_UP } from 'shared/router-path';
+import { theme } from 'theme';
 import { GraphQLIcon } from 'ui/icons';
 
 import { Logout } from 'components/Logout';
@@ -23,9 +24,9 @@ export const Header = () => {
   return (
     <AppBar position="sticky" sx={headerSx.header}>
       <Container maxWidth="xl" sx={headerSx.container}>
-        <GraphQLIcon width="60px" height="60px" />
+        <GraphQLIcon width={theme.spacing(7)} height={theme.spacing(7)} />
         <Stack direction="row" spacing={2.5}>
-          <Box component="div" display="flex" alignItems="center" gap="5px">
+          <Box component="div" display="flex" alignItems="center" gap={1}>
             <Typography variant="button" color="primary.main">
               Ru
             </Typography>

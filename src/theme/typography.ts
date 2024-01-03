@@ -1,39 +1,72 @@
 import { ThemeOptions } from '@mui/material';
-import { TypographyOptions } from '@mui/material/styles/createTypography';
 
-export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
-  fontFamily: ['Inter', 'sans-serif'].join(','),
+export const typographyCustom = (theme: ThemeOptions) => ({
+  fontFamily: 'Inter, sans-serif',
   h1: {
+    fontSize: '3.1rem',
     fontWeight: 700,
     lineHeight: 1.2,
-    fontSize: '12.6rem',
+    fontStyle: 'normal',
     ...(theme.breakpoints &&
       theme.breakpoints.down && {
-        [theme.breakpoints.down('md')]: {
-          fontSize: '8rem',
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.9rem',
         },
       }),
   },
   h2: {
-    fontSize: '3.2rem',
+    fontSize: '3rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.9rem',
+        },
+      }),
   },
   h3: {
     fontSize: '2.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.6rem',
+        },
+      }),
   },
   h4: {
     fontSize: '2.6rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.4rem',
+        },
+      }),
+  },
+  h5: {
+    fontSize: '1.8rem',
+    fontWeight: 700,
+    lineHeight: 1.2,
+    fontStyle: 'normal',
   },
   subtitle1: {
     fontSize: '1.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
     fontStyle: 'normal',
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.1rem',
+        },
+      }),
   },
   subtitle2: {
     fontSize: '1.1rem',
@@ -46,6 +79,12 @@ export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
     fontWeight: 100,
     fontStyle: 'italic',
     lineHeight: 1.2,
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1rem',
+        },
+      }),
   },
   body2: {
     fontSize: '1.2rem',
@@ -65,7 +104,7 @@ export const typographyCustom = (theme: ThemeOptions): TypographyOptions => ({
     lineHeight: 1.2,
   },
   code: {
-    fontFamily: ['Source Code Pro', 'monospace'].join(','),
+    fontFamily: 'Source Code Pro, monospace',
     fontWeight: 400,
     fontSize: '1rem',
     lineHeight: 1.4,

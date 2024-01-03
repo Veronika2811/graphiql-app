@@ -29,6 +29,9 @@ export default defineConfig({
       api: '/src/api',
       utils: '/src/utils',
       validation: '/src/validation',
+      assets: '/src/assets',
+      service: '/src/service',
+      store: '/src/store',
     },
   },
   test: {

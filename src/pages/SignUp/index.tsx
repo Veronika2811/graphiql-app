@@ -1,22 +1,17 @@
-import { Link, Typography } from '@mui/material';
-import ROOT from 'constants/constants';
+import { ROOT } from 'shared/constants/elements';
+import { SIGN_IN } from 'shared/router-path';
 
-import ContainerForm from 'components/ContainerForm';
-import SignUpForm from 'components/SignUpForm';
+import { FrameBox } from 'components/FrameBox';
+import { SignUpForm } from 'components/SignUpForm';
 
 const SignUp = () => (
-  <ContainerForm title={ROOT.SIGN_UP.TITLE}>
-    <SignUpForm />
-    <Typography
-      variant="body1"
-      component="p"
-      align="center"
-      sx={{ fontSize: '1rem' }}
-    >
-      {`${ROOT.SIGN_UP.MESSAGE} `}
-      <Link href="/">{ROOT.SIGN_UP.LINK_TEXT}</Link>
-    </Typography>
-  </ContainerForm>
+  <FrameBox
+    title={ROOT.SIGN_UP.TITLE}
+    content={<SignUpForm />}
+    message={ROOT.SIGN_UP.MESSAGE}
+    linkAdress={SIGN_IN}
+    linkText={ROOT.SIGN_UP.LINK_TEXT}
+  />
 );
 
 export default SignUp;

@@ -1,7 +1,6 @@
 import * as Yup from 'yup';
 
-//  Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter, and 1 number
-const passwordValidation: Yup.StringSchema<
+export const passwordValidation: Yup.StringSchema<
   string,
   Yup.AnyObject,
   undefined,
@@ -30,5 +29,3 @@ const passwordValidation: Yup.StringSchema<
     (value) => value !== undefined && /[!@#$%^&*]/.test(value)
   )
   .required('Password is required');
-
-export default passwordValidation;
