@@ -20,6 +20,6 @@ export const getData = async (
 
     return data;
   } catch (error) {
-    return error; // FIXME: SnackBar Error: 'Nothing found'
+    return error;
   }
 };

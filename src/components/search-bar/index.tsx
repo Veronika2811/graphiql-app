@@ -1,5 +1,8 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
+import { EDITOR_MESSAGES } from 'constants/editor-form';
+
+import { useSnackbar } from 'components/SnackbarProvider';
 
 import { searchBarSx } from './styles';
 
@@ -19,10 +22,12 @@ export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
     },
   });
 
+  const { openSnackbar } = useSnackbar();
+
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
-    if (!url) return; // FIXME: SnackBar Error: 'Enter endpoint'
+    if (!url) openSnackbar(EDITOR_MESSAGES.missing_URL, 'error');
 
     setEndpoint(url.trim());
   };
