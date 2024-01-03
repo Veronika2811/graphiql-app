@@ -1,9 +1,8 @@
 export const EditorOptionsSx = {
   container: {
     display: 'flex',
-    padding: '5px',
+    padding: 1,
     flexDirection: 'column',
-    columnGap: '10px',
     background: 'rgb(43, 41, 41)',
   },
 };

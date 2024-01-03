@@ -33,14 +33,11 @@ export const EditorForm = ({ endpoint }: { endpoint: string }) => {
 
   return (
     <FormProvider {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        style={EditorFormStyle.form as React.CSSProperties}
-      >
+      <EditorFormStyle onSubmit={form.handleSubmit(onSubmit)}>
         <EditorMain />
 
         <EditorOptions />
-      </form>
+      </EditorFormStyle>
     </FormProvider>
   );
 };
