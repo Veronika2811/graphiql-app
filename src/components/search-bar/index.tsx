@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 
 import { searchBarSx } from './styles';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
-import { LocaleProvider } from 'context';
+import { LocaleProvider } from 'internationalization/LocaleProvider';
 import { MuiProvider } from 'layouts/mui';
 import { store } from 'store';
 import { ErrorFallback } from 'ui/error-fallback';

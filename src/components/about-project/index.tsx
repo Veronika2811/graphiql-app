@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import aboutImage1 from 'assets/images/jpg/aboutImage1.jpg';
 import aboutImage2 from 'assets/images/jpg/aboutImage2.jpg';
 import aboutRsschool from 'assets/images/jpg/aboutRsschool.jpg';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 
 import LayoutAboutProject from '../layout-about-project';
 

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { CardMedia, Grid, Typography } from '@mui/material';
 import notFoundImage from 'assets/images/jpg/notFoundImage.jpg';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
 import { aboutProjectSx } from './styles';

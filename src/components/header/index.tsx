@@ -10,8 +10,8 @@ import {
   Tooltip,
   Typography,
 } from '@mui/material';
-import { useLocale } from 'context/hook';
-import { REGIONS } from 'context/locale';
+import { REGIONS } from 'internationalization/locale';
+import { useLocale } from 'internationalization/useLocale';
 import { AUTH, WELCOME } from 'shared/router-path';
 import { theme } from 'theme';
 import { GraphQLIcon } from 'ui/icons';

@@ -30,7 +30,7 @@ export default defineConfig({
       utils: '/src/utils',
       service: '/src/service',
       store: '/src/store',
-      context: '/src/context',
+      internationalization: '/src/internationalization',
     },
   },
   test: {

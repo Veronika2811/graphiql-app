@@ -1,5 +1,5 @@
 import { Grid, Stack, Typography } from '@mui/material';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 import { GenerateInformationAboutDeveloper } from 'utils/generate-info-developers';
 
 import { AboutProject } from 'components/about-project';

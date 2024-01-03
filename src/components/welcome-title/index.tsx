@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 
 export const WelcomeTitle = () => {
   const { translation } = useLocale();

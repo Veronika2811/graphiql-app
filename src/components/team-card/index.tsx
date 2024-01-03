@@ -1,6 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import defaultProfile from 'assets/images/svg/default-profile.svg';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 import { onErrorCardMedia } from 'utils/onErrorCardMedia';
 
 import { SocialMediaWrapper } from 'components/social-media-wrapper';

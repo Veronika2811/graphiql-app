@@ -1,6 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { Link, Typography } from '@mui/material';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 import { AUTH } from 'shared/router-path';
 
 const WelcomeLinkAuthorization = () => {

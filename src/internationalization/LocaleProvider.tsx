@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useMemo, useState } from 'react';
 
-import { LocaleContext } from './context';
 import { REGIONS, TRANSLATION_OBJ } from './locale';
+import { LocaleContext } from './LocaleContext';
 
 export const LocaleProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<string>(

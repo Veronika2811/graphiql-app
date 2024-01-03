@@ -1,6 +1,6 @@
 import girl from 'assets/images/svg/girl.svg';
 import man from 'assets/images/svg/man.svg';
-import { useLocale } from 'context/hook';
+import { useLocale } from 'internationalization/useLocale';
 
 export const GenerateInformationAboutDeveloper = () => {
   const { translation } = useLocale();
