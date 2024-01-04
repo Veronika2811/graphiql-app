@@ -2,7 +2,10 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { apiSlice } from 'service/api';
 
+import { docsSliceReducer } from './slices/documentation';
+
 const rootReducer = combineReducers({
+  docs: docsSliceReducer,
   [apiSlice.reducerPath]: apiSlice.reducer,
 });
 

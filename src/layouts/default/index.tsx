@@ -7,7 +7,11 @@ import { Header } from 'components/header';
 export const Layout = () => (
   <>
     <Header />
-    <Container component="main" maxWidth="xl" sx={{ flex: '1 1', py: '20px' }}>
+    <Container
+      component="main"
+      maxWidth="xl"
+      sx={{ flex: '1 1', py: '5px', overflow: 'hidden' }}
+    >
       <Outlet />
     </Container>
     <Footer />

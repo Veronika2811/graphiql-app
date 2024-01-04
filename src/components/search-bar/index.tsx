@@ -8,7 +8,7 @@ const SearchBar = ({
   setEndpoint,
 }: {
   endpoint: string;
-  setEndpoint: React.Dispatch<React.SetStateAction<string>>;
+  setEndpoint: (query: string) => void;
 }) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 

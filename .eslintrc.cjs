@@ -25,6 +25,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react-hooks', 'simple-import-sort'],
   rules: {
+    'no-param-reassign': [
+      'error',
+      { ignorePropertyModificationsFor: ['state'] },
+    ],
+    'no-underscore-dangle': ['error', { allow: ['__schema'] }],
     'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
