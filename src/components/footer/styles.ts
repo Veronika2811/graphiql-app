@@ -1,4 +1,4 @@
-const linkSx = {
+export const linkSx = {
   color: 'primary.main',
   transition: 'color ease 0.5s',
   '&:hover': {
