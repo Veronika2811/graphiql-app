@@ -7,8 +7,7 @@ import {
   query,
   where,
 } from 'firebase/firestore';
-
-import { ERROR } from '../constants/constants';
+import { ERROR } from 'shared/constants/errors';
 
 import { COLLECTIONS, USER_FIELDS } from './constants/constants';
 import { app as appFB } from './initFirebase';

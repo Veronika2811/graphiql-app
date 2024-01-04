@@ -2,11 +2,11 @@ import '@mui/material/styles';
 
 declare module '@mui/material/styles' {
   interface TypographyVariants {
-    code: React.CSSProperties;
+    code?: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
-    code: React.CSSProperties;
+    code?: React.CSSProperties;
   }
 }
 
@@ -19,7 +19,7 @@ declare module '@mui/material/SvgIcon' {
 
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
-    code: true;
+    code?: true;
   }
 }
 

@@ -1,5 +1,4 @@
 import React, { ReactNode, useEffect, useState } from 'react';
-import { Box } from '@mui/material';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -38,10 +37,10 @@ export const ErrorBoundary = ({ children, fallback }: ErrorBoundaryProps) => {
   }, []);
 
   if (hasError) {
-    return <Box>{fallback}</Box>;
+    return <>{fallback}</>;
   }
 
-  return <Box>{children}</Box>;
+  return <>{children}</>;
 };
 
 export default ErrorBoundary;
