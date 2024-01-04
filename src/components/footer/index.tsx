@@ -36,10 +36,12 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <Container component="footer" maxWidth="xl" sx={footerSx.footer}>
-      <Typography variant="subtitle2">{currentYear}</Typography>
+      <Typography variant="subtitle2" sx={footerSx.caption}>
+        {currentYear}
+      </Typography>
       <List sx={footerSx.list}>
         {contentGithubLinks.map((item) => (
-          <ListItem key={item.tooltip} disableGutters>
+          <ListItem key={item.tooltip} sx={footerSx.item} disableGutters>
             <Tooltip title={item.tooltip}>
               <Link
                 href={item.link}
