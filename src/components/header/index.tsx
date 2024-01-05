@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import {
   AppBar,
   Box,
@@ -8,19 +10,24 @@ import {
   Switch,
   Typography,
 } from '@mui/material';
+import { auth } from 'api/initFirebase';
+import { SIGN_IN, SIGN_UP } from 'shared/router-path';
 import { theme } from 'theme';
 import { combineSxProps } from 'theme/utils';
 import { GraphQLIcon } from 'ui/icons';
 
+import { Logout } from 'components/Logout';
+
 import { headerSx } from './styles';
 
 export const Header = () => {
+  const [user] = useAuthState(auth);
   const [sticky, setSticky] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
 
   const checkSticky = () => {
     if (headerRef.current) {
-      if (window.pageYOffset > headerRef.current.offsetHeight) {
+      if (window.scrollY > headerRef.current.offsetHeight) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -61,12 +68,30 @@ export const Header = () => {
             </Typography>
           </Box>
           <Stack direction="row" spacing={2.5} alignItems="center">
-            <Button variant="outlined" size="large" sx={headerSx.button}>
-              Sign In
-            </Button>
-            <Button variant="outlined" size="large" sx={headerSx.button}>
-              Sign Up
-            </Button>
+            {user ? (
+              <Logout sx={headerSx.button} />
+            ) : (
+              <>
+                <Button
+                  component={Link}
+                  to={SIGN_IN}
+                  variant="outlined"
+                  size="large"
+                  sx={headerSx.button}
+                >
+                  Sign In
+                </Button>
+                <Button
+                  component={Link}
+                  to={SIGN_UP}
+                  variant="outlined"
+                  size="large"
+                  sx={headerSx.button}
+                >
+                  Sign Up
+                </Button>
+              </>
+            )}
           </Stack>
         </Stack>
       </Container>
