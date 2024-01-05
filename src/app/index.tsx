@@ -7,7 +7,7 @@ import { AUTH, EDITOR, WELCOME } from 'shared/router-path';
 import { SnackbarProvider } from 'components/SnackbarProvider';
 
 const WelcomePage = React.lazy(() => import('pages/welcome'));
-const AuthPage = React.lazy(() => import('pages/auth'));
+const AuthPage = React.lazy(() => import('pages/auth-page'));
 const EditorPage = React.lazy(() => import('pages/editor'));
 const NotFoundPage = React.lazy(() => import('pages/404'));
 
