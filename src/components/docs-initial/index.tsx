@@ -37,7 +37,7 @@ export const DocsInitial = ({
       </Box>
       <Box component="div">
         <Typography variant="subtitle2" color="text.secondary">
-          All Schema Types
+          {translation.docs_all_schema}
         </Typography>
         <List sx={docsInitialSx.list}>
           {links?.map((item) => (

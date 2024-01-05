@@ -83,4 +83,5 @@ export const englishDictionary = {
   [TranslationKeys.docs_query]: 'query',
   [TranslationKeys.docs_root]: 'Root',
   [TranslationKeys.docs_fields]: 'Fields',
+  [TranslationKeys.docs_all_schema]: 'All Schema Types',
 };

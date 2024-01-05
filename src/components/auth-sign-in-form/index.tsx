@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import authService from 'api/apiAuthFirebase';
+import { useSnackbar } from 'context/snackbar-provider';
 import { useGetDicErrorApi } from 'hooks/useGetDicErrorApi';
 import { useSubmit } from 'hooks/useSubmit';
 import { useLocale } from 'internationalization/useLocale';
@@ -11,7 +12,6 @@ import { FormData, shemaSignIn } from 'validation/shemaSignIn';
 
 import { SubmitButton } from 'components/auth-submit-button';
 import { PasswordField, usePassword } from 'components/password-filed';
-import { useSnackbar } from 'components/SnackbarProvider';
 
 export const SignInForm = () => {
   const { submitDisabled, setSubmitDisabled } = useSubmit();

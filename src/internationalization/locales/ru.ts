@@ -90,4 +90,5 @@ export const russianDictionary = {
   [TranslationKeys.docs_query]: 'запрос',
   [TranslationKeys.docs_root]: 'Корень',
   [TranslationKeys.docs_fields]: 'Поля',
+  [TranslationKeys.docs_all_schema]: 'Все типы схем',
 };

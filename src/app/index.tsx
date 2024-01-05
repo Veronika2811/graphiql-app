@@ -2,11 +2,10 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { auth } from 'api/initFirebase';
+import { SnackbarProvider } from 'context/snackbar-provider';
 import { Layout } from 'layouts/default';
 import { SuspenseLayout } from 'layouts/suspense';
 import { AUTH, EDITOR, WELCOME } from 'shared/router-path';
-
-import { SnackbarProvider } from 'components/SnackbarProvider';
 
 const WelcomePage = React.lazy(() => import('pages/welcome'));
 const AuthPage = React.lazy(() => import('pages/auth-page'));

@@ -15,6 +15,7 @@ export const DocsWrapper = ({ links, root }: DocsInitialProps) => {
   const switchQuery = (query: string | null) => setQueryDocs(query);
 
   const isAdvancedQuery = Boolean(queryDocs);
+
   return (
     <>
       {!isAdvancedQuery && (

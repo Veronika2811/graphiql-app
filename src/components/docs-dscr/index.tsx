@@ -50,21 +50,11 @@ export const DocsDscr = ({
 
           return (
             <ListItem key={fieldInfo.name} sx={docsDscrSx.listItem}>
-              <Typography
-                variant="subtitle2"
-                color="custom.blue"
-                marginRight="8px"
-              >
+              <Typography variant="subtitle2" color="custom.blue">
                 {fieldInfo.name}
               </Typography>
-              <Typography variant="subtitle2" marginRight="8px">
-                {schema}
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                color="secondary.main"
-                marginRight="8px"
-              >
+              <Typography variant="subtitle2">{schema}</Typography>
+              <Typography variant="subtitle2" color="secondary.main">
                 {type.name ? `:${type.name}` : ''}
               </Typography>
             </ListItem>

@@ -67,4 +67,5 @@ export enum TranslationKeys {
   docs_query = 'docs_query',
   docs_root = 'docs_root',
   docs_fields = 'docs_fields',
+  docs_all_schema = 'docs_all_schema',
 }

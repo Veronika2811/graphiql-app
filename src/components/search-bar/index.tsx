@@ -1,8 +1,9 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
+import { useSnackbar } from 'context/snackbar-provider';
 import { useLocale } from 'internationalization/useLocale';
-
-import { useSnackbar } from 'components/SnackbarProvider';
+import { useAppDispatch } from 'store/hooks';
+import { setStateDocsDrawer } from 'store/slices/documentation';
 
 import { searchBarSx } from './styles';
 
@@ -23,13 +24,15 @@ export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   });
 
   const { openSnackbar } = useSnackbar();
-
   const { translation } = useLocale();
+  const dispatch = useAppDispatch();
 
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
     if (!url) openSnackbar(translation.editor_message_missing_URL, 'error');
+
+    dispatch(setStateDocsDrawer(false));
 
     setEndpoint(url.trim());
   };

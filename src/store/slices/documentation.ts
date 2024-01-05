@@ -26,8 +26,8 @@ export const docsSlice = createSlice({
     setButtonStateWithDocs(state: DocsData, action: PayloadAction<boolean>) {
       state.docsButton = action.payload;
     },
-    setStateDocsDrawer(state: DocsData) {
-      state.docsOpen = !state.docsOpen;
+    setStateDocsDrawer(state: DocsData, action: PayloadAction<boolean>) {
+      state.docsOpen = action.payload;
     },
   },
 });

@@ -4,6 +4,7 @@ import {
   UseFormProps,
   UseFormReturn,
 } from 'react-hook-form';
+import { useSnackbar } from 'context/snackbar-provider';
 import { useLocale } from 'internationalization/useLocale';
 import { useGetSchemeQuery } from 'service/api';
 import { getData } from 'service/getData';
@@ -12,7 +13,6 @@ import { EditorGraphQL } from 'types/editor-form';
 
 import { EditorMain } from 'components/editor-main';
 import { EditorOptions } from 'components/editor-options';
-import { useSnackbar } from 'components/SnackbarProvider';
 
 import { EditorFormStyle } from './styles';
 

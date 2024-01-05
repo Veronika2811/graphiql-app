@@ -33,6 +33,7 @@ export default defineConfig({
       store: '/src/store',
       internationalization: '/src/internationalization',
       hooks: '/src/hooks',
+      context: '/src/context',
     },
   },
   test: {

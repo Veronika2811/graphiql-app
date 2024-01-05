@@ -6,15 +6,16 @@ import {
 import { IconButton, Tooltip, Typography } from '@mui/material';
 import { useLocale } from 'internationalization/useLocale';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
-import { selectStateDocs } from 'store/selectors';
+import { selectStateDocs, selectStateDocsDrawer } from 'store/selectors';
 import { setStateDocsDrawer } from 'store/slices/documentation';
 
 export const EditorCommandPanel = () => {
   const { translation } = useLocale();
   const docs = useAppSelector(selectStateDocs);
+  const docsOpen = useAppSelector(selectStateDocsDrawer);
   const dispatch = useAppDispatch();
 
-  const handleDrawerChange = () => dispatch(setStateDocsDrawer());
+  const handleDrawerChange = () => dispatch(setStateDocsDrawer(!docsOpen));
 
   return (
     <>

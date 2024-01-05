@@ -10,7 +10,7 @@ export const Layout = () => (
     <Container
       component="main"
       maxWidth="xl"
-      sx={{ display: 'flex', flex: '1 1', py: '5px', overflow: 'hidden' }}
+      sx={{ display: 'flex', flex: '1 1' }}
     >
       <Outlet />
     </Container>

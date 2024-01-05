@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import authService from 'api/apiAuthFirebase';
+import { useSnackbar } from 'context/snackbar-provider';
 import { useGetDicErrorApi } from 'hooks/useGetDicErrorApi';
 import { useLocale } from 'internationalization/useLocale';
 import { AuthTextField } from 'ui/auth-text-field';
@@ -11,7 +12,6 @@ import { FormData, shemaSignUp } from 'validation/shemaSignUp';
 
 import { SubmitButton } from 'components/auth-submit-button';
 import { PasswordField, usePassword } from 'components/password-filed';
-import { useSnackbar } from 'components/SnackbarProvider';
 
 export const SignUpForm = () => {
   const [submitDisabled, setSubmitDisabled] = useState(false);
