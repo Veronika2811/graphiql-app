@@ -4,7 +4,8 @@ import { useGetSchemeQuery } from 'service/api';
 import { useAppDispatch } from 'store/hooks';
 import { setDocs } from 'store/slices/documentation';
 
-import SearchBar from 'components/search-bar';
+import { EditorForm } from 'components/editor-form';
+import { SearchBar } from 'components/search-bar';
 import { Sidebar } from 'components/sidebar';
 
 const EditorPage = () => {
@@ -25,10 +26,11 @@ const EditorPage = () => {
   };
 
   return (
-    <Stack direction="row" columnGap={2.5} height="100%">
+    <Stack direction="row" columnGap={2.5} width="100%">
       <Sidebar />
       <Stack direction="column" rowGap={2} width="100%">
         <SearchBar endpoint={endpoint} setEndpoint={onClickEndpoint} />
+        <EditorForm endpoint={endpoint} />
       </Stack>
     </Stack>
   );

@@ -1,4 +1,7 @@
 export const mainColumnSx = {
+  aside: {
+    display: 'flex',
+  },
   menu: {
     display: 'flex',
     flexDirection: 'column',

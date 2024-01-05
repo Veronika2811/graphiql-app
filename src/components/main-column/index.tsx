@@ -3,7 +3,6 @@ import { Box, Drawer, IconButton } from '@mui/material';
 import { useAppSelector } from 'store/hooks';
 import { selectScheme } from 'store/selectors';
 import { BookIcon } from 'ui/icons/book';
-import { PlayIcon } from 'ui/icons/play';
 import { RebootIcon } from 'ui/icons/reboot';
 import { SettingIcon } from 'ui/icons/setting';
 
@@ -16,25 +15,20 @@ interface MainColumnProps {
 export const MainColumn = memo((props: MainColumnProps) => {
   const docsInfo = useAppSelector(selectScheme);
   return (
-    <Box component="aside" sx={{ display: 'flex' }}>
+    <Box component="aside" sx={mainColumnSx.aside}>
       <Drawer
         variant="permanent"
         PaperProps={{
           sx: mainColumnSx.menu,
         }}
       >
-        <Box component="div" sx={mainColumnSx.block}>
-          <IconButton sx={mainColumnSx.playBtn}>
-            <PlayIcon width="20px" height="20px" />
-          </IconButton>
-          <IconButton
-            onClick={props.controlSideBar}
-            sx={{ color: '#ffffff' }}
-            disabled={Boolean(!docsInfo)}
-          >
-            <BookIcon width="40px" height="40px" />
-          </IconButton>
-        </Box>
+        <IconButton
+          onClick={props.controlSideBar}
+          sx={{ color: '#ffffff' }}
+          disabled={Boolean(!docsInfo)}
+        >
+          <BookIcon width="40px" height="40px" />
+        </IconButton>
         <Box component="div" sx={mainColumnSx.block}>
           <IconButton sx={{ color: '#ffffff' }}>
             <RebootIcon width="40px" height="40px" />

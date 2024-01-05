@@ -4,6 +4,9 @@ import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 import { MuiProvider } from 'layouts/mui';
 import { store } from 'store';
+import { ErrorFallback } from 'ui/error-fallback';
+
+import { ErrorBoundary } from 'components/error-boundary';
 
 import { App } from './app';
 
@@ -13,9 +16,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <MuiProvider>
       <HashRouter>
-        <Provider store={store}>
-          <App />
-        </Provider>
+        <ErrorBoundary fallback={<ErrorFallback />}>
+          <Provider store={store}>
+            <App />
+          </Provider>
+        </ErrorBoundary>
       </HashRouter>
     </MuiProvider>
   </React.StrictMode>

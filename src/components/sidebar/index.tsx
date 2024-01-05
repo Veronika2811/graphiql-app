@@ -12,7 +12,7 @@ export const Sidebar = memo(() => {
   }, []);
 
   return (
-    <Box component="div" sx={{ display: 'flex' }}>
+    <Box component="div" sx={{ display: 'flex', zIndex: 0 }}>
       <MainColumn controlSideBar={handleDrawerChange} />
       <Divider
         light
