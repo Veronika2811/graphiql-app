@@ -9,7 +9,7 @@ import {
 import { theme } from 'theme';
 import { GithubIcon, RsSchoolIcon } from 'ui/icons';
 
-import { footerSx } from './styles';
+import { footerSx, linkSx } from './styles';
 
 const contentGithubLinks = [
   {
@@ -57,7 +57,12 @@ export const Footer = () => {
           </ListItem>
         ))}
       </List>
-      <Link href="https://rs.school/" target="_blank" rel="noopener">
+      <Link
+        href="https://rs.school/"
+        target="_blank"
+        rel="noopener"
+        sx={linkSx}
+      >
         <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(8)} />
       </Link>
     </Container>
