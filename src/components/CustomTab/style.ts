@@ -1,4 +1,4 @@
-import { KitSxProps } from 'type/interface';
+import { KitSxProps } from 'types/interface';
 
 const generateStyles = (tabsLength: number): KitSxProps => ({
   tabs: {

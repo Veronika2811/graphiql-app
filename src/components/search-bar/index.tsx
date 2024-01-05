@@ -8,7 +8,7 @@ import { searchBarSx } from './styles';
 
 interface SearchBarProps {
   endpoint: string;
-  setEndpoint: React.Dispatch<React.SetStateAction<string>>;
+  setEndpoint: (query: string) => void;
 }
 
 interface DefaultValuesForm {

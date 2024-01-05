@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
-import { EditorOptionsFieldNames } from 'type/editor-form';
+import { EditorOptionsFieldNames } from 'types/editor-form';
 
 import { EditorField } from 'components/editor-field';
 import { OptionButtons } from 'components/editor-options-buttons';

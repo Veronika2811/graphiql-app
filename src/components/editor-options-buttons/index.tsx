@@ -1,6 +1,6 @@
 import React from 'react';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { EditorOptionsFieldNames } from 'type/editor-form';
+import { EditorOptionsFieldNames } from 'types/editor-form';
 
 import { EditorOptionsButtonsSx } from './styles';
 

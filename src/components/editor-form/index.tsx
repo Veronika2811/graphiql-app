@@ -10,7 +10,7 @@ import {
 } from 'constants/editor-form';
 import { useGetSchemeQuery } from 'service/api';
 import { getData } from 'service/getData';
-import { EditorGraphQL } from 'type/editor-form';
+import { EditorGraphQL } from 'types/editor-form';
 
 import { EditorMain } from 'components/editor-main';
 import { EditorOptions } from 'components/editor-options';

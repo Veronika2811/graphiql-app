@@ -1,5 +1,5 @@
 import { theme } from 'theme';
-import { KitSxProps } from 'type/interface';
+import { KitSxProps } from 'types/interface';
 
 const styles: KitSxProps = {
   paper: {

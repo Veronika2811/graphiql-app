@@ -1,5 +1,5 @@
 import { useController } from 'react-hook-form';
-import { EditorFieldNames } from 'type/editor-form';
+import { EditorFieldNames } from 'types/editor-form';
 
 import { EditorFieldStyle } from './styles';
 
