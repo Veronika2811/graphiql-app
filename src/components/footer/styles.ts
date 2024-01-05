@@ -1,14 +1,5 @@
 import { theme } from 'theme';
 
-export const linkSx = {
-  color: 'primary.main',
-  transition: 'color ease 0.5s',
-  '&:hover': {
-    transition: 'color ease 0.5s',
-    color: 'custom.blue',
-  },
-};
-
 export const footerSx = {
   footer: {
     display: 'flex',
@@ -31,5 +22,13 @@ export const footerSx = {
           textAlign: 'center',
         },
       }),
+  },
+  'link-rschool': {
+    color: 'primary.main',
+    transition: 'color ease 0.5s',
+    '&:hover': {
+      transition: 'color ease 0.5s',
+      color: 'secondary.main',
+    },
   },
 };

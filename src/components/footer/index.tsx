@@ -4,7 +4,7 @@ import { RsSchoolIcon } from 'ui/icons';
 
 import { GitHubDeveloperLinks } from 'components/github-developer-links';
 
-import { footerSx, linkSx } from './styles';
+import { footerSx } from './styles';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ export const Footer = () => {
         href="https://rs.school/react/"
         target="_blank"
         rel="noopener"
-        sx={linkSx}
+        sx={footerSx['link-rschool']}
       >
         <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(8)} />
       </Link>
