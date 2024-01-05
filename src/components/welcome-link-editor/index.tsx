@@ -3,7 +3,7 @@ import { Link, Typography } from '@mui/material';
 import { useLocale } from 'internationalization/useLocale';
 import { EDITOR } from 'shared/router-path';
 
-const WelcomeLinkEditor = () => {
+export const WelcomeLinkEditor = () => {
   const { translation } = useLocale();
 
   return (
@@ -21,5 +21,3 @@ const WelcomeLinkEditor = () => {
     </Typography>
   );
 };
-
-export default WelcomeLinkEditor;

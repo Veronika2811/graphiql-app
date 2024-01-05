@@ -1,20 +1,27 @@
-import { ROOT } from 'shared/constants/elements';
+import { useLocation } from 'react-router-dom';
+import { useLocale } from 'internationalization/useLocale';
+import { AUTH_TABS, AUTH_TABS_PANEL } from 'shared/constants/auth';
 
-import { ContainerForm } from 'components/ContainerForm';
-import { CustomTab } from 'components/CustomTab';
-import { SignInForm } from 'components/SignInForm';
-import { SignUpForm } from 'components/SignUpForm';
+import { AuthFormContainer } from 'components/auth-form-container';
+import { AuthTabs } from 'components/auth-tabs';
 
-const tabsPanel = [<SignInForm key="sing_in" />, <SignUpForm key="sing_up" />];
+const AuthPage = () => {
+  const { translation } = useLocale();
+  const location = useLocation();
 
-const Auth = () => (
-  <ContainerForm title={ROOT.AUTH_FORM.TITLE}>
-    <CustomTab
-      tabNames={ROOT.AUTH_FORM.TABS}
-      tabContent={tabsPanel}
-      activeTab={0}
-    />
-  </ContainerForm>
-);
+  const activeTab = location.state
+    ? location.state.activeTab
+    : AUTH_TABS.signIn;
 
-export default Auth;
+  return (
+    <AuthFormContainer title={translation.auth_title}>
+      <AuthTabs
+        tabNames={[translation.signIn, translation.signUp]}
+        tabContent={AUTH_TABS_PANEL}
+        activeTab={activeTab}
+      />
+    </AuthFormContainer>
+  );
+};
+
+export default AuthPage;

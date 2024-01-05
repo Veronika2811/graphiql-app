@@ -10,3 +10,11 @@ export const USER_FIELDS = {
 export const COLLECTIONS = {
   USERS: 'users',
 } as const;
+
+export const ERROR = {
+  FIREBASE: {
+    MESSAGE: 'Error authorization',
+    HEADER: 'Firebase Error',
+    NOT_FOUND: 'User not found',
+  },
+} as const;

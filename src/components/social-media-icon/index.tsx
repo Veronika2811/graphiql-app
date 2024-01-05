@@ -7,7 +7,7 @@ import {
   TelegramIcon,
 } from 'ui/icons/socialIcons';
 
-import { SocialMediaSx } from './styles';
+import { socialMediaSx } from './styles';
 
 interface SocialMediaIconProps {
   name: string;
@@ -32,7 +32,7 @@ const SocialMediaIcon = ({ name, type, url }: SocialMediaIconProps) => {
         href={url}
         target="_blank"
         rel="noopener"
-        sx={SocialMediaSx['social-button']}
+        sx={socialMediaSx['social-button']}
       >
         {iconMap.get(type) ?? <DefaulSocialIcon {...iconProps} />}
       </IconButton>

@@ -1,12 +1,7 @@
 import * as Yup from 'yup';
 
-export const emailValidation: Yup.StringSchema<
-  string,
-  Yup.AnyObject,
-  undefined,
-  ''
-> = Yup.string()
+export const emailValidation = Yup.string()
   .trim()
-  .email('Enter a valid email (e.g., user@example.com)')
-  .matches(/^.+@.+\..+$/, 'Email address must contain a domain name')
-  .required('Email is required');
+  .required('yup_required_field')
+  .email('yup_valid_email')
+  .matches(/^.+@.+\..+$/, 'yup_domain_name');

@@ -5,11 +5,11 @@ import { EditorOptionsFieldNames } from 'type/editor-form';
 import { EditorField } from 'components/editor-field';
 import { OptionButtons } from 'components/editor-options-buttons';
 
-import { EditorOptionsSx } from './styles';
+import { editorOptionsSx } from './styles';
 
 export const EditorOptions = () => {
   const [activeTab, setActiveTab] = useState<EditorOptionsFieldNames | null>(
-    'variables'
+    null
   );
 
   const handleActiveTab = (
@@ -18,7 +18,7 @@ export const EditorOptions = () => {
   ) => setActiveTab(value);
 
   return (
-    <Box sx={EditorOptionsSx.container}>
+    <Box sx={editorOptionsSx.container}>
       <OptionButtons activeTab={activeTab} handleActiveTab={handleActiveTab} />
 
       {activeTab && <EditorField key={activeTab} name={activeTab} />}

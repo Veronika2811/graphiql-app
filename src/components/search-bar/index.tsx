@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { Button, TextField } from '@mui/material';
-import { EDITOR_MESSAGES } from 'constants/editor-form';
 import { useLocale } from 'internationalization/useLocale';
 
 import { useSnackbar } from 'components/SnackbarProvider';
@@ -30,7 +29,7 @@ export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
-    if (!url) openSnackbar(EDITOR_MESSAGES.missing_URL, 'error');
+    if (!url) openSnackbar(translation.editor_message_missing_URL, 'error');
 
     setEndpoint(url.trim());
   };

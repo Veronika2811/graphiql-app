@@ -3,7 +3,7 @@ import { Link, Typography } from '@mui/material';
 import { useLocale } from 'internationalization/useLocale';
 import { AUTH } from 'shared/router-path';
 
-const WelcomeLinkAuthorization = () => {
+export const WelcomeLinkAuthorization = () => {
   const { translation } = useLocale();
 
   return (
@@ -21,5 +21,3 @@ const WelcomeLinkAuthorization = () => {
     </Typography>
   );
 };
-
-export default WelcomeLinkAuthorization;

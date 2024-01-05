@@ -32,9 +32,7 @@ export const SnackbarProvider = ({ children }: { children: ReactNode }) => {
     setSnackbarOpen(true);
   };
 
-  const closeSnackbar = () => {
-    setSnackbarOpen(false);
-  };
+  const closeSnackbar = () => setSnackbarOpen(false);
 
   const value = useMemo(
     () => ({

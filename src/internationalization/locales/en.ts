@@ -1,8 +1,9 @@
-import { TranslationKeys } from 'internationalization/enum';
+import { TranslationKeys } from 'internationalization/TranslationKeys';
 
 export const englishDictionary = {
   [TranslationKeys.signIn]: 'Sign In',
   [TranslationKeys.signUp]: 'Sign Up',
+  [TranslationKeys.logOut]: 'Log Out',
   [TranslationKeys.not_found_page]: 'Not Found Page',
   [TranslationKeys.welcome_page]: 'Welcome Page',
   [TranslationKeys.main_title]: 'The Best IDE for GraphQL Requests',
@@ -29,4 +30,49 @@ export const englishDictionary = {
   [TranslationKeys.konstantin]: 'Konstantin',
   [TranslationKeys.veranika]: 'Veranika',
   [TranslationKeys.artem]: 'Artem',
+  [TranslationKeys.auth_title]: 'Welcome',
+  [TranslationKeys.auth_email]: 'Email',
+  [TranslationKeys.auth_password]: 'Password',
+  [TranslationKeys.auth_confirm_password]: 'Confirm Password',
+  [TranslationKeys.auth_name]: 'Name',
+  [TranslationKeys.variables]: 'Variables',
+  [TranslationKeys.headers]: 'Headers',
+  [TranslationKeys.editor_message_missing_URL]: 'Enter endpoint',
+  [TranslationKeys.editor_message_incorrect_URL]: 'Enter correct endpoint',
+  [TranslationKeys.editor_message_missing_request]: 'Enter request',
+  [TranslationKeys.editor_message_check_request]: 'Check request',
+  [TranslationKeys.editor_message_successful_request]: 'Successful request',
+  [TranslationKeys.loading]: 'Loading',
+  [TranslationKeys.error_boundary_message]: 'Oops! Something went wrong!',
+  [TranslationKeys.button_execute_query]: 'Execute query',
+  [TranslationKeys.button_make_beautiful]: 'Make beautiful',
+  [TranslationKeys.auth_success_sign_in]: 'Logged in successfully',
+  [TranslationKeys.auth_success_sign_up]: 'Registered successfully',
+  [TranslationKeys.dic_error_api_wrong_password]: 'Wrong password',
+  [TranslationKeys.dic_error_api_invalid_email]: 'Invalid Email',
+  [TranslationKeys.dic_error_api_user_disabled]: 'User-disabled',
+  [TranslationKeys.dic_error_api_user_not_found]: 'User not found',
+  [TranslationKeys.dic_error_api_email_already_in_use]: 'Email already in use',
+  [TranslationKeys.dic_error_api_operation_not_allowed]:
+    'Operation not allowed',
+  [TranslationKeys.dic_error_api_weak_password]: 'Weak-password',
+  [TranslationKeys.dic_error_api_default]: 'Unknown error',
+  [TranslationKeys.auth_email_already_taken]: 'Email is already taken',
+  [TranslationKeys.yup_required_field]: 'Required field',
+  [TranslationKeys.yup_capitalize_first_letter]:
+    'The first letter must be capitalized',
+  [TranslationKeys.yup_only_letters]: 'The field should contain only letters',
+  [TranslationKeys.yup_valid_email]:
+    'Enter a valid email (e.g., user@example.com)',
+  [TranslationKeys.yup_domain_name]: 'Email address must contain a domain name',
+  [TranslationKeys.yup_length_password]:
+    'Password should be of minimum 8 characters length',
+  [TranslationKeys.yup_uppercase_letter]:
+    'Password must include at least one uppercase letter (A-Z)',
+  [TranslationKeys.yup_lowercase_letter]:
+    'Password must include at least one lowercase letter (a-z)',
+  [TranslationKeys.yup_digit]: 'Password must include at least one digit (0-9)',
+  [TranslationKeys.yup_special_character]:
+    'Password must include at least one special character (!@#$%^&*)',
+  [TranslationKeys.yup_password_mismatch]: 'Passwords must match',
 };

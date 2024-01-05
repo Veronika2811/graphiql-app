@@ -1,81 +1,24 @@
-import { Link as RouterLink } from 'react-router-dom';
-import {
-  AppBar,
-  Box,
-  Button,
-  Container,
-  Link,
-  Stack,
-  Switch,
-  Tooltip,
-  Typography,
-} from '@mui/material';
-import { REGIONS } from 'internationalization/locale';
-import { useLocale } from 'internationalization/useLocale';
-import { AUTH, WELCOME } from 'shared/router-path';
-import { theme } from 'theme';
-import { GraphQLIcon } from 'ui/icons';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { AppBar, Container, Stack } from '@mui/material';
+import { auth } from 'api/initFirebase';
+
+import { AppLogo } from 'components/app-logo';
+import { AuthButtons } from 'components/auth-buttons';
+import { AuthLogoutButton } from 'components/auth-logout-button';
+import { LanguageSwitch } from 'components/language-switch';
 
 import { headerSx } from './styles';
 
 export const Header = () => {
-  const { language, setLanguage, translation } = useLocale();
-
-  const onChangeLanguages = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const lang = e.target.checked ? REGIONS.EN : REGIONS.RU;
-    setLanguage(lang);
-    localStorage.setItem('lang', lang);
-  };
+  const [user] = useAuthState(auth);
 
   return (
     <AppBar position="sticky" sx={headerSx.header}>
       <Container maxWidth="xl" sx={headerSx.container}>
-        <Tooltip title={translation.welcome_page}>
-          <Link
-            component={RouterLink}
-            to={WELCOME}
-            color="secondary"
-            underline="always"
-            aria-label="link-welcome"
-          >
-            <GraphQLIcon width={theme.spacing(7)} height={theme.spacing(7)} />
-          </Link>
-        </Tooltip>
+        <AppLogo />
         <Stack direction="row" spacing={2.5}>
-          <Box component="div" display="flex" alignItems="center" gap={1}>
-            <Typography variant="button" color="primary.main">
-              Ru
-            </Typography>
-            <Switch
-              sx={headerSx.switch}
-              inputProps={{ 'aria-label': 'controlled', role: 'switch' }}
-              checked={language === REGIONS.EN}
-              onChange={onChangeLanguages}
-            />
-            <Typography variant="button" color="primary.main">
-              En
-            </Typography>
-          </Box>
-          <Stack direction="row" spacing={2.5} alignItems="center">
-            <Button
-              variant="outlined"
-              size="large"
-              sx={headerSx.button}
-              component={RouterLink}
-              to={AUTH}
-            >
-              {translation.signIn}
-            </Button>
-            <Button
-              variant="outlined"
-              size="large"
-              sx={headerSx.button}
-              component={RouterLink}
-              to={AUTH}
-            >
-              {translation.signUp}
-            </Button>
-          </Stack>
+          <LanguageSwitch />
+          {user ? <AuthLogoutButton /> : <AuthButtons />}
         </Stack>
       </Container>
     </AppBar>
