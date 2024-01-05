@@ -8,7 +8,7 @@ import { useLocale } from 'internationalization/useLocale';
 import { useGetSchemeQuery } from 'service/api';
 import { getData } from 'service/getData';
 import { EDITOR_FORM_DEFAULT_VALUES } from 'shared/constants/editor-form';
-import { EditorGraphQL } from 'type/editor-form';
+import { EditorGraphQL } from 'types/editor-form';
 
 import { EditorMain } from 'components/editor-main';
 import { EditorOptions } from 'components/editor-options';

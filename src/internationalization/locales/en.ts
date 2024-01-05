@@ -75,4 +75,12 @@ export const englishDictionary = {
   [TranslationKeys.yup_special_character]:
     'Password must include at least one special character (!@#$%^&*)',
   [TranslationKeys.yup_password_mismatch]: 'Passwords must match',
+  [TranslationKeys.editor_show_documentation]: 'Show documentation explorer',
+  [TranslationKeys.docs]: 'Docs',
+  [TranslationKeys.docs_description]:
+    'A GraphQL schema provides a root type for each kind of operation',
+  [TranslationKeys.docs_root_types]: 'Root types',
+  [TranslationKeys.docs_query]: 'query',
+  [TranslationKeys.docs_root]: 'Root',
+  [TranslationKeys.docs_fields]: 'Fields',
 };

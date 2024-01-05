@@ -2,7 +2,7 @@ import React from 'react';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useLocale } from 'internationalization/useLocale';
 import { EDITOR_TABS } from 'shared/constants/editor-form';
-import { EditorOptionsFieldNames } from 'type/editor-form';
+import { EditorOptionsFieldNames } from 'types/editor-form';
 
 import { editorOptionsButtonsSx } from './styles';
 

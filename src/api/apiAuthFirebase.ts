@@ -14,7 +14,7 @@ import {
   getFirestore,
 } from 'firebase/firestore';
 
-import { User } from '../type/interface';
+import { User } from '../types/interface';
 
 import { AUTH_PROVIDERS, COLLECTIONS } from './constants/constants';
 import { handleFirebaseError } from './utils/handleFirebaseError';

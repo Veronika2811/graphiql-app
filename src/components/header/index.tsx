@@ -28,9 +28,7 @@ export const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', checkSticky);
-    return () => {
-      window.removeEventListener('scroll', checkSticky);
-    };
+    return () => window.removeEventListener('scroll', checkSticky);
   }, []);
 
   return (

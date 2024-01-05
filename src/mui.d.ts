@@ -2,7 +2,7 @@ import '@mui/material/styles';
 
 declare module '@mui/material/styles' {
   interface TypographyVariants {
-    code?: React.CSSProperties;
+    code: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -13,5 +13,20 @@ declare module '@mui/material/styles' {
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     code?: true;
+  }
+}
+
+interface PaletteCustom {
+  blue: string;
+  yellow: string;
+}
+
+declare module '@mui/material/styles' {
+  interface Palette {
+    custom: PaletteCustom;
+  }
+
+  interface PaletteOptions {
+    custom?: PaletteCustom;
   }
 }

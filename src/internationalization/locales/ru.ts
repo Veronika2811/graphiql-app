@@ -81,4 +81,13 @@ export const russianDictionary = {
   [TranslationKeys.yup_special_character]:
     'Пароль должен содержать хотя бы один специальный символ (!@#$%^&*)',
   [TranslationKeys.yup_password_mismatch]: 'Пароли должны совпадать',
+  [TranslationKeys.editor_show_documentation]:
+    'Показать проводник документации',
+  [TranslationKeys.docs]: 'Документы',
+  [TranslationKeys.docs_description]:
+    'Схема GraphQL предоставляет корневой тип для каждого типа операций',
+  [TranslationKeys.docs_root_types]: 'Типы корней',
+  [TranslationKeys.docs_query]: 'запрос',
+  [TranslationKeys.docs_root]: 'Корень',
+  [TranslationKeys.docs_fields]: 'Поля',
 };
