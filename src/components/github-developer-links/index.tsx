@@ -16,7 +16,11 @@ export const GitHubDeveloperLinks = () => {
         )!;
 
         return (
-          <ListItem key={item.name} disableGutters>
+          <ListItem
+            key={item.name}
+            disableGutters
+            sx={gitHubDeveloperLinksSx.item}
+          >
             <SocialMediaIcon name={item.name} type={type} url={url} />
           </ListItem>
         );

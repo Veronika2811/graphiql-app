@@ -6,6 +6,10 @@ export const headerSx = {
     boxShadow: 0,
     flex: 1,
     justifyContent: 'center',
+    transition: 'background-color 0.5s ease',
+  },
+  headerSticky: {
+    bgcolor: 'background.paper',
   },
   container: {
     display: 'flex',
