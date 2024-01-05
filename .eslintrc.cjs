@@ -25,6 +25,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react-hooks', 'simple-import-sort'],
   rules: {
+    'no-param-reassign': [
+      'error',
+      { ignorePropertyModificationsFor: ['state'] },
+    ],
+    'no-underscore-dangle': ['error', { allow: ['__schema'] }],
     'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -53,7 +58,8 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'no-console': ['warn', { allow: ['error'] }],
-    'react/jsx-props-no-spreading': 'off'
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-no-useless-fragment': 'off'
   },
   settings: {
     react: {

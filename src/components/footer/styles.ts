@@ -57,6 +57,7 @@ export const footerSx = {
       theme.breakpoints.down && {
         [theme.breakpoints.down('sm')]: {
           width: '100%',
+          justifyContent: 'center',
         },
       }),
   },

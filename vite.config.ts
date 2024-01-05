@@ -3,7 +3,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -26,8 +25,10 @@ export default defineConfig({
       theme: '/src/theme',
       ui: '/src/ui',
       constants: '/src/constants',
-      assets: '/src/assets',
+      api: '/src/api',
       utils: '/src/utils',
+      validation: '/src/validation',
+      assets: '/src/assets',
       service: '/src/service',
       store: '/src/store',
     },
