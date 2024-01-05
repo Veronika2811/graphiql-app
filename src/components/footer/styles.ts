@@ -1,4 +1,6 @@
-const linkSx = {
+import { theme } from 'theme';
+
+export const linkSx = {
   color: 'primary.main',
   transition: 'color ease 0.5s',
   '&:hover': {
@@ -13,6 +15,22 @@ export const footerSx = {
     alignItems: 'center',
     justifyContent: 'space-between',
     minHeight: 90,
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        },
+      }),
+  },
+  caption: {
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          width: '100%',
+          textAlign: 'center',
+        },
+      }),
   },
   firstLink: {
     ...linkSx,
@@ -35,5 +53,19 @@ export const footerSx = {
   list: {
     display: 'flex',
     gap: 2,
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          width: '100%',
+        },
+      }),
+  },
+  item: {
+    ...(theme.breakpoints &&
+      theme.breakpoints.down && {
+        [theme.breakpoints.down('sm')]: {
+          width: 'auto',
+        },
+      }),
   },
 };
