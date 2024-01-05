@@ -26,7 +26,7 @@ const EditorPage = () => {
   };
 
   return (
-    <Stack direction="row" columnGap={2.5} width="100%">
+    <Stack direction="row" columnGap={2.5} width="100%" maxHeight="76vh">
       <Sidebar />
       <Stack direction="column" rowGap={2} width="100%">
         <SearchBar endpoint={endpoint} setEndpoint={onClickEndpoint} />
