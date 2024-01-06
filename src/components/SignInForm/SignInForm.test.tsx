@@ -63,14 +63,6 @@ describe('SignInForm', () => {
     const email = 'test@example.com';
     const password = '12345qQ!';
 
-    // mocks.authService.signIn.mockImplementation(async () => {});
-    // mocks.authService.signIn.mockImplementation( () =>
-    //     Promise.resolve()
-    // );
-    // mocks.authService.signIn.mockImplementation(() => {
-    //   throw new Error('Test error');
-    // });
-
     const { getByLabelText, getByRole } = render(<SignInForm />);
 
     const emailInput = getByLabelText(/Email/i);
