@@ -43,7 +43,11 @@ export const Header = () => {
     >
       <Container maxWidth="xl" sx={headerSx.container}>
         <AppLogo />
-        <Stack direction="row" spacing={2.5}>
+        <Stack
+          direction="row"
+          spacing={{ xs: 0.5, md: 2.5 }}
+          alignItems="center"
+        >
           <LanguageSwitch />
           {user ? <AuthLogoutButton /> : <AuthButtons />}
         </Stack>

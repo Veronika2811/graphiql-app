@@ -1,6 +1,6 @@
 export const authFormContainerSx = {
   paper: {
-    padding: 5,
+    padding: 2,
     borderRadius: 5,
   },
   container: {

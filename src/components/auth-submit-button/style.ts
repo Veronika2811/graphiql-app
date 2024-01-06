@@ -1,3 +1,5 @@
+import { theme } from 'theme';
+
 export const submitButtonSx = {
   box: {
     position: 'relative',
@@ -15,5 +17,8 @@ export const submitButtonSx = {
     margin: 'auto',
     borderRadius: 5,
     fontSize: '1.2rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+    },
   },
 };
