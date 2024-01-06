@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "test": "vitest",
+    "test": "vitest --coverage",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
     "prettier": "prettier --check \"./src/**/*.{ts,tsx}\"",
     "prettier-fix": "prettier --write \"./src/**/*.{ts,tsx}\""
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^14.1.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
@@ -52,6 +53,7 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "husky": "^8.0.3",
+    "jsdom": "^23.0.1",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.0",
     "typescript": "^5.2.2",
