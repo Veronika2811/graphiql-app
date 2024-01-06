@@ -62,10 +62,4 @@ export enum TranslationKeys {
   yup_password_mismatch = 'yup_password_mismatch',
   editor_show_documentation = 'editor_show_documentation',
   docs = 'docs',
-  docs_description = 'docs_description',
-  docs_root_types = 'docs_root_types',
-  docs_query = 'docs_query',
-  docs_root = 'docs_root',
-  docs_fields = 'docs_fields',
-  docs_all_schema = 'docs_all_schema',
 }

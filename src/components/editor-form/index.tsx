@@ -6,7 +6,6 @@ import {
 } from 'react-hook-form';
 import { useSnackbar } from 'context/snackbar-provider';
 import { useLocale } from 'internationalization/useLocale';
-import { useGetSchemeQuery } from 'service/api';
 import { getData } from 'service/getData';
 import { EDITOR_FORM_DEFAULT_VALUES } from 'shared/constants/editor-form';
 import { EditorGraphQL } from 'types/editor-form';
@@ -16,7 +15,12 @@ import { EditorOptions } from 'components/editor-options';
 
 import { EditorFormStyle } from './styles';
 
-export const EditorForm = ({ endpoint }: { endpoint: string }) => {
+interface EditorFormProps {
+  endpoint: string | undefined;
+  isError: boolean;
+}
+
+export const EditorForm = ({ endpoint, isError }: EditorFormProps) => {
   const form: UseFormReturn<EditorGraphQL, UseFormProps> =
     useForm<EditorGraphQL>({
       defaultValues: EDITOR_FORM_DEFAULT_VALUES,
@@ -25,10 +29,11 @@ export const EditorForm = ({ endpoint }: { endpoint: string }) => {
   const { openSnackbar } = useSnackbar();
   const { translation } = useLocale();
 
-  const { isError } = useGetSchemeQuery(endpoint);
-
   const onSubmit = async (data: EditorGraphQL) => {
     const { request, variables, headers } = data;
+
+    if (!endpoint)
+      return openSnackbar(translation.editor_message_missing_URL, 'error');
 
     if (isError)
       return openSnackbar(translation.editor_message_incorrect_URL, 'error');

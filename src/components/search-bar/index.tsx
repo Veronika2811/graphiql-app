@@ -8,8 +8,8 @@ import { setStateDocsDrawer } from 'store/slices/documentation';
 import { searchBarSx } from './styles';
 
 interface SearchBarProps {
-  endpoint: string;
-  setEndpoint: (query: string) => void;
+  endpoint: string | undefined;
+  setEndpoint: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
 interface DefaultValuesForm {
@@ -30,11 +30,14 @@ export const SearchBar = ({ endpoint, setEndpoint }: SearchBarProps) => {
   const onSubmit = (data: DefaultValuesForm) => {
     const { endpoint: url } = data;
 
-    if (!url) openSnackbar(translation.editor_message_missing_URL, 'error');
-
     dispatch(setStateDocsDrawer(false));
 
-    setEndpoint(url.trim());
+    if (!url) {
+      setEndpoint(undefined);
+      return openSnackbar(translation.editor_message_missing_URL, 'error');
+    }
+
+    return setEndpoint(url.trim());
   };
 
   return (

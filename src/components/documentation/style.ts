@@ -4,7 +4,7 @@ export const documentationSx = {
     flexDirection: 'column',
     gap: 2,
     position: 'relative',
-    maxWidth: 320,
+    maxWidth: 280,
     padding: 1.5,
   },
 };

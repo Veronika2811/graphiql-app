@@ -84,11 +84,4 @@ export const russianDictionary = {
   [TranslationKeys.editor_show_documentation]:
     'Показать проводник документации',
   [TranslationKeys.docs]: 'Документы',
-  [TranslationKeys.docs_description]:
-    'Схема GraphQL предоставляет корневой тип для каждого типа операций',
-  [TranslationKeys.docs_root_types]: 'Типы корней',
-  [TranslationKeys.docs_query]: 'запрос',
-  [TranslationKeys.docs_root]: 'Корень',
-  [TranslationKeys.docs_fields]: 'Поля',
-  [TranslationKeys.docs_all_schema]: 'Все типы схем',
 };

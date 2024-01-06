@@ -1,8 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IntrospectionSchema } from 'graphql';
 
 interface DocsData {
-  schema: IntrospectionSchema | null;
+  schema: string | null;
   docsButton: boolean;
   docsOpen: boolean;
 }
@@ -17,10 +16,7 @@ export const docsSlice = createSlice({
   name: 'documentation',
   initialState,
   reducers: {
-    setSchema(
-      state: DocsData,
-      action: PayloadAction<IntrospectionSchema | null>
-    ) {
+    setSchema(state: DocsData, action: PayloadAction<string | null>) {
       state.schema = action.payload;
     },
     setButtonStateWithDocs(state: DocsData, action: PayloadAction<boolean>) {
