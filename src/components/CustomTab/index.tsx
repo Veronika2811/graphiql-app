@@ -16,7 +16,7 @@ interface CustomTabProps {
   activeTab?: number;
 }
 
-const TabPanel = ({ children, value, index }: TabPanelProps) => {
+export const TabPanel = ({ children, value, index }: TabPanelProps) => {
   if (!children) return null;
 
   return (
@@ -31,7 +31,7 @@ const TabPanel = ({ children, value, index }: TabPanelProps) => {
   );
 };
 
-const TabPanelMemo = memo(
+export const TabPanelMemo = memo(
   TabPanel,
   (prevProps, nextProps) =>
     prevProps.children === nextProps.children &&
