@@ -1,31 +1,26 @@
 import * as Yup from 'yup';
 
-export const passwordValidation: Yup.StringSchema<
-  string,
-  Yup.AnyObject,
-  undefined,
-  ''
-> = Yup.string()
+export const passwordValidation = Yup.string()
   .trim()
-  .min(8, 'Password should be of minimum 8 characters length')
+  .required('yup_required_field')
   .test(
     'uppercase',
-    'Password must include at least one uppercase letter (A-Z)',
+    'yup_uppercase_letter',
     (value) => value !== undefined && /[A-Z]/.test(value)
   )
   .test(
     'lowercase',
-    'Password must include at least one lowercase letter (a-z)',
+    'yup_lowercase_letter',
     (value) => value !== undefined && /[a-z]/.test(value)
   )
   .test(
     'digit',
-    'Password must include at least one digit (0-9)',
+    'yup_digit',
     (value) => value !== undefined && /[0-9]/.test(value)
   )
   .test(
     'specialCharacters',
-    'Password must include at least one special character (!@#$%^&*)',
+    'yup_special_character',
     (value) => value !== undefined && /[!@#$%^&*]/.test(value)
   )
-  .required('Password is required');
+  .min(8, 'yup_length_password');

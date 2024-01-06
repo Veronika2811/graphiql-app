@@ -1,16 +1,20 @@
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Grid, Stack, Typography } from '@mui/material';
 import { auth } from 'api/initFirebase';
-import { INFORMATION_ABOUT_DEVELOPERS } from 'constants/about-developers';
+import { useLocale } from 'internationalization/useLocale';
+import { GetDevelopersInfo } from 'utils/get-developers-info';
 
-import { AboutProject } from 'components/about-project';
-import { TeamCard } from 'components/team-card';
-import WelcomeLinkAuthorization from 'components/welcome-link-authorization';
-import WelcomeLinkEditor from 'components/welcome-link-editor';
+import { DeveloperCard } from 'components/developer-card';
+import { AboutProjectList } from 'components/welcome-about-project-list';
+import { WelcomeLinkAuthorization } from 'components/welcome-link-authorization';
+import { WelcomeLinkEditor } from 'components/welcome-link-editor';
 import { WelcomeTitle } from 'components/welcome-title';
 
 const WelcomePage = () => {
   const [user] = useAuthState(auth);
+  const { translation } = useLocale();
+
+  const developersInfo = GetDevelopersInfo();
 
   return (
     <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>
@@ -18,14 +22,14 @@ const WelcomePage = () => {
 
       {user ? <WelcomeLinkEditor /> : <WelcomeLinkAuthorization />}
 
-      <AboutProject />
+      <AboutProjectList />
 
       <Typography variant="h2" component="h2" align="center" color="secondary">
-        Team
+        {translation.team}
       </Typography>
 
       <Grid container spacing={5} columnSpacing={5} wrap="wrap">
-        {INFORMATION_ABOUT_DEVELOPERS.map((developer) => (
+        {developersInfo.map((developer) => (
           <Grid
             item
             xs={12}
@@ -34,7 +38,7 @@ const WelcomePage = () => {
             display="flex"
             justifyContent="center"
           >
-            <TeamCard
+            <DeveloperCard
               name={developer.name}
               photo={developer.photo}
               socialMedia={developer.socialMedia}

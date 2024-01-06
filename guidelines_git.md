@@ -1,27 +1,3 @@
-# graphiql-app
-
-## How to install
-
-``` shell
-npm install
-```
-
-## How to run application
-
-``` shell
-npm start
-```
-
-The application will boot op on http://localhost:3000.
-
-## Build application
-
-``` shell
-npm run build
-```
-
-This will create a dist folder with compiled and minimized components.
-
 ## Git Rules
 
 Below are some guidelines for naming branches and commits in a Git repository, specifically for branches with species names.
@@ -49,17 +25,6 @@ Branch name format: `{type}/GQ-{issue number}/{short task title}`.
 **Examples**: `docs/GQ-1/guidelines-git`, `feature/GQ-2/config`.
 
 ### Commits
-
-#### One Commit. One Change.
-
-Before creating a PR, you should have only one commit in a branch. You have two ways to achieve a single commit:
-
-1. All subsequent commits must update the first commit:
-```git commit --amend --no-edit```
-
-This way, your branch will only have 1 commit, making it easier to merge branches later on.
-
-2. Before creating a PR, do a `git squash` to squash all the commits into one.
 
 #### Commit message
 

@@ -1,24 +1,31 @@
-import { Drawer } from '@mui/material';
-import { useAppSelector } from 'store/hooks';
-import { selectScheme } from 'store/selectors';
-
-import { DocsWrapper } from 'components/docs-wrapper';
+import React, { Suspense } from 'react';
+import { CircularProgress, Drawer } from '@mui/material';
+import { useAppDispatch, useAppSelector } from 'store/hooks';
+import { selectStateDocsDrawer } from 'store/selectors';
+import { setStateDocsDrawer } from 'store/slices/documentation';
 
 import { documentationSx } from './style';
 
+const DocsWrapper = React.lazy(() => import('components/docs-wrapper'));
+
 export const Documentation = () => {
-  const docsInfo = useAppSelector(selectScheme);
-  const rootType = docsInfo?.queryType.name ?? null;
-  const links =
-    docsInfo?.types.filter((item) => !item.name.startsWith('__')) ?? null;
+  const docsOpen = useAppSelector(selectStateDocsDrawer);
+  const dispatch = useAppDispatch();
+
+  const onCloseDrawer = () => dispatch(setStateDocsDrawer(false));
+
   return (
     <Drawer
-      variant="permanent"
+      variant="temporary"
+      open={docsOpen}
       PaperProps={{
         sx: documentationSx.menu,
       }}
+      onClose={onCloseDrawer}
     >
-      <DocsWrapper links={links} root={rootType} />
+      <Suspense fallback={<CircularProgress color="secondary" size={100} />}>
+        <DocsWrapper />
+      </Suspense>
     </Drawer>
   );
 };

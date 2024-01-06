@@ -1,14 +1,5 @@
 import { theme } from 'theme';
 
-export const linkSx = {
-  color: 'primary.main',
-  transition: 'color ease 0.5s',
-  '&:hover': {
-    transition: 'color ease 0.5s',
-    color: 'custom.blue',
-  },
-};
-
 export const footerSx = {
   footer: {
     display: 'flex',
@@ -32,41 +23,12 @@ export const footerSx = {
         },
       }),
   },
-  firstLink: {
-    ...linkSx,
+  'link-rschool': {
+    color: 'primary.main',
+    transition: 'color ease 0.5s',
     '&:hover': {
-      color: 'custom.blue',
-    },
-  },
-  secondLink: {
-    ...linkSx,
-    '&:hover': {
+      transition: 'color ease 0.5s',
       color: 'secondary.main',
     },
-  },
-  thirtyLink: {
-    ...linkSx,
-    '&:hover': {
-      color: 'custom.yellow',
-    },
-  },
-  list: {
-    display: 'flex',
-    gap: 2,
-    ...(theme.breakpoints &&
-      theme.breakpoints.down && {
-        [theme.breakpoints.down('sm')]: {
-          width: '100%',
-          justifyContent: 'center',
-        },
-      }),
-  },
-  item: {
-    ...(theme.breakpoints &&
-      theme.breakpoints.down && {
-        [theme.breakpoints.down('sm')]: {
-          width: 'auto',
-        },
-      }),
   },
 };

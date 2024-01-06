@@ -1,10 +1,10 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { Fallback } from 'components/fallback';
+import { LoadingFallback } from 'components/loading-fallback';
 
 export const SuspenseLayout = () => (
-  <Suspense fallback={<Fallback />}>
+  <Suspense fallback={<LoadingFallback />}>
     <Outlet />
   </Suspense>
 );
