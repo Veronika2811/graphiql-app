@@ -13,6 +13,9 @@ const styles: KitSxProps = {
   },
   container: {
     py: 5,
+    [theme.breakpoints.down('sm')]: {
+      px: 0,
+    },
   },
 };
 
