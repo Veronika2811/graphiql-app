@@ -1,18 +1,18 @@
-import { Button, SxProps } from '@mui/material';
+import LogoutIcon from '@mui/icons-material/Logout';
 import authService from 'api/apiAuthFirebase';
 
-interface LogoutProps {
-  sx: SxProps;
-}
+import { HeaderButton } from 'components/HeaderButton';
 
-export const Logout = ({ sx }: LogoutProps) => {
+export const Logout = () => {
   const hendlerOnClick = () => {
     authService.logout();
   };
 
   return (
-    <Button variant="outlined" size="large" sx={sx} onClick={hendlerOnClick}>
-      Logout
-    </Button>
+    <HeaderButton
+      name="Logout"
+      icon={<LogoutIcon />}
+      onClick={hendlerOnClick}
+    />
   );
 };
