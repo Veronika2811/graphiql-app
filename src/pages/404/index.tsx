@@ -1,5 +1,10 @@
 import { Box } from '@mui/material';
+import { useLocale } from 'internationalization/useLocale';
 
-const NotFound = () => <Box component="div">Not Found Page</Box>;
+const NotFoundPage = () => {
+  const { translation } = useLocale();
 
-export default NotFound;
+  return <Box component="div">{translation.not_found_page}</Box>;
+};
+
+export default NotFoundPage;

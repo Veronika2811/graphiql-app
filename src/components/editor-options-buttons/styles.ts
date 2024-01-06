@@ -1,4 +1,4 @@
-export const EditorOptionsButtonsSx = {
+export const editorOptionsButtonsSx = {
   'buttons-group': {
     background: 'rgb(43, 41, 41)',
     color: '#fff',

@@ -11,7 +11,7 @@ describe('confirmPasswordValidation', () => {
         password: Yup.string(),
         confirmPassword: confirmPasswordValidation,
       }).validateSync(testValue)
-    ).toThrow('Password confirmation is required');
+    ).toThrow('yup_required_field');
   });
 
   it('returns an error if the confirmation password does not match the password', () => {
@@ -22,7 +22,7 @@ describe('confirmPasswordValidation', () => {
         password: Yup.string(),
         confirmPassword: confirmPasswordValidation,
       }).validateSync(testValue)
-    ).toThrow('Passwords must match');
+    ).toThrow('yup_password_mismatch');
   });
 
   it('passes validation if the confirmation password matches the password', () => {

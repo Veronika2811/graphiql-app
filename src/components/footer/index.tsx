@@ -1,69 +1,25 @@
-import {
-  Container,
-  Link,
-  List,
-  ListItem,
-  Tooltip,
-  Typography,
-} from '@mui/material';
+import { Container, Link, Typography } from '@mui/material';
 import { theme } from 'theme';
-import { GithubIcon, RsSchoolIcon } from 'ui/icons';
+import { RsSchoolIcon } from 'ui/icons';
 
-import { footerSx, linkSx } from './styles';
+import { GitHubDeveloperLinks } from 'components/github-developer-links';
 
-const contentGithubLinks = [
-  {
-    tooltip: 'Artem',
-    link: 'https://github.com/Arterixs',
-    styleIconSx: footerSx.firstLink,
-    ariaLabel: 'Artem github link',
-  },
-  {
-    tooltip: 'Veronika',
-    link: 'https://github.com/Veronika2811',
-    styleIconSx: footerSx.secondLink,
-    ariaLabel: 'Veronika github link',
-  },
-  {
-    tooltip: 'Konstantin',
-    link: 'https://github.com/KikinovK',
-    styleIconSx: footerSx.thirtyLink,
-    ariaLabel: 'Konstantin github link',
-  },
-];
+import { footerSx } from './styles';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+
   return (
     <Container component="footer" maxWidth="xl" sx={footerSx.footer}>
       <Typography variant="subtitle2" sx={footerSx.caption}>
         {currentYear}
       </Typography>
-      <List sx={footerSx.list}>
-        {contentGithubLinks.map((item) => (
-          <ListItem key={item.tooltip} sx={footerSx.item} disableGutters>
-            <Tooltip title={item.tooltip}>
-              <Link
-                href={item.link}
-                target="_blank"
-                rel="noopener"
-                sx={item.styleIconSx}
-              >
-                <GithubIcon
-                  width={theme.spacing(6)}
-                  height={theme.spacing(6)}
-                  aria-label={item.ariaLabel}
-                />
-              </Link>
-            </Tooltip>
-          </ListItem>
-        ))}
-      </List>
+      <GitHubDeveloperLinks />
       <Link
-        href="https://rs.school/"
+        href="https://rs.school/react/"
         target="_blank"
         rel="noopener"
-        sx={linkSx}
+        sx={footerSx['link-rschool']}
       >
         <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(8)} />
       </Link>

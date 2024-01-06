@@ -1,4 +1,4 @@
-export const EditorOptionsSx = {
+export const editorOptionsSx = {
   container: {
     display: 'flex',
     padding: 1,

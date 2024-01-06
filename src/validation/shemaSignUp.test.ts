@@ -76,7 +76,7 @@ describe('shemaSignUp', () => {
     };
 
     expect(() => shemaSignUp.validateSync(testValue)).toThrow(
-      'Name is required'
+      'yup_required_field'
     );
   });
 
@@ -89,7 +89,7 @@ describe('shemaSignUp', () => {
     };
 
     expect(() => shemaSignUp.validateSync(testValue)).toThrow(
-      'The field should contain only letters.'
+      'yup_required_field'
     );
   });
 });

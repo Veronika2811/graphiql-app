@@ -3,7 +3,7 @@ import { emailValidation } from './email.validation';
 describe('emailValidation', () => {
   it('returns an error if the email is missing', () => {
     expect(() => emailValidation.validateSync(null)).toThrow(
-      'Email is required'
+      'yup_required_field'
     );
   });
 
@@ -11,7 +11,7 @@ describe('emailValidation', () => {
     const testValue = 'invalidEmail';
 
     expect(() => emailValidation.validateSync(testValue)).toThrow(
-      'Enter a valid email (e.g., user@example.com)'
+      'yup_valid_email'
     );
   });
 
@@ -19,7 +19,7 @@ describe('emailValidation', () => {
     const testValue = 'user@g';
 
     expect(() => emailValidation.validateSync(testValue)).toThrow(
-      'Email address must contain a domain name'
+      'yup_domain_name'
     );
   });
 

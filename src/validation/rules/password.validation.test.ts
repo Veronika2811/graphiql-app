@@ -2,10 +2,10 @@ import { passwordValidation } from './password.validation';
 
 describe('passwordValidation', () => {
   it('returns an error for a short password', () => {
-    const testValue = 'Abc12';
+    const testValue = 'Ab!12';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
-      'Password should be of minimum 8 characters length'
+      'yup_length_password'
     );
   });
 
@@ -13,7 +13,7 @@ describe('passwordValidation', () => {
     const testValue = 'abc12345';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
-      'Password must include at least one uppercase letter (A-Z)'
+      'yup_uppercase_letter'
     );
   });
 
@@ -21,7 +21,7 @@ describe('passwordValidation', () => {
     const testValue = 'ABC12345';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
-      'Password must include at least one lowercase letter (a-z)'
+      'yup_lowercase_letter'
     );
   });
 
@@ -29,7 +29,7 @@ describe('passwordValidation', () => {
     const testValue = 'Abcdefgh';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
-      'Password must include at least one digit (0-9)'
+      'yup_digit'
     );
   });
 
@@ -37,13 +37,13 @@ describe('passwordValidation', () => {
     const testValue = 'Abc123456';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
-      'Password must include at least one special character (!@#$%^&*)'
+      'yup_special_character'
     );
   });
 
   it('returns an error if the password is missing', () => {
     expect(() => passwordValidation.validateSync(null)).toThrow(
-      'Password is required'
+      'yup_required_field'
     );
   });
 

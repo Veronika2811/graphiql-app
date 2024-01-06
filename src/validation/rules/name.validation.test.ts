@@ -2,14 +2,16 @@ import { nameValidation } from './name.validation';
 
 describe('nameValidation', () => {
   it('returns an error if the name is missing', () => {
-    expect(() => nameValidation.validateSync(null)).toThrow('Name is required');
+    expect(() => nameValidation.validateSync(null)).toThrow(
+      'yup_required_field'
+    );
   });
 
   it('returns an error if the name is empty', () => {
-    const testValue = '';
+    const testValue = '1';
 
     expect(() => nameValidation.validateSync(testValue)).toThrow(
-      'The field should contain only letters.'
+      'yup_only_letters'
     );
   });
 
@@ -17,7 +19,7 @@ describe('nameValidation', () => {
     const testValue = 'john';
 
     expect(() => nameValidation.validateSync(testValue)).toThrow(
-      'The first letter must be capitalized'
+      'yup_capitalize_first_letter'
     );
   });
 
