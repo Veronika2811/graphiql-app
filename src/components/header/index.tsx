@@ -1,21 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import LoginIcon from '@mui/icons-material/Login';
 import {
   AppBar,
   Box,
-  Button,
   Container,
+  Link,
   Stack,
   Switch,
   Typography,
 } from '@mui/material';
 import { auth } from 'api/initFirebase';
-import { SIGN_IN, SIGN_UP } from 'shared/router-path';
-import { theme } from 'theme';
+import { SIGN_IN, SIGN_UP, WELCOME } from 'shared/router-path';
 import { combineSxProps } from 'theme/utils';
 import { GraphQLIcon } from 'ui/icons';
 
+import { HeaderButton } from 'components/HeaderButton';
 import { Logout } from 'components/Logout';
 
 import { headerSx } from './styles';
@@ -53,7 +55,9 @@ export const Header = () => {
       }
     >
       <Container maxWidth="xl" sx={headerSx.container}>
-        <GraphQLIcon width={theme.spacing(7)} height={theme.spacing(7)} />
+        <Link component={RouterLink} to={WELCOME} sx={headerSx.logo}>
+          <GraphQLIcon width="100%" height="100%" />
+        </Link>
         <Stack direction="row" spacing={2.5}>
           <Box component="div" display="flex" alignItems="center" gap={1}>
             <Typography variant="button" color="primary.main">
@@ -67,29 +71,25 @@ export const Header = () => {
               En
             </Typography>
           </Box>
-          <Stack direction="row" spacing={2.5} alignItems="center">
+          <Stack
+            direction="row"
+            spacing={{ xs: 0.5, md: 2.5 }}
+            alignItems="center"
+          >
             {user ? (
-              <Logout sx={headerSx.button} />
+              <Logout />
             ) : (
               <>
-                <Button
-                  component={Link}
+                <HeaderButton
                   to={SIGN_IN}
-                  variant="outlined"
-                  size="large"
-                  sx={headerSx.button}
-                >
-                  Sign In
-                </Button>
-                <Button
-                  component={Link}
+                  name="Sign In"
+                  icon={<LoginIcon />}
+                />
+                <HeaderButton
                   to={SIGN_UP}
-                  variant="outlined"
-                  size="large"
-                  sx={headerSx.button}
-                >
-                  Sign Up
-                </Button>
+                  name="Sign UP"
+                  icon={<AppRegistrationIcon />}
+                />
               </>
             )}
           </Stack>
