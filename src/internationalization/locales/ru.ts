@@ -10,7 +10,8 @@ export const russianDictionary = {
   [TranslationKeys.main_subtitle]:
     'Приложение является результатом выполнения финального задания на курсе RS School React.',
   [TranslationKeys.welcome_link_editor_heading]: 'Главная страница',
-  [TranslationKeys.welcome_link_authorization_heading]: 'для начала',
+  [TranslationKeys.welcome_link_authorization_heading]:
+    'Войти / Зарегистрироваться',
   [TranslationKeys.about_project_title_1]: 'Язык запросов для вашего API',
   [TranslationKeys.about_project_subtitle_1]:
     'GraphQL — это язык запросов для API и среда выполнения для выполнения этих запросов с использованием существующих данных. GraphQL предоставляет полное и понятное описание данных в вашем API, дает клиентам возможность запрашивать именно то, что им нужно, и не более того, упрощает постепенное развитие API и предоставляет мощные инструменты разработчика.',
