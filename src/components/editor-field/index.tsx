@@ -10,13 +10,13 @@ interface EditorFieldProps {
 
 export const EditorField = ({ name, readOnly = false }: EditorFieldProps) => {
   const controller = useController({ name });
-
-  const onChangeEditor = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+  const onChangeEditor = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     controller.field.onChange(e.target.value);
+  };
 
   return (
     <EditorFieldStyle
-      defaultValue={controller.field.value}
+      value={controller.field.value}
       readOnly={readOnly}
       onChange={onChangeEditor}
     />
