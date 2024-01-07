@@ -1,7 +1,7 @@
 import { combineSxProps } from './utils';
 
-describe('combineSxProps', () => {
-  it('combines multiple SxProps into one', () => {
+describe('MUI utils combineSxProps', () => {
+  it('should combines multiple SxProps into one', () => {
     const sxProps1 = { color: 'red', fontSize: 12 };
     const sxProps2 = { backgroundColor: 'blue' };
     const sxProps3 = { fontSize: 14, lineHeight: 1.5 };
@@ -16,7 +16,7 @@ describe('combineSxProps', () => {
     });
   });
 
-  it('returns an empty object if no SxProps are provided', () => {
+  it('should returns an empty object if no SxProps are provided', () => {
     const result = combineSxProps();
 
     expect(result).toEqual({});

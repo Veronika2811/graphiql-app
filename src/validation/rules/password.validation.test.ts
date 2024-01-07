@@ -1,7 +1,7 @@
 import { passwordValidation } from './password.validation';
 
-describe('passwordValidation', () => {
-  it('returns an error if the password does not contain an uppercase letter', () => {
+describe('validation rule passwordValidation', () => {
+  it('should returns an error if the password does not contain an uppercase letter', () => {
     const testValue = 'abc12345';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
@@ -9,7 +9,7 @@ describe('passwordValidation', () => {
     );
   });
 
-  it('returns an error if the password does not contain a lowercase letter', () => {
+  it('should returns an error if the password does not contain a lowercase letter', () => {
     const testValue = 'ABC12345';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
@@ -17,7 +17,7 @@ describe('passwordValidation', () => {
     );
   });
 
-  it('returns an error if the password does not contain a digit', () => {
+  it('should returns an error if the password does not contain a digit', () => {
     const testValue = 'Abcdefgh';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
@@ -25,7 +25,7 @@ describe('passwordValidation', () => {
     );
   });
 
-  it('returns an error if the password does not contain a special character', () => {
+  it('should returns an error if the password does not contain a special character', () => {
     const testValue = 'Abc123456';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
@@ -33,13 +33,13 @@ describe('passwordValidation', () => {
     );
   });
 
-  it('returns an error if the password is missing', () => {
+  it('should returns an error if the password is missing', () => {
     expect(() => passwordValidation.validateSync(null)).toThrow(
       'yup_required_field'
     );
   });
 
-  it('returns an error for a short password', () => {
+  it('should returns an error for a short password', () => {
     const testValue = 'Ab12@';
 
     expect(() => passwordValidation.validateSync(testValue)).toThrow(
@@ -47,7 +47,7 @@ describe('passwordValidation', () => {
     );
   });
 
-  it('passes validation for a correct password', () => {
+  it('should passes validation for a correct password', () => {
     const testValue = 'Abc12345!';
 
     expect(() => passwordValidation.validateSync(testValue)).not.toThrow();

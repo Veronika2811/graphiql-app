@@ -23,7 +23,7 @@ vi.mock('store/hooks', () => ({
 describe('SearchBar component', () => {
   const endpoint = 'https://rickandmortyapi.com/graphql';
 
-  it('should renders correctly SignInForm component', () => {
+  it('should renders correctly SearchBar component', () => {
     const container = render(
       <SearchBar endpoint={endpoint} setEndpoint={vi.fn} />
     );

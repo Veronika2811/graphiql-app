@@ -3,7 +3,7 @@ import { FirebaseError } from 'firebase/app';
 
 import { handleFirebaseError } from './handleFirebaseError';
 
-describe('handleFirebaseError', () => {
+describe('utils function handleFirebaseError', () => {
   it('should throw an error with Firebase error header and message', () => {
     const firebaseError = new FirebaseError('code', 'Firebase error message');
     expect(() => {

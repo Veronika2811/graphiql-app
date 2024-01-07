@@ -9,7 +9,7 @@ const ChildErrorBoundaryComponent = () => {
 };
 
 describe('ErrorBoundary component', () => {
-  it('renders correctly ErrorBoundary component', () => {
+  it('should renders correctly ErrorBoundary component', () => {
     const container = renderWithProviders(
       <ErrorBoundary fallback={<ErrorFallback />}>
         Test ErrorBoundary
@@ -24,7 +24,6 @@ describe('ErrorBoundary component', () => {
         <ChildErrorBoundaryComponent />
       </ErrorBoundary>
     );
-
     expect(getByText('Oops! Something went wrong!')).toBeInTheDocument();
   });
 });

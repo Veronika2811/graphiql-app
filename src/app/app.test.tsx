@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import { App } from '.';
 
 describe('App component', () => {
-  it('Renders Suspend', () => {
+  it('should render Suspense', () => {
     const { getByText } = render(
       <MemoryRouter>
         <App />

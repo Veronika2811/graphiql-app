@@ -7,8 +7,7 @@ export const WelcomeLinkEditor = () => {
   const { translation } = useLocale();
 
   return (
-    <Typography variant="h3" component="h2" align="center">
-      {translation.welcome_link_editor_heading}&nbsp;
+    <Typography variant="h3" component="h2" align="right">
       <Link
         component={RouterLink}
         to={EDITOR}
@@ -16,7 +15,7 @@ export const WelcomeLinkEditor = () => {
         underline="always"
         aria-label="link-editor"
       >
-        GraphiQL IDE
+        {translation.welcome_link_editor_heading}
       </Link>
     </Typography>
   );

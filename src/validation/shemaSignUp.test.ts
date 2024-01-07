@@ -1,7 +1,7 @@
 import { shemaSignUp } from './shemaSignUp';
 
-describe('shemaSignUp', () => {
-  it('returns an error if any field is missing', () => {
+describe('validation shemaSignUp', () => {
+  it('should returns an error if any field is missing', () => {
     const testValue = {
       name: '',
       email: '',
@@ -12,7 +12,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).toThrow();
   });
 
-  it('returns an error if the name is not valid', () => {
+  it('should returns an error if the name is not valid', () => {
     const testValue = {
       name: 'john',
       email: 'user@example.com',
@@ -23,7 +23,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).toThrow();
   });
 
-  it('returns an error if the email is not valid', () => {
+  it('should returns an error if the email is not valid', () => {
     const testValue = {
       name: 'John',
       email: 'invalidEmail',
@@ -34,7 +34,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).toThrow();
   });
 
-  it('returns an error if the password is not valid', () => {
+  it('should returns an error if the password is not valid', () => {
     const testValue = {
       name: 'John',
       email: 'user@example.com',
@@ -45,7 +45,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).toThrow();
   });
 
-  it('returns an error if the confirmation password does not match the password', () => {
+  it('should returns an error if the confirmation password does not match the password', () => {
     const testValue = {
       name: 'John',
       email: 'user@example.com',
@@ -56,7 +56,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).toThrow();
   });
 
-  it('passes validation for correct inputs', () => {
+  it('should passes validation for correct inputs', () => {
     const testValue = {
       name: 'John',
       email: 'user@example.com',
@@ -67,7 +67,7 @@ describe('shemaSignUp', () => {
     expect(() => shemaSignUp.validateSync(testValue)).not.toThrow();
   });
 
-  it('returns an error if the name is missing', () => {
+  it('should returns an error if the name is missing', () => {
     const testValue = {
       name: null,
       email: 'user@example.com',
@@ -80,7 +80,7 @@ describe('shemaSignUp', () => {
     );
   });
 
-  it('returns an error if the name is empty', () => {
+  it('should returns an error if the name is empty', () => {
     const testValue = {
       name: 11,
       email: 'user@example.com',

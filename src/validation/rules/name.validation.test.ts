@@ -1,13 +1,13 @@
 import { nameValidation } from './name.validation';
 
-describe('nameValidation', () => {
-  it('returns an error if the name is missing', () => {
+describe('validation rule nameValidation', () => {
+  it('should returns an error if the name is missing', () => {
     expect(() => nameValidation.validateSync(null)).toThrow(
       'yup_required_field'
     );
   });
 
-  it('returns an error if the name is digit', () => {
+  it('should returns an error if the name is digit', () => {
     const testValue = 123;
 
     expect(() => nameValidation.validateSync(testValue)).toThrow(
@@ -15,7 +15,7 @@ describe('nameValidation', () => {
     );
   });
 
-  it('returns an error if the first letter of the name is not capitalized', () => {
+  it('should returns an error if the first letter of the name is not capitalized', () => {
     const testValue = 'john';
 
     expect(() => nameValidation.validateSync(testValue)).toThrow(
@@ -23,7 +23,7 @@ describe('nameValidation', () => {
     );
   });
 
-  it('passes validation if the first letter of the name is capitalized', () => {
+  it('should passes validation if the first letter of the name is capitalized', () => {
     const testValue = 'John';
 
     expect(() => nameValidation.validateSync(testValue)).not.toThrow();

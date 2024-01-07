@@ -9,7 +9,7 @@ exports[`WelcomeTitle component > renders correctly WelcomeTitle 1`] = `
         class="MuiBox-root css-yd8sa2"
       >
         <h1
-          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-ddm9au-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
         >
           The Best IDE for GraphQL Requests
         </h1>
@@ -26,7 +26,105 @@ exports[`WelcomeTitle component > renders correctly WelcomeTitle 1`] = `
       class="MuiBox-root css-yd8sa2"
     >
       <h1
-        class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-ddm9au-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
+      >
+        The Best IDE for GraphQL Requests
+      </h1>
+      <p
+        class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
+      >
+        The app is the result of completing the final task of RS School React Course.
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;
+
+exports[`WelcomeTitle component > should renders correctly WelcomeTitle component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiBox-root css-yd8sa2"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
+        >
+          The Best IDE for GraphQL Requests
+        </h1>
+        <p
+          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
+        >
+          The app is the result of completing the final task of RS School React Course.
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiBox-root css-yd8sa2"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
       >
         The Best IDE for GraphQL Requests
       </h1>

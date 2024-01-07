@@ -2,8 +2,8 @@ import * as Yup from 'yup';
 
 import { confirmPasswordValidation } from './confirmPassword.validation';
 
-describe('confirmPasswordValidation', () => {
-  it('returns an error if the confirmation password is missing', () => {
+describe('validation rule confirmPasswordValidation', () => {
+  it('should returns an error if the confirmation password is missing', () => {
     const testValue = { password: 'Abc12345!', confirmPassword: null };
 
     expect(() =>
@@ -14,7 +14,7 @@ describe('confirmPasswordValidation', () => {
     ).toThrow('yup_required_field');
   });
 
-  it('returns an error if the confirmation password does not match the password', () => {
+  it('should returns an error if the confirmation password does not match the password', () => {
     const testValue = { password: 'Abc12345!', confirmPassword: 'Abc12345' };
 
     expect(() =>
@@ -25,7 +25,7 @@ describe('confirmPasswordValidation', () => {
     ).toThrow('yup_password_mismatch');
   });
 
-  it('passes validation if the confirmation password matches the password', () => {
+  it('should passes validation if the confirmation password matches the password', () => {
     const testValue = { password: 'Abc12345!', confirmPassword: 'Abc12345!' };
 
     expect(() =>

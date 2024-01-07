@@ -2,8 +2,8 @@ import { theme } from 'theme';
 
 import { typographyCustom } from './typography';
 
-describe('typographyCustom', () => {
-  it('returns the correct typography options for a given theme', () => {
+describe('MUI typographyCustom', () => {
+  it('should returns the correct typography options for a given theme', () => {
     const result = typographyCustom(theme);
 
     expect(result).toEqual({

@@ -1,80 +1,35 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ErrorBoundary component > renders correctly ErrorBoundary 1`] = `
+exports[`WelcomeLinkEditor component > renders correctly WelcomeLinkEditor 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      Test ErrorBoundary
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-editor"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/editor"
+        >
+          Main Page
+        </a>
+      </h2>
     </div>
   </body>,
   "container": <div>
-    Test ErrorBoundary
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`ErrorBoundary component > renders correctly ErrorBoundary component 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      Test ErrorBoundary
-    </div>
-  </body>,
-  "container": <div>
-    Test ErrorBoundary
+    <h2
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+    >
+      <a
+        aria-label="link-editor"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+        href="#/editor"
+      >
+        Main Page
+      </a>
+    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -137,16 +92,128 @@ exports[`ErrorBoundary component > renders correctly ErrorBoundary component 1`]
 }
 `;
 
-exports[`ErrorBoundary component > should renders correctly ErrorBoundary component 1`] = `
+exports[`WelcomeLinkEditor component > renders correctly WelcomeLinkEditor component 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      Test ErrorBoundary
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-editor"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/editor"
+        >
+          Main Page
+        </a>
+      </h2>
     </div>
   </body>,
   "container": <div>
-    Test ErrorBoundary
+    <h2
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+    >
+      <a
+        aria-label="link-editor"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+        href="#/editor"
+      >
+        Main Page
+      </a>
+    </h2>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;
+
+exports[`WelcomeLinkEditor component > should renders correctly WelcomeLinkEditor component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-editor"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/editor"
+        >
+          Main Page
+        </a>
+      </h2>
+    </div>
+  </body>,
+  "container": <div>
+    <h2
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+    >
+      <a
+        aria-label="link-editor"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+        href="#/editor"
+      >
+        Main Page
+      </a>
+    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

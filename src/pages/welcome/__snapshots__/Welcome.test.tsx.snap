@@ -8,33 +8,31 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
       <div
         class="MuiStack-root css-1vfrozj-MuiStack-root"
       >
+        <h2
+          class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+        >
+          <a
+            aria-label="link-authorization"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+            href="#/auth"
+          >
+            Войти / Зарегистрироваться
+          </a>
+        </h2>
         <div
           class="MuiBox-root css-yd8sa2"
         >
           <h1
-            class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-1r00w45-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
           >
             The Best IDE for GraphQL Requests
           </h1>
           <p
-            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
           >
             The app is the result of completing the final task of RS School React Course.
           </p>
         </div>
-        <h2
-          class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter css-47suzj-MuiTypography-root"
-        >
-          <a
-            aria-label="link-authorization"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vrl3mg-MuiTypography-root-MuiLink-root"
-            href="#/auth"
-          >
-            Sign In
-          </a>
-           
-          to get started
-        </h2>
         <div
           class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
         >
@@ -45,12 +43,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
             >
               <h3
-                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
               >
                 A query language for your API
               </h3>
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
               >
                 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
               </p>
@@ -73,12 +71,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
             >
               <h3
-                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
               >
                 Ask for what you need,get exactly that
               </h3>
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
               >
                 Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
               </p>
@@ -101,12 +99,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
             >
               <h3
-                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
               >
                 About the RS School
               </h3>
               <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
               >
                 RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
               </p>
@@ -124,7 +122,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
           </div>
         </div>
         <h2
-          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-ladt45-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-1db66bg-MuiTypography-root"
         >
           Team
         </h2>
@@ -135,13 +133,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
             >
               <div
                 class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
               >
                 <h5
-                  class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
                 >
                   Konstantin
                 </h5>
@@ -150,7 +148,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 >
                   <a
                     aria-label="github"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://github.com/KikinovK"
                     rel="noopener"
@@ -176,7 +174,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="linkedIn"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://www.linkedin.com/in/kostiantyn-kikinov-505387b3/"
                     rel="noopener"
@@ -208,7 +206,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="telegram"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://t.me/KonstantinKikinov"
                     rel="noopener"
@@ -292,13 +290,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
             >
               <div
                 class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
               >
                 <h5
-                  class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
                 >
                   Veranika
                 </h5>
@@ -307,7 +305,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 >
                   <a
                     aria-label="github"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://github.com/Veronika2811"
                     rel="noopener"
@@ -333,7 +331,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="linkedIn"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://www.linkedin.com/in/veranika-smiayun-9a2297235/"
                     rel="noopener"
@@ -365,7 +363,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="telegram"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://t.me/nika_2811"
                     rel="noopener"
@@ -449,13 +447,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
             >
               <div
                 class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
               >
                 <h5
-                  class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
                 >
                   Artem
                 </h5>
@@ -464,7 +462,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 >
                   <a
                     aria-label="github"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://github.com/Arterixs"
                     rel="noopener"
@@ -490,7 +488,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="linkedIn"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://www.linkedin.com/in/artem-ivanov-49ba35255/"
                     rel="noopener"
@@ -522,7 +520,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                   </a>
                   <a
                     aria-label="telegram"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://t.me/arteminder"
                     rel="noopener"
@@ -610,33 +608,31 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
     <div
       class="MuiStack-root css-1vfrozj-MuiStack-root"
     >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-authorization"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/auth"
+        >
+          Войти / Зарегистрироваться
+        </a>
+      </h2>
       <div
         class="MuiBox-root css-yd8sa2"
       >
         <h1
-          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-1r00w45-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
         >
           The Best IDE for GraphQL Requests
         </h1>
         <p
-          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
         >
           The app is the result of completing the final task of RS School React Course.
         </p>
       </div>
-      <h2
-        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter css-47suzj-MuiTypography-root"
-      >
-        <a
-          aria-label="link-authorization"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vrl3mg-MuiTypography-root-MuiLink-root"
-          href="#/auth"
-        >
-          Sign In
-        </a>
-         
-        to get started
-      </h2>
       <div
         class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
       >
@@ -647,12 +643,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
           >
             <h3
-              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
             >
               A query language for your API
             </h3>
             <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
             >
               GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
             </p>
@@ -675,12 +671,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
           >
             <h3
-              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
             >
               Ask for what you need,get exactly that
             </h3>
             <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
             >
               Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
             </p>
@@ -703,12 +699,12 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
             class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
           >
             <h3
-              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-y59ln4-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
             >
               About the RS School
             </h3>
             <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-1oj8gvg-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
             >
               RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
             </p>
@@ -726,7 +722,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
         </div>
       </div>
       <h2
-        class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-ladt45-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-1db66bg-MuiTypography-root"
       >
         Team
       </h2>
@@ -737,13 +733,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
           >
             <div
               class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
             >
               <h5
-                class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
               >
                 Konstantin
               </h5>
@@ -752,7 +748,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               >
                 <a
                   aria-label="github"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://github.com/KikinovK"
                   rel="noopener"
@@ -778,7 +774,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="linkedIn"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://www.linkedin.com/in/kostiantyn-kikinov-505387b3/"
                   rel="noopener"
@@ -810,7 +806,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="telegram"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://t.me/KonstantinKikinov"
                   rel="noopener"
@@ -894,13 +890,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
           >
             <div
               class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
             >
               <h5
-                class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
               >
                 Veranika
               </h5>
@@ -909,7 +905,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               >
                 <a
                   aria-label="github"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://github.com/Veronika2811"
                   rel="noopener"
@@ -935,7 +931,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="linkedIn"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://www.linkedin.com/in/veranika-smiayun-9a2297235/"
                   rel="noopener"
@@ -967,7 +963,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="telegram"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://t.me/nika_2811"
                   rel="noopener"
@@ -1051,13 +1047,13 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1jlmaoe-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
           >
             <div
               class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
             >
               <h5
-                class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
               >
                 Artem
               </h5>
@@ -1066,7 +1062,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
               >
                 <a
                   aria-label="github"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://github.com/Arterixs"
                   rel="noopener"
@@ -1092,7 +1088,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="linkedIn"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://www.linkedin.com/in/artem-ivanov-49ba35255/"
                   rel="noopener"
@@ -1124,7 +1120,7 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
                 </a>
                 <a
                   aria-label="telegram"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1c115fy-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
                   data-mui-internal-clone-element="true"
                   href="https://t.me/arteminder"
                   rel="noopener"
@@ -1257,6 +1253,1277 @@ exports[`WelcomePage page > renders correctly WelcomePage 1`] = `
   "queryByText": [Function],
   "queryByTitle": [Function],
   "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;
+
+exports[`WelcomePage page > should renders correctly WelcomePage page 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiStack-root css-1vfrozj-MuiStack-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+        >
+          <a
+            aria-label="link-authorization"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+            href="#/auth"
+          >
+            Войти / Зарегистрироваться
+          </a>
+        </h2>
+        <div
+          class="MuiBox-root css-yd8sa2"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
+          >
+            The Best IDE for GraphQL Requests
+          </h1>
+          <p
+            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
+          >
+            The app is the result of completing the final task of RS School React Course.
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+            >
+              <h3
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+              >
+                A query language for your API
+              </h3>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+              >
+                GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+            >
+              <img
+                alt="Section image A query language for your API"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/jpg/aboutImage1.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bj3cij-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+            >
+              <h3
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+              >
+                Ask for what you need,get exactly that
+              </h3>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+              >
+                Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+            >
+              <img
+                alt="Section image Ask for what you need,get exactly that"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/jpg/aboutImage2.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+            >
+              <h3
+                class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+              >
+                About the RS School
+              </h3>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+              >
+                RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+            >
+              <img
+                alt="Section image About the RS School"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/jpg/aboutRsschool.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <h2
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-1db66bg-MuiTypography-root"
+        >
+          Team
+        </h2>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+                >
+                  Konstantin
+                </h5>
+                <div
+                  class="MuiStack-root css-m69qwo-MuiStack-root"
+                >
+                  <a
+                    aria-label="github"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://github.com/KikinovK"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="GithubIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                        fill="white"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="linkedIn"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.linkedin.com/in/kostiantyn-kikinov-505387b3/"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="LinkedInIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                        fill="#0077B5"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                        fill="white"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="telegram"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://t.me/KonstantinKikinov"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="TelegramIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                        fill="url(#paint0_linear_193_43)"
+                      />
+                      <path
+                        d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                        fill="#C8DAEA"
+                      />
+                      <path
+                        d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                        fill="#A9C9DD"
+                      />
+                      <path
+                        d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                        fill="url(#paint1_linear_193_43)"
+                      />
+                      <defs>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_linear_193_43"
+                          x1="15.002"
+                          x2="5.002"
+                          y1="1.668"
+                          y2="25"
+                        >
+                          <stop
+                            stop-color="#37AEE2"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#1E96C8"
+                          />
+                        </lineargradient>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint1_linear_193_43"
+                          x1="17.4963"
+                          x2="19.6333"
+                          y1="21.2284"
+                          y2="28.1408"
+                        >
+                          <stop
+                            stop-color="#EFF7FC"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="white"
+                          />
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                </div>
+              </div>
+              <img
+                alt="Profile picture Konstantin"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/svg/man.svg"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+                >
+                  Veranika
+                </h5>
+                <div
+                  class="MuiStack-root css-m69qwo-MuiStack-root"
+                >
+                  <a
+                    aria-label="github"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://github.com/Veronika2811"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="GithubIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                        fill="white"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="linkedIn"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.linkedin.com/in/veranika-smiayun-9a2297235/"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="LinkedInIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                        fill="#0077B5"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                        fill="white"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="telegram"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://t.me/nika_2811"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="TelegramIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                        fill="url(#paint0_linear_193_43)"
+                      />
+                      <path
+                        d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                        fill="#C8DAEA"
+                      />
+                      <path
+                        d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                        fill="#A9C9DD"
+                      />
+                      <path
+                        d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                        fill="url(#paint1_linear_193_43)"
+                      />
+                      <defs>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_linear_193_43"
+                          x1="15.002"
+                          x2="5.002"
+                          y1="1.668"
+                          y2="25"
+                        >
+                          <stop
+                            stop-color="#37AEE2"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#1E96C8"
+                          />
+                        </lineargradient>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint1_linear_193_43"
+                          x1="17.4963"
+                          x2="19.6333"
+                          y1="21.2284"
+                          y2="28.1408"
+                        >
+                          <stop
+                            stop-color="#EFF7FC"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="white"
+                          />
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                </div>
+              </div>
+              <img
+                alt="Profile picture Veranika"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/svg/girl.svg"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+                >
+                  Artem
+                </h5>
+                <div
+                  class="MuiStack-root css-m69qwo-MuiStack-root"
+                >
+                  <a
+                    aria-label="github"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://github.com/Arterixs"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="GithubIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                        fill="white"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="linkedIn"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.linkedin.com/in/artem-ivanov-49ba35255/"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="LinkedInIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                        fill="#0077B5"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                        fill="white"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                  <a
+                    aria-label="telegram"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://t.me/arteminder"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      aria-label="TelegramIcon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                        fill="url(#paint0_linear_193_43)"
+                      />
+                      <path
+                        d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                        fill="#C8DAEA"
+                      />
+                      <path
+                        d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                        fill="#A9C9DD"
+                      />
+                      <path
+                        d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                        fill="url(#paint1_linear_193_43)"
+                      />
+                      <defs>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_linear_193_43"
+                          x1="15.002"
+                          x2="5.002"
+                          y1="1.668"
+                          y2="25"
+                        >
+                          <stop
+                            stop-color="#37AEE2"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="#1E96C8"
+                          />
+                        </lineargradient>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint1_linear_193_43"
+                          x1="17.4963"
+                          x2="19.6333"
+                          y1="21.2284"
+                          y2="28.1408"
+                        >
+                          <stop
+                            stop-color="#EFF7FC"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="white"
+                          />
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </a>
+                </div>
+              </div>
+              <img
+                alt="Profile picture Artem"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+                loading="lazy"
+                src="/src/assets/images/svg/man.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiStack-root css-1vfrozj-MuiStack-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-authorization"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/auth"
+        >
+          Войти / Зарегистрироваться
+        </a>
+      </h2>
+      <div
+        class="MuiBox-root css-yd8sa2"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter css-4d4fmw-MuiTypography-root"
+        >
+          The Best IDE for GraphQL Requests
+        </h1>
+        <p
+          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1ukqcrx-MuiTypography-root"
+        >
+          The app is the result of completing the final task of RS School React Course.
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              A query language for your API
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image A query language for your API"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutImage1.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bj3cij-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              Ask for what you need,get exactly that
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image Ask for what you need,get exactly that"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutImage2.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              About the RS School
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image About the RS School"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutRsschool.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <h2
+        class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-1db66bg-MuiTypography-root"
+      >
+        Team
+      </h2>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+              >
+                Konstantin
+              </h5>
+              <div
+                class="MuiStack-root css-m69qwo-MuiStack-root"
+              >
+                <a
+                  aria-label="github"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://github.com/KikinovK"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="GithubIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                      fill="white"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="linkedIn"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://www.linkedin.com/in/kostiantyn-kikinov-505387b3/"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="LinkedInIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                      fill="#0077B5"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                      fill="white"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="telegram"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://t.me/KonstantinKikinov"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="TelegramIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                      fill="url(#paint0_linear_193_43)"
+                    />
+                    <path
+                      d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                      fill="#C8DAEA"
+                    />
+                    <path
+                      d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                      fill="#A9C9DD"
+                    />
+                    <path
+                      d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                      fill="url(#paint1_linear_193_43)"
+                    />
+                    <defs>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_linear_193_43"
+                        x1="15.002"
+                        x2="5.002"
+                        y1="1.668"
+                        y2="25"
+                      >
+                        <stop
+                          stop-color="#37AEE2"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#1E96C8"
+                        />
+                      </lineargradient>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint1_linear_193_43"
+                        x1="17.4963"
+                        x2="19.6333"
+                        y1="21.2284"
+                        y2="28.1408"
+                      >
+                        <stop
+                          stop-color="#EFF7FC"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                        />
+                      </lineargradient>
+                    </defs>
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </div>
+            </div>
+            <img
+              alt="Profile picture Konstantin"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/svg/man.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+              >
+                Veranika
+              </h5>
+              <div
+                class="MuiStack-root css-m69qwo-MuiStack-root"
+              >
+                <a
+                  aria-label="github"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://github.com/Veronika2811"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="GithubIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                      fill="white"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="linkedIn"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://www.linkedin.com/in/veranika-smiayun-9a2297235/"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="LinkedInIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                      fill="#0077B5"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                      fill="white"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="telegram"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://t.me/nika_2811"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="TelegramIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                      fill="url(#paint0_linear_193_43)"
+                    />
+                    <path
+                      d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                      fill="#C8DAEA"
+                    />
+                    <path
+                      d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                      fill="#A9C9DD"
+                    />
+                    <path
+                      d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                      fill="url(#paint1_linear_193_43)"
+                    />
+                    <defs>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_linear_193_43"
+                        x1="15.002"
+                        x2="5.002"
+                        y1="1.668"
+                        y2="25"
+                      >
+                        <stop
+                          stop-color="#37AEE2"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#1E96C8"
+                        />
+                      </lineargradient>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint1_linear_193_43"
+                        x1="17.4963"
+                        x2="19.6333"
+                        y1="21.2284"
+                        y2="28.1408"
+                      >
+                        <stop
+                          stop-color="#EFF7FC"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                        />
+                      </lineargradient>
+                    </defs>
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </div>
+            </div>
+            <img
+              alt="Profile picture Veranika"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/svg/girl.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-4h41ig-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1vocpei-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-1wnzpor-MuiCardContent-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-1ourv89-MuiTypography-root"
+              >
+                Artem
+              </h5>
+              <div
+                class="MuiStack-root css-m69qwo-MuiStack-root"
+              >
+                <a
+                  aria-label="github"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://github.com/Arterixs"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="GithubIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                      fill="white"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="linkedIn"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://www.linkedin.com/in/artem-ivanov-49ba35255/"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="LinkedInIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z"
+                      fill="#0077B5"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M14.4322 12.3524C14.4322 13.66 13.448 14.7062 11.8676 14.7062H11.8386C10.317 14.7062 9.33325 13.66 9.33325 12.3524C9.33325 11.0171 10.3469 10.0001 11.8974 10.0001C13.448 10.0001 14.4028 11.0171 14.4322 12.3524ZM14.1337 16.5649V30.183H9.60126V16.5649H14.1337ZM30.4792 30.1832L30.4794 22.375C30.4794 18.1921 28.2434 16.2453 25.2609 16.2453C22.8545 16.2453 21.7771 17.5671 21.1755 18.4943V16.5654H16.6425C16.7023 17.8433 16.6425 30.1835 16.6425 30.1835H21.1755V22.578C21.1755 22.171 21.2049 21.765 21.3248 21.4736C21.6523 20.6605 22.3982 19.8187 23.6504 19.8187C25.2911 19.8187 25.947 21.0675 25.947 22.8975V30.1832H30.4792Z"
+                      fill="white"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+                <a
+                  aria-label="telegram"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+                  data-mui-internal-clone-element="true"
+                  href="https://t.me/arteminder"
+                  rel="noopener"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    aria-label="TelegramIcon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                      fill="url(#paint0_linear_193_43)"
+                    />
+                    <path
+                      d="M16.3334 29.1667C15.6854 29.1667 15.7955 28.9221 15.5721 28.3051L13.6667 22.0344L28.3334 13.3334"
+                      fill="#C8DAEA"
+                    />
+                    <path
+                      d="M16.3333 29.1666C16.8333 29.1666 17.0542 28.9379 17.3333 28.6666L20 26.0736L16.6736 24.0677"
+                      fill="#A9C9DD"
+                    />
+                    <path
+                      d="M16.6733 24.0682L24.7333 30.023C25.6531 30.5305 26.3169 30.2678 26.546 29.1691L29.8268 13.7086C30.1627 12.3619 29.3135 11.7511 28.4336 12.1506L9.16861 19.5791C7.85359 20.1065 7.86126 20.8402 8.92891 21.1671L13.8727 22.7101L25.3182 15.4893C25.8586 15.1616 26.3545 15.3378 25.9474 15.699"
+                      fill="url(#paint1_linear_193_43)"
+                    />
+                    <defs>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_linear_193_43"
+                        x1="15.002"
+                        x2="5.002"
+                        y1="1.668"
+                        y2="25"
+                      >
+                        <stop
+                          stop-color="#37AEE2"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#1E96C8"
+                        />
+                      </lineargradient>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint1_linear_193_43"
+                        x1="17.4963"
+                        x2="19.6333"
+                        y1="21.2284"
+                        y2="28.1408"
+                      >
+                        <stop
+                          stop-color="#EFF7FC"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                        />
+                      </lineargradient>
+                    </defs>
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </div>
+            </div>
+            <img
+              alt="Profile picture Artem"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-f0u1va-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/svg/man.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
   "unmount": [Function],
 }
 `;

@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "test": "vitest",
+    "test": "vitest --coverage",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
     "prettier": "prettier --check \"./src/**/*.{ts,tsx}\"",
     "prettier-fix": "prettier --write \"./src/**/*.{ts,tsx}\"",

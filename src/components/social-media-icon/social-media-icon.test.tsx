@@ -11,14 +11,14 @@ describe('SocialMediaIcon component', () => {
     url: 'https://github.com/KikinovK',
   };
 
-  it('renders correctly SocialMediaIcon component', () => {
+  it('should renders correctly SocialMediaIcon component', () => {
     const container = renderWithProviders(
       <SocialMediaIcon name={name} type={type} url={url} />
     );
     expect(container).toMatchSnapshot();
   });
 
-  it('renders default SocialMediaIcon component', () => {
+  it('should renders default SocialMediaIcon component', () => {
     renderWithProviders(
       <SocialMediaIcon name={name} type="unknow" url={url} />
     );
