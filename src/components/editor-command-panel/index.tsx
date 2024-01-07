@@ -9,7 +9,13 @@ import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { selectStateDocs, selectStateDocsDrawer } from 'store/selectors';
 import { setStateDocsDrawer } from 'store/slices/documentation';
 
-export const EditorCommandPanel = () => {
+interface EditorCommandPanelProps {
+  handleClick: () => void;
+}
+
+export const EditorCommandPanel = ({
+  handleClick,
+}: EditorCommandPanelProps) => {
   const { translation } = useLocale();
   const docs = useAppSelector(selectStateDocs);
   const docsOpen = useAppSelector(selectStateDocsDrawer);
@@ -25,7 +31,7 @@ export const EditorCommandPanel = () => {
         </IconButton>
       </Tooltip>
       <Tooltip title={translation.button_make_beautiful}>
-        <IconButton aria-label="Prettify query">
+        <IconButton aria-label="Prettify query" onClick={handleClick}>
           <CleaningServices color="secondary" fontSize="large" />
         </IconButton>
       </Tooltip>

@@ -13,6 +13,7 @@ import { EditorGraphQL } from 'types/editor-form';
 import { EditorMain } from 'components/editor-main';
 import { EditorOptions } from 'components/editor-options';
 
+import { getPrettifyString } from './prettify/getPrettifyString';
 import { EditorFormStyle } from './styles';
 
 interface EditorFormProps {
@@ -54,10 +55,16 @@ export const EditorForm = ({ endpoint, isError }: EditorFormProps) => {
     );
   };
 
+  const handleClick = () => {
+    const valueField = form.getValues('request');
+    const prettifyString = getPrettifyString(valueField);
+    form.setValue('request', prettifyString);
+  };
+
   return (
     <FormProvider {...form}>
       <EditorFormStyle onSubmit={form.handleSubmit(onSubmit)}>
-        <EditorMain />
+        <EditorMain handleClick={handleClick} />
 
         <EditorOptions />
       </EditorFormStyle>
