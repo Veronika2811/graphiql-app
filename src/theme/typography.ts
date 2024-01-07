@@ -74,12 +74,6 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     lineHeight: 1.2,
     fontStyle: 'normal',
   },
-  subtitle3: {
-    fontSize: '1rem',
-    fontWeight: 400,
-    fontStyle: 'italic',
-    lineHeight: 1.28,
-  },
   body1: {
     fontSize: '1.6rem',
     fontWeight: 100,
@@ -108,6 +102,7 @@ export const typographyCustom = (theme: ThemeOptions) => ({
     fontSize: '0.8rem',
     fontWeight: 700,
     lineHeight: 1.2,
+    fontStyle: 'normal',
   },
   code: {
     fontFamily: 'Source Code Pro, monospace',

@@ -15,7 +15,7 @@ export const SocialMediaWrapper = ({
   <Stack direction="row" useFlexGap>
     {socialMedia.map((social) => {
       const { type, url } = social;
-      return <SocialMediaIcon key={type} type={type} url={url} />;
+      return <SocialMediaIcon key={type} name={type} type={type} url={url} />;
     })}
   </Stack>
 );

@@ -11,8 +11,6 @@ Please delete options that are not relevant.
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected).
 - [ ] This change requires a documentation update.
 
-### Screenshots (if applicable)
-
 ### Checklist
 
 Before submitting this pull request, please make sure to review and check the following:
@@ -20,7 +18,6 @@ Before submitting this pull request, please make sure to review and check the fo
 - [ ] The code follows the project's coding guidelines and style.
 - [ ] The documentation has been updated to reflect the changes (if applicable).
 - [ ] The branch is up-to-date with the latest changes from the target branch.
-- [ ] There is only one commit in a branch.
 
 ### Additional Notes (Optional)
 
