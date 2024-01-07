@@ -20,6 +20,7 @@ export const Footer = () => {
         target="_blank"
         rel="noopener"
         sx={footerSx['link-rschool']}
+        aria-label="RS School React"
       >
         <RsSchoolIcon width={theme.spacing(15)} height={theme.spacing(8)} />
       </Link>

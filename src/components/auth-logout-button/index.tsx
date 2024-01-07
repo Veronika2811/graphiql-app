@@ -3,7 +3,7 @@ import { Button, Hidden, IconButton, Tooltip } from '@mui/material';
 import authService from 'api/apiAuthFirebase';
 import { useLocale } from 'internationalization/useLocale';
 
-import { routerLinkButtonSx } from 'components/router-link-button/styles';
+import { authLogoutButtonSx } from './styles';
 
 export const AuthLogoutButton = () => {
   const { translation } = useLocale();
@@ -16,7 +16,7 @@ export const AuthLogoutButton = () => {
         <Button
           variant="outlined"
           size="large"
-          sx={routerLinkButtonSx.button}
+          sx={authLogoutButtonSx.button}
           onClick={handlerOnClick}
         >
           {translation.logOut}
