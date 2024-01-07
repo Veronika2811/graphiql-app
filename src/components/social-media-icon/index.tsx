@@ -34,7 +34,9 @@ const SocialMediaIcon = ({ name, type, url }: SocialMediaIconProps) => {
         rel="noopener"
         sx={socialMediaSx['social-button']}
       >
-        {iconMap.get(type) ?? <DefaulSocialIcon {...iconProps} />}
+        {iconMap.get(type) ?? (
+          <DefaulSocialIcon data-testid="default-social-icon" {...iconProps} />
+        )}
       </IconButton>
     </Tooltip>
   );

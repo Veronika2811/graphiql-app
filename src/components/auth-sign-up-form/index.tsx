@@ -37,7 +37,7 @@ export const SignUpForm = () => {
       if (isEmailExist) {
         setError('email', {
           type: 'manual',
-          message: translation.auth_email_already_taken,
+          message: 'auth_email_already_taken',
         });
         setSubmitDisabled(false);
         return;

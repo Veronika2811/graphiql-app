@@ -7,7 +7,7 @@ interface EditorMainProps {
   handleClick: () => void;
 }
 
-export const EditorMain = (props: EditorMainProps) => (
+export const EditorMain = ({ handleClick }: EditorMainProps) => (
   <Grid
     container
     columns={13}
@@ -27,7 +27,7 @@ export const EditorMain = (props: EditorMainProps) => (
       justifyContent={{ xs: 'center', md: 'flex-start' }}
       height={{ md: '100%' }}
     >
-      <EditorCommandPanel handleClick={props.handleClick} />
+      <EditorCommandPanel handleClick={handleClick} />
     </Grid>
     <Grid item xs={13} md={6} height={{ xs: '40%', md: '100%' }}>
       <EditorField name="response" readOnly />

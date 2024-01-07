@@ -22,7 +22,11 @@ export const SubmitButton = ({
       disabled={!isValid || submitDisabled}
     >
       {submitDisabled ? (
-        <CircularProgress sx={submitButtonSx.spinner} size={20} />
+        <CircularProgress
+          data-testid="сircular-progress"
+          sx={submitButtonSx.spinner}
+          size={20}
+        />
       ) : null}
       {nameButton}
     </Button>

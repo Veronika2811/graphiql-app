@@ -6,7 +6,7 @@ interface TabPanelProps {
   children: React.ReactNode;
 }
 
-const TabPanel = ({ value, index, children }: TabPanelProps) => {
+export const TabPanel = ({ value, index, children }: TabPanelProps) => {
   if (!children) return null;
 
   return (

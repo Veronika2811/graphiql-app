@@ -1,0 +1,517 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GitHubDeveloperLinks component > renders correctly GitHubDeveloperLinks component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="MuiList-root MuiList-padding css-1wsr4k-MuiList-root"
+      >
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Konstantin"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/KikinovK"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Veranika"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/Veronika2811"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Artem"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/Arterixs"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="MuiList-root MuiList-padding css-1wsr4k-MuiList-root"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Konstantin"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/KikinovK"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Veranika"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/Veronika2811"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Artem"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/Arterixs"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;
+
+exports[`GitHubDeveloperLinks component > should renders correctly GitHubDeveloperLinks component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="MuiList-root MuiList-padding css-1wsr4k-MuiList-root"
+      >
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Konstantin"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/KikinovK"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Veranika"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/Veronika2811"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+        >
+          <a
+            aria-label="Artem"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+            data-mui-internal-clone-element="true"
+            href="https://github.com/Arterixs"
+            rel="noopener"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="GithubIcon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="MuiList-root MuiList-padding css-1wsr4k-MuiList-root"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Konstantin"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/KikinovK"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Veranika"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/Veronika2811"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-padding css-ui33fs-MuiListItem-root"
+      >
+        <a
+          aria-label="Artem"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-wamkri-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/Arterixs"
+          rel="noopener"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="GithubIcon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0002 0C8.95583 0 0 9.18053 0 20.5062C0 29.5665 5.73066 37.2532 13.6773 39.9648C14.6769 40.1546 15.0438 39.5199 15.0438 38.9783C15.0438 38.4893 15.0253 36.8739 15.0167 35.1604C9.45262 36.4009 8.27853 32.7409 8.27853 32.7409C7.36874 30.3706 6.05788 29.7404 6.05788 29.7404C4.24326 28.4676 6.19466 28.4938 6.19466 28.4938C8.20302 28.6381 9.26053 30.607 9.26053 30.607C11.0443 33.742 13.9393 32.8356 15.0806 32.3117C15.2601 30.9866 15.7784 30.0813 16.3504 29.5696C11.9081 29.051 7.23825 27.2927 7.23825 19.4351C7.23825 17.1963 8.01954 15.367 9.29894 13.9309C9.09129 13.4141 8.40671 11.3287 9.49269 8.50409C9.49269 8.50409 11.1722 7.95295 14.9942 10.6061C16.5895 10.1517 18.3005 9.92387 20.0002 9.91606C21.6999 9.92387 23.4121 10.1517 25.0105 10.6061C28.8278 7.95295 30.505 8.50409 30.505 8.50409C31.5936 11.3287 30.9087 13.4141 30.7011 13.9309C31.9834 15.367 32.7594 17.1963 32.7594 19.4351C32.7594 27.3113 28.0806 29.0456 23.6271 29.5533C24.3444 30.1896 24.9836 31.4376 24.9836 33.3508C24.9836 36.0942 24.9605 38.3025 24.9605 38.9783C24.9605 39.524 25.3205 40.1634 26.3343 39.962C34.2766 37.2474 40 29.5634 40 20.5062C40 9.18053 31.0455 0 20.0002 0"
+              fill="white"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;

@@ -7,7 +7,7 @@ export const WelcomeLinkAuthorization = () => {
   const { translation } = useLocale();
 
   return (
-    <Typography variant="h3" component="h2" align="center">
+    <Typography variant="h3" component="h2" align="right">
       <Link
         component={RouterLink}
         to={AUTH}
@@ -15,9 +15,8 @@ export const WelcomeLinkAuthorization = () => {
         underline="always"
         aria-label="link-authorization"
       >
-        {translation.signIn}
+        {translation.welcome_link_authorization_heading}
       </Link>
-      &nbsp;{translation.welcome_link_authorization_heading}
     </Typography>
   );
 };

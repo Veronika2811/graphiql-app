@@ -1,4 +1,4 @@
-import React from 'react';
+import { lazy } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { auth } from 'api/initFirebase';
@@ -7,10 +7,10 @@ import { Layout } from 'layouts/default';
 import { SuspenseLayout } from 'layouts/suspense';
 import { AUTH, EDITOR, WELCOME } from 'shared/router-path';
 
-const WelcomePage = React.lazy(() => import('pages/welcome'));
-const AuthPage = React.lazy(() => import('pages/auth-page'));
-const EditorPage = React.lazy(() => import('pages/editor'));
-const NotFoundPage = React.lazy(() => import('pages/404'));
+const WelcomePage = lazy(() => import('pages/welcome'));
+const AuthPage = lazy(() => import('pages/auth-page'));
+const EditorPage = lazy(() => import('pages/editor'));
+const NotFoundPage = lazy(() => import('pages/404'));
 
 export const App = () => {
   const [user] = useAuthState(auth);

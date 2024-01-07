@@ -9,8 +9,7 @@ export const russianDictionary = {
   [TranslationKeys.main_title]: 'Лучшая IDE для запросов GraphQL',
   [TranslationKeys.main_subtitle]:
     'Приложение является результатом выполнения финального задания на курсе RS School React.',
-  [TranslationKeys.welcome_link_editor_heading]:
-    'Запрашивайте и изучайте GraphQL API с помощью',
+  [TranslationKeys.welcome_link_editor_heading]: 'Главная страница',
   [TranslationKeys.welcome_link_authorization_heading]: 'для начала',
   [TranslationKeys.about_project_title_1]: 'Язык запросов для вашего API',
   [TranslationKeys.about_project_subtitle_1]:

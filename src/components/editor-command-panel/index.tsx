@@ -13,7 +13,9 @@ interface EditorCommandPanelProps {
   handleClick: () => void;
 }
 
-export const EditorCommandPanel = (props: EditorCommandPanelProps) => {
+export const EditorCommandPanel = ({
+  handleClick,
+}: EditorCommandPanelProps) => {
   const { translation } = useLocale();
   const docs = useAppSelector(selectStateDocs);
   const docsOpen = useAppSelector(selectStateDocsDrawer);
@@ -29,7 +31,7 @@ export const EditorCommandPanel = (props: EditorCommandPanelProps) => {
         </IconButton>
       </Tooltip>
       <Tooltip title={translation.button_make_beautiful}>
-        <IconButton aria-label="Prettify query" onClick={props.handleClick}>
+        <IconButton aria-label="Prettify query" onClick={handleClick}>
           <CleaningServices color="secondary" fontSize="large" />
         </IconButton>
       </Tooltip>

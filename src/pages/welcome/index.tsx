@@ -18,9 +18,9 @@ const WelcomePage = () => {
 
   return (
     <Stack spacing={{ xs: 5, sm: 7 }} direction="column" useFlexGap>
-      <WelcomeTitle />
-
       {user ? <WelcomeLinkEditor /> : <WelcomeLinkAuthorization />}
+
+      <WelcomeTitle />
 
       <AboutProjectList />
 
