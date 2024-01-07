@@ -1,15 +1,35 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`LayoutMui component > should renders correctly LayoutMui component 1`] = `
+exports[`WelcomeLinkAuthorization component > should renders correctly WelcomeLinkAuthorization component 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      Test LayoutMui
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+      >
+        <a
+          aria-label="link-authorization"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+          href="#/auth"
+        >
+          Sign In / Sign Up
+        </a>
+      </h2>
     </div>
   </body>,
   "container": <div>
-    Test LayoutMui
+    <h2
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignRight css-46qt88-MuiTypography-root"
+    >
+      <a
+        aria-label="link-authorization"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-m2vvas-MuiTypography-root-MuiLink-root"
+        href="#/auth"
+      >
+        Sign In / Sign Up
+      </a>
+    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

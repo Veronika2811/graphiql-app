@@ -1,0 +1,247 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AboutProjectList component > should renders correctly AboutProjectList component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              A query language for your API
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image A query language for your API"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutImage1.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bj3cij-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              Ask for what you need,get exactly that
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image Ask for what you need,get exactly that"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutImage2.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+          >
+            <h3
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+            >
+              About the RS School
+            </h3>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+            >
+              RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+          >
+            <img
+              alt="Section image About the RS School"
+              class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+              loading="lazy"
+              src="/src/assets/images/jpg/aboutRsschool.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiGrid-root MuiGrid-container css-hzzwwn-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+          >
+            A query language for your API
+          </h3>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+          >
+            GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+        >
+          <img
+            alt="Section image A query language for your API"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+            loading="lazy"
+            src="/src/assets/images/jpg/aboutImage1.jpg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bj3cij-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+          >
+            Ask for what you need,get exactly that
+          </h3>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+          >
+            Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results. Apps using GraphQL are fast and stable because they control the data they get, not the server.
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+        >
+          <img
+            alt="Section image Ask for what you need,get exactly that"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+            loading="lazy"
+            src="/src/assets/images/jpg/aboutImage2.jpg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+          >
+            About the RS School
+          </h3>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+          >
+            RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community since 2013. Everyone can study at RS School, regardless of age, professional employment, or place of residence. The mentors and trainers of school are front-end and javascript developers from different companies and countries.
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+        >
+          <img
+            alt="Section image About the RS School"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+            loading="lazy"
+            src="/src/assets/images/jpg/aboutRsschool.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;

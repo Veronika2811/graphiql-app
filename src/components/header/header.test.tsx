@@ -2,11 +2,11 @@ import { waitFor } from '@testing-library/react';
 
 import { renderWithProviders } from '../../renderWithProviders';
 
-import { Layout } from '.';
+import { Header } from '.';
 
-describe('Layout component', () => {
-  it('should renders correctly Layout component', async () => {
-    const container = renderWithProviders(<Layout />);
+describe('Header component', () => {
+  it('should renders correctly Header component', async () => {
+    const container = renderWithProviders(<Header />);
 
     await waitFor(() => {
       expect(container).toMatchSnapshot();

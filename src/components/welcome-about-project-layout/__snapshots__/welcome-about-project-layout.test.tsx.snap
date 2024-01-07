@@ -1,22 +1,68 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`NotFoundPage page > should renders correctly NotFoundPage page 1`] = `
+exports[`AboutProjectLayout component > should renders correctly AboutProjectLayout component 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="MuiBox-root css-0"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
       >
-        Not Found Page
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+          >
+            title
+          </h3>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+          >
+            description
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+        >
+          <img
+            alt="Section image title"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+            loading="lazy"
+            src="image"
+          />
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="MuiBox-root css-0"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-bv4zbf-MuiGrid-root"
     >
-      Not Found Page
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1y9vqab-MuiGrid-root"
+      >
+        <h3
+          class="MuiTypography-root MuiTypography-h4 MuiTypography-alignLeft css-1d7vezj-MuiTypography-root"
+        >
+          title
+        </h3>
+        <p
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-paragraph css-o9hzk3-MuiTypography-root"
+        >
+          description
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-zeroMinWidth MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-18ca2hh-MuiGrid-root"
+      >
+        <img
+          alt="Section image title"
+          class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ol6qqc-MuiCardMedia-root"
+          loading="lazy"
+          src="image"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],

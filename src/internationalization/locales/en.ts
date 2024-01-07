@@ -10,8 +10,7 @@ export const englishDictionary = {
   [TranslationKeys.main_subtitle]:
     'The app is the result of completing the final task of RS School React Course.',
   [TranslationKeys.welcome_link_editor_heading]: 'Main Page',
-  [TranslationKeys.welcome_link_authorization_heading]:
-    'Войти / Зарегистрироваться',
+  [TranslationKeys.welcome_link_authorization_heading]: 'Sign In / Sign Up',
   [TranslationKeys.about_project_title_1]: 'A query language for your API',
   [TranslationKeys.about_project_subtitle_1]:
     'GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.',

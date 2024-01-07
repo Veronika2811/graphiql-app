@@ -6,11 +6,7 @@ import { useLocale } from 'internationalization/useLocale';
 import { useGetSchemeQuery } from 'service/api';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { selectStateDocsDrawer } from 'store/selectors';
-import {
-  setButtonStateWithDocs,
-  setSchema,
-  setStateDocsDrawer,
-} from 'store/slices/documentation';
+import { setButtonStateWithDocs, setSchema } from 'store/slices/documentation';
 
 import { Documentation } from 'components/documentation';
 import { EditorForm } from 'components/editor-form';
@@ -27,12 +23,14 @@ const EditorPage = () => {
   const { translation } = useLocale();
 
   useEffect(() => {
-    if (isSuccess) dispatch(setSchema(data));
+    dispatch(setButtonStateWithDocs(isSuccess));
+
+    if (isSuccess) {
+      dispatch(setSchema(data));
+      openSnackbar(translation.editor_message_successful_request, 'success');
+    }
     if (isError)
       openSnackbar(translation.editor_message_incorrect_URL, 'error');
-
-    dispatch(setStateDocsDrawer(false));
-    dispatch(setButtonStateWithDocs(isSuccess));
   }, [
     data,
     isSuccess,
@@ -40,6 +38,7 @@ const EditorPage = () => {
     dispatch,
     openSnackbar,
     translation.editor_message_incorrect_URL,
+    translation.editor_message_successful_request,
   ]);
 
   return (
