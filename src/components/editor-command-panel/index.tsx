@@ -4,7 +4,11 @@ import {
 } from '@mui/icons-material';
 import { IconButton, Tooltip } from '@mui/material';
 
-export const EditorCommandPanel = () => (
+interface EditorCommandPanelProps {
+  handleClick: () => void;
+}
+
+export const EditorCommandPanel = (props: EditorCommandPanelProps) => (
   <>
     <Tooltip title="Execute query">
       <IconButton aria-label="Execute query" type="submit">
@@ -12,7 +16,7 @@ export const EditorCommandPanel = () => (
       </IconButton>
     </Tooltip>
     <Tooltip title="Prettify query">
-      <IconButton aria-label="Prettify query">
+      <IconButton aria-label="Prettify query" onClick={props.handleClick}>
         <CleaningServices color="secondary" fontSize="large" />
       </IconButton>
     </Tooltip>

@@ -16,6 +16,7 @@ import { EditorMain } from 'components/editor-main';
 import { EditorOptions } from 'components/editor-options';
 import { useSnackbar } from 'components/SnackbarProvider';
 
+import { getPrettifyString } from './prettify/getPrettifyString';
 import { EditorFormStyle } from './styles';
 
 export const EditorForm = ({ endpoint }: { endpoint: string }) => {
@@ -44,11 +45,16 @@ export const EditorForm = ({ endpoint }: { endpoint: string }) => {
     return openSnackbar(EDITOR_MESSAGES.successful_request, 'success');
   };
 
+  const handleClick = () => {
+    const valueField = form.getValues('request');
+    const prettifyString = getPrettifyString(valueField);
+    form.setValue('request', prettifyString);
+  };
+
   return (
     <FormProvider {...form}>
       <EditorFormStyle onSubmit={form.handleSubmit(onSubmit)}>
-        <EditorMain />
-
+        <EditorMain handleClick={handleClick} />
         <EditorOptions />
       </EditorFormStyle>
     </FormProvider>
