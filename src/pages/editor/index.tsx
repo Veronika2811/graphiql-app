@@ -27,7 +27,10 @@ const EditorPage = () => {
   const { translation } = useLocale();
 
   useEffect(() => {
-    if (isSuccess) dispatch(setSchema(data));
+    if (isSuccess) {
+      dispatch(setSchema(data));
+      openSnackbar(translation.editor_message_successful_request, 'success');
+    }
     if (isError)
       openSnackbar(translation.editor_message_incorrect_URL, 'error');
 
@@ -40,6 +43,7 @@ const EditorPage = () => {
     dispatch,
     openSnackbar,
     translation.editor_message_incorrect_URL,
+    translation.editor_message_successful_request,
   ]);
 
   return (
