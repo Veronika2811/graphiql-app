@@ -1,4 +1,11 @@
-import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react';
 import { Alert, AlertColor, Snackbar } from '@mui/material';
 
 type SnackbarContextProps = {
@@ -26,13 +33,13 @@ export const SnackbarProvider = ({ children }: { children: ReactNode }) => {
   const [snackbarMessage, setSnackbarMessage] = useState('');
   const [snackbarVariant, setSnackbarVariant] = useState<AlertColor>('info');
 
-  const openSnackbar = (message: string, variant: AlertColor) => {
+  const openSnackbar = useCallback((message: string, variant: AlertColor) => {
     setSnackbarMessage(message);
     setSnackbarVariant(variant);
     setSnackbarOpen(true);
-  };
+  }, []);
 
-  const closeSnackbar = () => setSnackbarOpen(false);
+  const closeSnackbar = useCallback(() => setSnackbarOpen(false), []);
 
   const value = useMemo(
     () => ({
@@ -42,7 +49,13 @@ export const SnackbarProvider = ({ children }: { children: ReactNode }) => {
       snackbarMessage,
       snackbarVariant,
     }),
-    [snackbarOpen, snackbarMessage, snackbarVariant]
+    [
+      openSnackbar,
+      closeSnackbar,
+      snackbarOpen,
+      snackbarMessage,
+      snackbarVariant,
+    ]
   );
 
   return (
