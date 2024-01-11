@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Tab, Tabs } from '@mui/material';
 import { increaseArraySize } from 'utils/increaseArraySize';
 
@@ -7,14 +7,16 @@ import { getAuthTabsSx } from './style';
 
 interface CustomTabProps {
   tabNames: readonly string[];
-  tabContent: React.ReactElement[];
+  tabContent: readonly React.ReactElement[];
   activeTab?: number;
+  onCangeActiveTab: (activeTab: number) => void;
 }
 
 export const AuthTabs = ({
   tabNames,
   tabContent,
   activeTab = 0,
+  onCangeActiveTab = () => {},
 }: CustomTabProps) => {
   const [value, setValue] = useState(activeTab);
 
@@ -23,8 +25,13 @@ export const AuthTabs = ({
     [tabNames.length]
   );
 
-  const handleChange = (_: React.SyntheticEvent, newValue: number) =>
+  const handleChange = (_: React.SyntheticEvent, newValue: number) => {
+    onCangeActiveTab(newValue);
     setValue(newValue);
+  };
+  useEffect(() => {
+    setValue(activeTab);
+  }, [activeTab]);
 
   let tabNamesUdates = [...tabNames];
   let tabContentUpates = [...tabContent];
